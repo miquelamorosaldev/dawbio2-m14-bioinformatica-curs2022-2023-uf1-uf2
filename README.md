@@ -1,8 +1,8 @@
 # Formació de Python, Pandas i Estadística, aplicada a la Bioinformàtica.
 
-### A011 - Preparació entorn.
+### A011 - Preparació entorn: SO Linux, Python, Anaconda i editors de codi.
 
-⌚ Temps previst: Entre 1 i 2 sessions.
+⌚ Temps previst: Entre el primer i segon dia.
 
 1. [Sessió 1](./Sessi%C3%B31_PreparacioEntorn "Sessió 1")
 	- Important! Com actualitzar de PopOS 20.04 a PopOS 22.04 LTS
@@ -14,9 +14,9 @@
 
 ### A012 - Repàs funcionalitats bàsiques de Python.
 
-⌚ Temps previst. Una sessió a classe (o dues si cal) amb el més important.
+⌚ Temps previst. (1 - 2 hores) amb el més important.
 La resta de recursos queden com a referència. 
-Pressuposem que ja s'han treballat les funcions i estructures bàsiques de Python, i aquí en fem un repàs.
+Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures bàsiques de Python, i aquí en fem un repàs.
 
 1. [Repàs Python, part 1](./A012_RepasPythonPart1 "Repàs Python, part 1")
 	- Introducció Bàsica a Python 
@@ -35,12 +35,18 @@ Pressuposem que ja s'han treballat les funcions i estructures bàsiques de Pytho
 	- Llegir fitxers CSV amb iteradors
 	- Instrucció Yields
 	- Prog. Funcional : Maps i filter
+6. [ConsellsGit](./ConsellsGit "ConsellsGit 5")
+
+
+### A012 - Exercicis explotació de dades amb Python.
+
+⌚ Temps previst. 2 - 3 hores.
+
 6. [FitxesCSVScymago](./A013_ExplotacioFitxersCSV "FitxesCSVScymago")
 	- Llegir fitxers CSV i 10 exercicis d'explotació de dades
-7. [ConsellsGit](./ConsellsGit "ConsellsGit 5")
 
 
-### Tractament de fitxers CSV amb dades de bioinfomràtica amb Python
+### A02 - Tractament de fitxers CSV amb dades de bioinfomràtica amb Python
 	
 ⌚ Temps previst. 21 hores.
 
@@ -57,22 +63,15 @@ Pressuposem que ja s'han treballat les funcions i estructures bàsiques de Pytho
 		* SORT_VALUES
 		* MASKS
 
-9. [Sessió 9](./Sessió9_PandasScimago "Sessió 9")
-	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
-	- Seleccionar diferents registres a partir d'una condició d'un camp
-	- Detecció Valors na, eliminació de registres amb valors incoherents.
-	- Funcions aply, map, mapapply
-	- Afegir noves columnes, canvi d'ordre
-
 <em> En procés d'actualització </em>
 
-### Estadística 
+### A03 - Estadística 
  
 ⌚ Temps previst. 18 hores.
 
-15. [Sessió 15 (10 gener 2022)](./Sessió15_Estadistica "Estadística ")	
+15. [Repàs estadística](./Sessió15_Estadistica "Estadística ")	
 
-16. [Sessió 16 (17-20-24 gener 2022)](./Sessió16_EstadisticaDadesCovid "Dades covid ")	
+16. [Exercicis estadística Dades Covid)](./Sessió16_EstadisticaDadesCovid "Dades covid ")	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques	
 	- Mitjana
