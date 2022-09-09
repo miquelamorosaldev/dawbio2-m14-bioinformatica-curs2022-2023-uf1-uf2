@@ -161,11 +161,15 @@ Per desactivar l'entorn (i usar-ne un altre), trobant-nos al entorn s'utilitza
 
 Instal·lem Python des del repositori d'anaconda oficial. BIO és el nom de l'entorn que hem decidit.
 
-```sudo conda install -n BIO anaconda python ```
+```bash 
+conda install -n BIO anaconda python
+```
 
 	o bé
 
-```sudo conda install -c anaconda python ```
+```bash
+sudo conda install -c anaconda python
+```
 
 <hr/>
 <a name="interprets"></a>
@@ -211,7 +215,9 @@ Proporciona un entorn de desenvolupament interactiu perquè els científics de d
 
 Comanda (directori no oficial): 
 
-    ```sudo conda install -n BIO conda-forge jupyter-lab```
+    ```bash
+    conda install -c conda-forge jupyterlab
+    ```
     
 **Area de treball** 
 
