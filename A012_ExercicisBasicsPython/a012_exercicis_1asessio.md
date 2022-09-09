@@ -32,3 +32,36 @@ llistaDonants = ["A+","O+","O-","A+", "AB+", "A+", "AB+", "B-", "O+"]
 **Pista:**
 Operador divisió entera: %.
 Exemples d'ús: 10 % 5 = 0. 2 % 5 = 2.
+
+
+### Indicacions de FAQs Sessió 1.
+
+Eliminar aquestes linies, que no calen mai:
+
+
+conda install -n BIO anaconda python
+
+o bé
+
+conda install -c anaconda python
+
+----
+
+Afegir aquestes linies:
+
+conda update -n base -c defaults conda
+
+conda create -n bio
+
+conda install -n bio -c conda-forge jupyterlab
+
+
+Els entorns son molt lleugers.
+
+Per veure'ls
+
+conda env list
+
+I borrar l'entorn vell:
+
+conda env remove -n BIO
