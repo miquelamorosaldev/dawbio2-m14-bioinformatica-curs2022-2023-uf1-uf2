@@ -1,11 +1,15 @@
 # Instalació disc dur SSD USB bootable amb Linux
 ## Pablo Garcia, Miquel Angel Bardají, Miquel Amorós.
 
+
+<a name="toc"></a>
+
 * [Instal.lació PopOs o Ubuntu en un SSD](#installpopos)
 * [Instal·lació d´una versió de Python diferent del sistema Linux.](#python)
 * [Comandes bàsiques gestor Conda](#conda)
-* [Intèrprets de Python i IDE VSCode](#interprets)
+* [Intèrprets de Python](#interprets)
 * [Entorn JupyterLab](#jupyterlab)
+* [IDE VSCode](#vscode)
 * [Desinstal.lació Conda](#uninstallconda)
 
 <a name="installpopos"></a>
@@ -119,6 +123,8 @@ Recomanable [crear una drecera per activar el system-monitor per si es realentei
 		 
 	 Si sense voler no ens ha parat a la pregunta conda init (hem apretat el enter mentre s´estaven descomprimint arxius) --> Llavors fiquem ./ conda_init (executable al directori actual, ens hem de ficar a "~/anaconda3/bin")
 
+[Índex de continguts](#toc)
+
 <hr/>
 <a name="conda"></a>
 
@@ -136,17 +142,24 @@ A l'arrancar el terminal et sortirà la paraula (base), és el intèrpret de Con
 - Per veure el propietari **ls -lisah /home/alumne/anaconda3/bin/conda**
 - Comanda friki **ls -lisah $(which conda)**, la sortida de la comanda interior, es la entrada de la comanda més exterior.
 
-### Comandes instal·lació de Python amb Anaconda
+### Comandes instal·lació de Python amb Anaconda.
+
+Executem aquesta comanda per actualitzar Conda a la última versió. 
+Si ja tenim una versió recent no cal.
+
+```conda update -n base -c defaults conda```
 
 · Creació d'un entorn --> 
 
 Creem un nou entorn Conda (així no trepitgem l'entorn base)
 
-
 #### Crear el teu propi entorn. 
+
 [tutorial](https://www.devacademy.es/entornos-virtuales-en-python-anaconda).
 
-```conda create -n nomenv python=x.x```
+**Recomanació: Un nom amb minúscules i curt. Per exemple: bio.**
+
+```conda create -n nomenv```
 
 Per activar-lo, un cop ja es troba creat fem:
 
@@ -159,17 +172,7 @@ Per desactivar l'entorn (i usar-ne un altre), trobant-nos al entorn s'utilitza
 
 · Instal·lació python --> 
 
-Instal·lem Python des del repositori d'anaconda oficial. BIO és el nom de l'entorn que hem decidit.
-
-```bash 
-conda install -n BIO anaconda python
-```
-
-	o bé
-
-```bash
-conda install -c anaconda python
-```
+Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022).
 
 <hr/>
 <a name="interprets"></a>
@@ -187,6 +190,28 @@ Molt bàsic.
 ```bash
 jupyter lab
 ```
+
+[Índex de continguts](#toc)
+
+
+<a name="jupyterlab"></a>
+
+### Entorn JupyterLab
+
+JupyterLab és una interfície d'usuari basada en web per a Júpiter del projecte i està estretament integrat a Adobe Experience Platform i Google Colab.
+
+Proporciona un entorn de desenvolupament interactiu perquè els científics de dades treballin amb Jupyter Notebooks, codi i dades.
+
+· Instal·lació [Jupyter Lab](https://jupyter.org/). 
+
+Comanda (directori no oficial): 
+
+    ```bash
+    conda install -n nomenv -c conda-forge jupyterlab
+    ```
+
+
+<a name="vscode"></a>
 
 ### Integració IDE VSCode.
 
@@ -214,21 +239,7 @@ Podem provar els 2 tipus de fitxers.
 1. Un de Pyhton (*.py)
 2. Un de Jupyter Notebook (*.ipynb)
 
-<a name="jupyterlab"></a>
-### Entorn JupyterLab
 
-JupyterLab és una interfície d'usuari basada en web per a Júpiter del projecte i està estretament integrat a Adobe Experience Platform i Google Colab.
-
-Proporciona un entorn de desenvolupament interactiu perquè els científics de dades treballin amb Jupyter Notebooks, codi i dades.
-
-· Instal·lació [Jupyter Lab](https://jupyter.org/). 
-
-Comanda (directori no oficial): 
-
-    ```bash
-    conda install -c conda-forge jupyterlab
-    ```
-    
 **Area de treball** 
 
   Extensió dels projectes: **.ipynb**  
@@ -250,7 +261,10 @@ Comanda (directori no oficial):
 	Shift+Intro --> Executar una cel·la i anar a la següent
 	Ctrl + Intro --> Executar una cel·la i es queda a la mateixa.
 
+[Índex de continguts](#toc)
+
 <hr/>
+
 <a name="uninstallconda"></a>
 
 ### Desinstal.lació Conda
@@ -277,3 +291,4 @@ unset __conda_setup
 
 Per exemple: .conda
 
+[Índex de continguts](#toc)
