@@ -1,5 +1,9 @@
 # Formació de Python, Pandas i Estadística, aplicada a la Bioinformàtica.
 
+### A011 - Introducció a Python.
+
+⌚ Temps previst. 12 hores.
+
 ### A011 - Preparació entorn: SO Linux, Python, Anaconda i editors de codi.
 
 ⌚ Temps previst: Entre el primer i segon dia.
@@ -28,7 +32,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		- Slices
 		- Conjunts (Sets)
 3. [Txuletari Python](./A012_Cheatsheet "Txuletari Python")
-	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris
+	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris.
 4. [ExercicisBasicsPython](./A012_ExercicisBasicsPython "ExercicisBasicsPython")
 	- Exercicis programació amb python (bucles, llistes, set, etc)
 5. [Repàs Python, part 2](./A012_RepasPythonPart2 "Repàs Python, part 2")
@@ -37,12 +41,12 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	- Prog. Funcional : Maps i filter
 6. [ConsellsGit](./ConsellsGit "ConsellsGit 5")
 
+#### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
-### A012 - Exercicis explotació de dades amb Python.
 
-⌚ Temps previst. 2 - 3 hores.
+### A013 - Exercicis explotació de dades amb Python.
 
-6. [FitxesCSVScymago](./A013_ExplotacioFitxersCSV "FitxesCSVScymago")
+1. [FitxesCSVScymago](./A013_ExplotacioFitxersCSV "FitxesCSVScymago")
 	- Llegir fitxers CSV i 10 exercicis d'explotació de dades
 
 

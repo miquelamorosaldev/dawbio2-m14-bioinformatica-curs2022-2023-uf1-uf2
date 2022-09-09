@@ -314,8 +314,7 @@ Per una de les possibles solucions al exercici s'introdueix un nou concepte el d
 
 ##### Comprenhension Lists and Dicts
 
-·Hi ha "Dict Comprenhensions" y "List Comprenhensions", serveixen per a inicialitzar i omplir 
-de dades d'una llista (o diccionari) basant-nos en valors d'una llista (o dict.) existent. 
+·Hi ha "Dict Comprenhensions" y "List Comprenhensions", serveixen per a inicialitzar i omplir de dades d'una llista (o diccionari) basant-nos en valors d'una llista (o dict.) existent. 
 
 ·Per a llegir o escriure una comprenhension, es comença per la comanda del mig (pel "for") de l'instrucció.
 
@@ -329,13 +328,13 @@ de dades d'una llista (o diccionari) basant-nos en valors d'una llista (o dict.)
 
 Crear un nou diccionari on les claus del primer siguin els valors del segon i els valors, passin a ser les claus.
 
-[Solucions exercici1](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B32_ComandesConda/exercici1.md "exercici1")
+[Solucions exercici1](exercici1.md "exercici1")
 
 <a name="exercici2_comprenhension"></a>
 
 ***Exercici 2*** A partir d'una llista, que va del 1 al 10, crear amb una linea , una nova llista, amb els valors al quadrat de la primera.
 
-[Solucions exercici2](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B32_ComandesConda/exercici2.md "exercici2")
+[Solucions exercici2](exercici2.md "exercici2")
 
 
 <a name="slices"></a>
@@ -669,7 +668,7 @@ print(nombre + "-" + apellido1 )
 ***Exercici 3*** 
 Construir la llista de tuples amb un bucle while
 
-[Solució exercici3](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B32_ComandesConda/exercici3.md "Solució exercici3")
+[Solució exercici3](exercici3.md "Solució exercici3")
 
 
 <a name="ajuda"></a>
