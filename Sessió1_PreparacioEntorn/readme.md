@@ -168,7 +168,7 @@ conda install -n BIO anaconda python
 	o bé
 
 ```bash
-sudo conda install -c anaconda python
+conda install -c anaconda python
 ```
 
 <hr/>
