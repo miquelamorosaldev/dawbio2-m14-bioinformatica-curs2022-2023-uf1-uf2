@@ -18,7 +18,7 @@
 
 ### A012 - Repàs funcionalitats bàsiques de Python.
 
-⌚ Temps previst. (1 - 2 hores) amb el més important.
+⌚ Temps previst. (2 hores) amb el més important.
 La resta de recursos queden com a referència. 
 Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures bàsiques de Python, i aquí en fem un repàs.
 
@@ -39,7 +39,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	- Llegir fitxers CSV amb iteradors
 	- Instrucció Yields
 	- Prog. Funcional : Maps i filter
-6. [ConsellsGit](./ConsellsGit "ConsellsGit 5")
+6. [Com fer còpia seguratat amb RSYNC](./ConsellsGit "ConsellsGit 5")
 
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
@@ -90,7 +90,7 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Mitjana
 	- Moda
 	- Mediana
-	- Quartils? 
+	- Quartils 
 
 <em> En procés d'actualització </em>
 
