@@ -200,7 +200,7 @@ O bé pel terminal
 
 ```bash
 apt-get install vscode
-``
+```
 
 VSCode ens pregunta si volem instal.lar eines per a Pyhton, li diem que sí. 
 També podem instal.lar-ne per a Markdown. 
