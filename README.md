@@ -2,7 +2,6 @@
 
 * Pablo García.
 * Miquel Àngel Amorós
-
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
 ### A011 - Introducció a Python.
@@ -36,6 +35,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		- Tuples
 		- Slices
 		- Conjunts (Sets)
+		- Ajuda
 3. [Txuletari Python](./A012_Cheatsheet "Txuletari Python")
 	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris.
 4. [ExercicisBasicsPython](./A012_ExercicisBasicsPython "ExercicisBasicsPython")
@@ -43,13 +43,12 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 5. [Repàs Python, part 2](./A012_RepasPythonPart2 "Repàs Python, part 2")
 	- Llegir fitxers CSV amb iteradors
 	- Instrucció Yields
-	- Prog. Funcional : Maps i filter
-6. [Com fer còpia seguratat amb RSYNC](./ConsellsGit "ConsellsGit 5")
+	- Prog. Funcional : Map i filter
+6. [Com fer còpia seguratat amb RSYNC](./A01_ConsellsGit "ConsellsGit 5")
 
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
 **[A012-Exercicis-JupyterNb-Sessio1](./A012_ExercicisBasicsPython/a012_exercicis_1asessio.md "A012-Exercicis-JupyterNb-Sessio1")**
-
 
 <hr/>
 
@@ -100,8 +99,10 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 <em> En procés d'actualització </em>
 
 
-#### Disclaimer
+### Agraïments.
 
 Gràcies a tot el professorat de l'institut que ha fet possible tirar endavant el cicle de DAW, perfil especialitzat en Bioinformàtica. 
+
 En aquest mòdul concret, agraeixo al Pablo Garcia i el Miquel Àngel Bardají, que han publicat de forma resumida projectes de programació en Python aplicats a la bioinformàtica.
+
 Per últim, i el més important, als i les alumnes de l'institut per demostrar cada dia la seva iniciativa, saber fer i esperit crític. 
