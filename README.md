@@ -1,4 +1,9 @@
-# Formació de Python, Pandas i Estadística, aplicada a la Bioinformàtica.
+# M14 - Bioinformàtica.
+
+Pablo García.
+Miquel Àngel Amorós
+
+[Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
 ### A011 - Introducció a Python.
 
@@ -98,4 +103,5 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 #### Disclaimer
 
 Gràcies a tot el professorat de l'institut que ha fet possible tirar endavant el cicle de DAW, perfil especialitzat en Bioinformàtica. 
-En aquest cas concret, el Pablo Garcia i el Miquel Àngel Bardají, que han publicat de forma resumida projectes de programació en Python aplicats a la bioinformàtica.
+En aquest mòdul concret, agraeixo al Pablo Garcia i el Miquel Àngel Bardají, que han publicat de forma resumida projectes de programació en Python aplicats a la bioinformàtica.
+Per últim, i el més important, als i les alumnes de l'institut per demostrar cada dia la seva iniciativa, saber fer i esperit crític. 
