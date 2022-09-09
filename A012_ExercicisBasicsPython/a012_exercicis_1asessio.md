@@ -1,4 +1,4 @@
-## A012 - Exercicis repàs Pyhton. Primera Sessió
+## A0121 - Exercicis repàs Pyhton. Primeres Sessions.
 
 Realitza aquests exercicis en un quadern de Jupyter Notebook (ipynb).
 Apart d'aquests exercicis t'anirà bé per a provar els exemples que hem posat en aquesta wiki, i exemples propis :) 
@@ -7,8 +7,9 @@ Apart d'aquests exercicis t'anirà bé per a provar els exemples que hem posat e
 #### El resultats haurien de ser: 1, 2, 4, 8, 16, ...
 
 **Pista:**
-
 llistaNums = range(1,21)
+
+L'operació per a fer la potència 2 ^ num és: 2 ** num
 
 List Comprension. 
 myNewList = [elem for elem in list_source]
@@ -18,7 +19,7 @@ myNewList = [elem for elem in list_source]
 **Pista:**
 
 Dict. Comprension.
-d2 = {key:value for key,value in dictionary_source.items()
+d2 = {key:value for key,value in dictionary_source.items()}
 
 
 ### EXA3. A partir d'una llista en la qual els seus valors hi ha el grup sanguini i RH d'alguns donants de sang, crea un conjunt on es vegin els valors no repetits. (grup sanguini i RH; pex A+)
@@ -34,34 +35,11 @@ Operador divisió entera: %.
 Exemples d'ús: 10 % 5 = 0. 2 % 5 = 2.
 
 
-### Indicacions de FAQs Sessió 1.
+### EXA5. Tenim un llistat de pluges mensuals. Mostra els següents resultats.
+llistaPluges21 = [16.5, 0.0, 32.7, 6.5, 24.6, 15.7, 2.6, 0.0, 94.2, 65.5, 25.5, 9.2]
+1. Calcula el total.
+2. Ordena la llista de valors grans a petits.
+3. Mostra els 3 valors més grans.
+4. Obtén el valor màxim i el mínim.
+5. Calcula la mitjana aritmètica.
 
-Eliminar aquestes linies, que no calen mai:
-
-
-conda install -n BIO anaconda python
-
-o bé
-
-conda install -c anaconda python
-
-----
-
-Afegir aquestes linies:
-
-conda update -n base -c defaults conda
-
-conda create -n bio
-
-conda install -n bio -c conda-forge jupyterlab
-
-
-Els entorns son molt lleugers.
-
-Per veure'ls
-
-conda env list
-
-I borrar l'entorn vell:
-
-conda env remove -n BIO
