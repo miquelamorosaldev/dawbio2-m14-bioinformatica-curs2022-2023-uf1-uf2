@@ -192,6 +192,16 @@ jupyter lab
 
 Va molt bé integrar el nostre entorn operatiu (Conda, Python, Jupyter, llibreries com Pandas... ) a Visual Studio Code.
 
+#### Important! Instal.leu la versió deb, no la flatpak.
+
+La podeu instal.lar o bé pel PopOS! Shop
+
+O bé pel terminal
+
+```bash
+apt-get install vscode
+``
+
 VSCode ens pregunta si volem instal.lar eines per a Pyhton, li diem que sí. 
 També podem instal.lar-ne per a Markdown. 
 
