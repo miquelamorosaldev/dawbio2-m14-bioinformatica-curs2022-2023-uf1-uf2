@@ -43,12 +43,18 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
+**[A012-Exercicis-JupyterNb-Sessio1](./A012_ExercicisBasicsPython/a012_exercicis_1asessio.md "A012-Exercicis-JupyterNb-Sessio1")**
+
+
+<hr/>
 
 ### A013 - Exercicis explotació de dades amb Python.
 
 1. [FitxesCSVScymago](./A013_ExplotacioFitxersCSV "FitxesCSVScymago")
 	- Llegir fitxers CSV i 10 exercicis d'explotació de dades
-
+  
+<hr/>
+<hr/>
 
 ### A02 - Tractament de fitxers CSV amb dades de bioinfomràtica amb Python
 	
@@ -68,6 +74,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		* MASKS
 
 <em> En procés d'actualització </em>
+
+<hr/>
+<hr/>
 
 ### A03 - Estadística 
  
