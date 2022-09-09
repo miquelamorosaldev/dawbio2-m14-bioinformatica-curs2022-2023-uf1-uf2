@@ -1,7 +1,7 @@
 # M14 - Bioinformàtica.
 
-Pablo García.
-Miquel Àngel Amorós
+* Pablo García.
+* Miquel Àngel Amorós
 
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
