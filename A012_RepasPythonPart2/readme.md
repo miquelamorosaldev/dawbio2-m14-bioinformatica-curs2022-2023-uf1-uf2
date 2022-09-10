@@ -65,12 +65,12 @@ file.close()
 
 |  Paradigmes de la programació |
 | :------------ |
-|  Procedures utilitzen funcions impures |
+|  *Procedural* utilitzen funcions impures |
 |  *OOP* tenen totes funcions impures |
 |  *Funcional* emprar el màxim possible de funcions pures(almenys una segur que hi ha) |
 
 
-> Funcions pures: 
+## Funcions pures: 
 >  ·Sol llegeix dels seus paràmetres d'entrada
 >  ·Sol escriu desde els seus paràmetres de sortida
 >  ·Si pels mateixos paràmetres d'entrada sempre retorna els mateixos paràmetres d'entrada
@@ -164,12 +164,14 @@ Quan arriba al final, de la iteració dona un error i una excepció.
 >
 >  StopIteration: 
 
-| **Programació funcional**  |
-| :------------ |
-|  Per concatenar operacions fent 3 funcions bàsiques (sol treballar amb iteracions) |
-| · map |
-| · filter |
-| · reduce *(s'utilitza menys)* |
+## Programació funcional
+    
+
+Per concatenar operacions fent 3 funcions bàsiques (sol treballar amb iteracions) |
+1. **map**, alternativa a les list/dict comprensions.
+2. **filter**, força interessant i més net que l'ús de condicionals dintre de bucles.
+3. **reduce**, va bé per agrupar valors, però s'utilitza menys.
+4. **zip**, s'utilitza si volem treballar amb tuples.
 
 ### Exemple Map.    
     
@@ -228,8 +230,11 @@ llistaNumsPer3 = list(map(mult3,llistaNums))
 print(llistaNumsPer3)
 ```
 Llista números original.
+    
 [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+    
 Llista números multiplicats per 3.
+    
 [30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, 102, 108, 114]
 
 
