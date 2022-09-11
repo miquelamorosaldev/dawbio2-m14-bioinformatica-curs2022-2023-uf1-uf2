@@ -1,14 +1,14 @@
-#  Exercici explotació fitxers CSV
-##              <center>Pablo Garcia, Miquel Angel Bardají</center>
+#  Exercici explotació fitxers CSV (2022 - 2023)
+## <center>Pablo Garcia, Miquel Angel Amoros, Miquel Angel Bardají</center>
 
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
+
 > The SCImago Journal & Country Rank is a publicly available portal that includes the journals and country scientific indicators developed from the information contained in the Scopus® database. These indicators can be used to assess and analyze scientific domains. Journals can be compared or analysed separately. Country rankings may also be compared or analysed separately.
 
 
 ###  **Practica explotar un fitxer** i resoldre diferents consultes.
 
-Fitxer de dades : [aqui](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/sessio4_ExplotacioFitxersCSV/scimago-medicine.csv "aqui")
-
+Fitxer de dades : [aqui](./scimago-medicine.csv "aqui")
 
 #### Entries from SciMago
 
@@ -27,6 +27,9 @@ def read_csv_file(csv_file_path: str) -> list:
 ```
 
 D'aquesta manera anomenem la funció que ens tornarà el contingut.
+
+
+
 
 
 ```python

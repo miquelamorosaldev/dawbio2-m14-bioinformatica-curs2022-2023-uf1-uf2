@@ -2,6 +2,7 @@
 
 * Pablo García.
 * Miquel Àngel Amorós
+
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
 ### A011 - Introducció a Python.
@@ -44,7 +45,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	- Llegir fitxers CSV amb iteradors
 	- Instrucció Yields
 	- Prog. Funcional : Map i filter
-6. [Com fer còpia seguratat amb RSYNC](./A01_ConsellsGit "ConsellsGit 5")
+6. [Com fer còpia seguratat amb RSYNC](./A012_ConsellsGit "ConsellsGit 5")
 
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
