@@ -10,13 +10,15 @@ En altres paraules, és una organització que analitza mitjançant diverses mèt
 
 ###  **Practica explotar un fitxer** i resoldre diferents consultes.
 
+L'any passat ens vam descarregar el fitxer de dades, versió 2021-2022 : [aqui](./scimago-medicine.csv "aqui")
+
+Igualment, recomanem tornar a descarregar el CSV original.
 Per a extreure la versió més recent del fitxer, consulteu la web:
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
 
-![](CapturaScimago2021.PNG)
+I seleccioneu els articles de "Medicine" del 2021.
 
-L'any passat ens vam descarregar el fitxer de dades, versió 2021-2022 : [aqui](./scimago-medicine.csv "aqui")
-Però recomanem tornar a descarregar el CSV de la web
+![](CapturaScimago2021.PNG)
 
 
 #### Entries from SciMago
