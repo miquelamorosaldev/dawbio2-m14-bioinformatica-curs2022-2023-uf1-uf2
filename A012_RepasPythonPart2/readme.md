@@ -71,10 +71,15 @@ file.close()
 
 
 ## Funcions pures: 
->  ·Sol llegeix dels seus paràmetres d'entrada
->  ·Sol escriu desde els seus paràmetres de sortida
->  ·Si pels mateixos paràmetres d'entrada sempre retorna els mateixos paràmetres d'entrada
- 
+1. Sol llegeix dels seus paràmetres d'entrada
+2. Sol escriu desde els seus paràmetres de sortida
+3. Si pels mateixos paràmetres d'entrada sempre retorna els mateixos paràmetres d'entrada
+
+Exemple
+def mult2(i: int) -> int:
+    return i*2
+
+
 > **Pros** 
 > Són les més reutilitzables.
 > Les més testejables
