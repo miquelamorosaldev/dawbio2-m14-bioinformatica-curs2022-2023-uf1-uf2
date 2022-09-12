@@ -91,8 +91,6 @@ for entry in entries:
 print(NumTypeValuesDict)
 
 
-#q8 i q9
-
 # Q6. Guardar quines categories (Categories) existeixen.
 # Fixeu-vos que una entrada pot pertanyer a més d'una categoria, i estan seperades per ;
 # També hem d'esborrar els paràmetres que hi diu (Q1),(Q2)... que hi ha entremig.
@@ -125,3 +123,5 @@ print(categoriesList)
 #        position=category.find(" (Q")
 #        if (position!=-1):
 #            cate = cate[:posicion] 
+
+# Q7. Guardar quines categories (Categories) existeixen.
