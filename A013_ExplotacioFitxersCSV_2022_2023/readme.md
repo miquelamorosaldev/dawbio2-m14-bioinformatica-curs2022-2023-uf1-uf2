@@ -13,7 +13,7 @@ En altres paraules, és una organització que analitza mitjançant diverses mèt
 Per a extreure la versió més recent del fitxer, consulteu la web:
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
 
-
+![](CapturaScimago2021.PNG)
 
 L'any passat ens vam descarregar el fitxer de dades, versió 2021-2022 : [aqui](./scimago-medicine.csv "aqui")
 Però recomanem tornar a descarregar el CSV de la web
