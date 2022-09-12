@@ -3,12 +3,21 @@
 
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
 
-> The SCImago Journal & Country Rank is a publicly available portal that includes the journals and country scientific indicators developed from the information contained in the Scopus® database. These indicators can be used to assess and analyze scientific domains. Journals can be compared or analysed separately. Country rankings may also be compared or analysed separately.
+> The SCImago Journal & Country Rank is a publicly available portal that includes the journals and country scientific indicators developed from the information contained in the **Scopus® database.** 
+> **These indicators can be used to assess and analyze scientific domains.** Journals can be compared or analysed separately. Country rankings may also be compared or analysed separately.
 
+En altres paraules, és una organització que analitza mitjançant diverses mètriques la qualitat de les publicacions cientìfiques: l'H-Index, el total absolut d'articles citats, documents publicats durant 1 i 3 anys...
 
 ###  **Practica explotar un fitxer** i resoldre diferents consultes.
 
-Fitxer de dades : [aqui](./scimago-medicine.csv "aqui")
+Per a extreure la versió més recent del fitxer, consulteu la web:
+[Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
+
+
+
+L'any passat ens vam descarregar el fitxer de dades, versió 2021-2022 : [aqui](./scimago-medicine.csv "aqui")
+Però recomanem tornar a descarregar el CSV de la web
+
 
 #### Entries from SciMago
 
@@ -87,7 +96,6 @@ def read_csv_file(csv_file_path: str) -> list:
 # How to import a notebook a file
 
 import csv
-import re
 csv_file_path = "scimago-medicine.csv"
 entries = read_csv_file(csv_file_path)
 # entries = entries[0:10] opció per a quedar-se sol amb els 10 primers , per poder fer proves.
@@ -123,28 +131,52 @@ entries[0]
 <a name="ex1"></a>
 **Exercici 1** How many entries are in scimago-medicine.csv?
 
-
-
+```python
+print(len(entries))
+```
 
 <a name="ex2"></a>
 
 **Exercici2** Show the first 25 entries.
 
-
-
+```python
+print(entries[0:25])
+```
 
 <a name="ex3"></a>
 
 **Exercici3**
 Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)
 
+```python
+#Solució 31
+numEntriesSpain: int = 0
+for entry in entries:
+    if(entry['Country'] == 'Spain'):
+        numEntriesSpain+=1
 
+print(numEntriesSpain)
+
+#Solució 32, funcional.
+def filterEntrySpain (entry:dict) -> bool:      
+        return entry['Country'] == 'Spain'
+
+entriesSpain= list(filter(filterEntrySpain,entries))
+print(len(entriesSpain))
+```
 
 <a name="ex4"></a>
 
-**Exercici4** Show the first 25 entries.
+**Exercici4** Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.
 
+```python
+# Solucio FUNCIONAL.
+def filterUKJournalHIndex300 (entry:dict) -> bool:      
+        return entry['Country'] == 'United Kingdom' and entry['Type'] == 'journal' and int(entry['H index']) > 200                          
 
+entriesUKJournalHIndex300 = list(filter(filterUKJournalHIndex300,entries))                          
+print(len(entriesUKJournalHIndex300))
+```
 
 <a name="ex5"></a>
 
