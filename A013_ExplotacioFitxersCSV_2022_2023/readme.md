@@ -1,5 +1,5 @@
 #  Exercici explotació fitxers CSV (2022 - 2023)
-## <center>Pablo Garcia, Miquel Angel Amoros, Miquel Angel Bardají</center>
+## <center>Pablo Garcia, Miquel Angel Amoros.</center>
 
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
 
@@ -51,7 +51,7 @@ entries[0]
 >    'Categories': 'Hematology (Q1); Oncology (Q1)'}
 
 
-## Exercicis
+## Exercicis.
 
 **Es publicaran les solucions obtingudes al final de la sessió.**
 També s'enviarà codi intermig per a donar-vos pistes durant la sessió a:
@@ -67,7 +67,7 @@ També s'enviarà codi intermig per a donar-vos pistes durant la sessió a:
 * [Ex7 - Show all data from entries of categories: "Sports Medicine" or "Sports science"](#ex7)
 
 
-# Read Entries from SciMago CSV file.
+### Read Entries from SciMago CSV file.
 
 ```python
 # How to define a function in python with the word key
@@ -118,6 +118,7 @@ entries[0]
 >     
 ```
 
+#### Enunciat i solució dels exercicis (pròximament). 
 
 <a name="ex1"></a>
 **Exercici 1** How many entries are in scimago-medicine.csv?
