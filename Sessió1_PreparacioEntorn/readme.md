@@ -149,30 +149,59 @@ Si ja tenim una versió recent no cal.
 
 ```conda update -n base -c defaults conda```
 
-· Creació d'un entorn --> 
+### Crear el teu propi entorn. 
 
 Creem un nou entorn Conda (així no trepitgem l'entorn base)
-
-#### Crear el teu propi entorn. 
 
 [tutorial](https://www.devacademy.es/entornos-virtuales-en-python-anaconda).
 
 **Recomanació: Un nom amb minúscules i curt. Per exemple: bio.**
 
-```conda create -n nomenv```
+#### Pas 1.
 
+```sh
+conda create -n nomenv
+```
+
+#### Pas 2.
+Instal.lem una llibreria, la del Jupyter Labs
+<em>Acrònim de: Ju -> Julia, Py -> Python, R -> R.</em>
+
+```sh
+conda install -n nomenv -c conda-forge jupyterlab
+```
+
+#### Pas 3.
 Per activar-lo, un cop ja es troba creat fem:
 
-```conda activate nomenv```
-
+```sh
+conda activate nomenv
+```
+#### Pas 4.
 Per desactivar l'entorn (i usar-ne un altre), trobant-nos al entorn s'utilitza 
 
-```conda deactivate```
+```sh
+conda deactivate
+```
+També podem veure la llista d'entorns:
 
+```sh
+conda env list
+```
+
+Per esborrar un entorn:
+```sh
+conda env remove -n nomenv
+```
 
 · Instal·lació python --> 
 
 Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022).
+
+Ho podem verificar mitjançant la comanda:
+```sh
+python --version
+```
 
 <hr/>
 <a name="interprets"></a>
@@ -202,14 +231,13 @@ JupyterLab és una interfície d'usuari basada en web per a Júpiter del project
 
 Proporciona un entorn de desenvolupament interactiu perquè els científics de dades treballin amb Jupyter Notebooks, codi i dades.
 
-· Instal·lació [Jupyter Lab](https://jupyter.org/). 
+#### Instal·lació [Jupyter Lab](https://jupyter.org/). 
 
 Comanda (directori no oficial): 
 
-    ```bash
-    conda install -n nomenv -c conda-forge jupyterlab
-    ```
-
+```bash
+conda install -n nomenv -c conda-forge jupyterlab
+```
 
 <a name="vscode"></a>
 
