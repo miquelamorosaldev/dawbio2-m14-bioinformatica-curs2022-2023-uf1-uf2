@@ -55,11 +55,12 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A013 - Exercicis explotació de dades amb Python.
 
-[Fitxes CSV Scymago (2022-2023)](./A013_ExplotacioFitxersCSV_2022_2023/readme.md "FitxesCSVScymago")
-	- Llegir fitxers CSV i exercicis d'explotació de dades.
+
+**[A013-Exercicis Fitxes CSV Scymago (2022-2023)](./A013_ExplotacioFitxersCSV_2022_2023/readme.md "FitxesCSVScymago")**
+	- Llegir fitxers CSV i nous exercicis d'explotació de dades.
   
 [Fitxes CSV Scymago (2021-2022)](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B35_ExplotacioFitxersCSV/readme.md) "FitxesCSVScymago")
-	- Llegir fitxers CSV i exercicis d'explotació de dades.
+	- Llegir fitxers CSV i alguns exercicis d'explotació de dades fets, anys anteriors.
   
 <hr/>
 <hr/>
