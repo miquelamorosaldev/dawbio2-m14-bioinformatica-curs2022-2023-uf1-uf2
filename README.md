@@ -50,6 +50,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
 **[A012-Exercicis-JupyterNb-Sessio1](./A012_ExercicisBasicsPython/a012_exercicis_1asessio.md "A012-Exercicis-JupyterNb-Sessio1")**
+**[A012-SolucionsExercicis-JupyterNb-Sessio1](.A012_ExercicisBasicsPython/A012_SolucionsExercicisBasicsPython.ipynb)**
 
 <hr/>
 
