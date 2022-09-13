@@ -16,14 +16,16 @@ Igualment, recomanem tornar a descarregar el CSV original.
 Per a extreure la versió més recent del fitxer, consulteu la web:
 [Font de dades: Web Scimago ](https://www.scimagojr.com/journalrank.php?area=2700 "Web font de dades ")
 
-I seleccioneu els articles de "Medicine" del 2021.
+1. Seleccionem els articles de "Medicine" del 2021.
+2. La resta de camps deixem els que indica per defecte.
+3. Finalment, pitgem a "Download Data".
 
 ![](CapturaScimago2021.PNG)
 
 
 #### Entries from SciMago
 
-Per llegir un fitxer a python, utilitzarem una funció que li passarem la ruta i retornarà una llista amb totes les línies del fitxer.
+Per llegir un fitxer a Python, utilitzarem una funció que li passarem la ruta i retornarà una llista amb totes les línies del fitxer. 
 
 ```python
 # How to define a function in python with the word key
@@ -38,7 +40,6 @@ def read_csv_file(csv_file_path: str) -> list:
 ```
 
 D'aquesta manera anomenem la funció que ens tornarà el contingut.
-
 
 
 ```python
