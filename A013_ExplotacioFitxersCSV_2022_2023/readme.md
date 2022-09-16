@@ -70,13 +70,17 @@ També s'enviarà codi intermig per a donar-vos pistes durant la sessió a:
 [https://etherpad.wikimedia.org/p/m14-uf1-uf2](Wiki Etherpad M14)
 
 
-* [Ex1 - How many entries are in scimago-medicine.csv?](#ex1)
-* [Ex2 - Show the first 25 entries.](#ex2)
-* [Ex3 - Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)](#ex3)
-* [Ex4 - Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.](#ex4)
-* [Ex5 - What types of scientific publications are in the file ?](#ex5)
-* [Ex6 - List all the avaliable categories. Each entry can have more than one category.](#ex6)
-* [Ex7 - Show all data from entries of categories: "Sports Medicine" or "Sports science"](#ex7)
+* [Q1 - How many entries are in scimago-medicine.csv?](#ex1)
+* [Q2 - Show the first 25 entries.](#ex2)
+* [Q3 - Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)](#ex3)
+* [Q4 - Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.](#ex4)
+* [Q5 - What types of scientific publications are in the file ?](#ex5)
+* [Q6 - List all the avaliable categories. Each entry can have more than one category.](#ex6)
+* [Q7 - Show all data from the category with most entries."](#ex7)
+* [Q8 - Show all data from entries of categories: "Sports Medicine" or "Sports science"](#ex8)
+* [Q9 - All regions covered by all entries.](#ex9)
+* [Q10 - Mean of H-index by region.](#ex10)
+* [Q11 - What is the oldest publisher that is still active?](#ex11)
 
 
 ### Read Entries from SciMago CSV file.
@@ -132,15 +136,16 @@ entries[0]
 #### Enunciat i solució dels exercicis (pròximament). 
 
 <a name="ex1"></a>
-**Exercici 1** How many entries are in scimago-medicine.csv?
+**Question 1** How many entries are in scimago-medicine.csv?
 
 ```python
-print(len(entries))
+num = len(entries)
+print(f"There are {num} entries.")
 ```
 
 <a name="ex2"></a>
 
-**Exercici2** Show the first 25 entries.
+**Question 2** Show the first 25 entries.
 
 ```python
 print(entries[0:25])
@@ -148,7 +153,7 @@ print(entries[0:25])
 
 <a name="ex3"></a>
 
-**Exercici3**
+**Question 3**
 Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)
 
 ```python
@@ -170,7 +175,7 @@ print(len(entriesSpain))
 
 <a name="ex4"></a>
 
-**Exercici4** Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.
+**Question 4** Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.
 
 ```python
 # Solucio FUNCIONAL.
@@ -183,19 +188,69 @@ print(len(entriesUKJournalHIndex300))
 
 <a name="ex5"></a>
 
-**Exercici 5** What types of scientific publications are in the file ?
+**Question 5** What types of scientific publications are in the file ? Show the name of all types.
 
-
+**Expected Result:**
+```python
+['journal', 'book series', 'conference and proceedings', 'trade journal']
+```
 
 <a name="ex6"></a>
 
-**Exercici 6**  List all the avaliable categories. Each entry can have more than one category.
+**Question 6**  List all the avaliable categories. Each entry can have more than one category.
 
+**Hint: Split function.**
+```python
+# One entry can belong to one or more categories. These are separated by semicolon (;) 
+# You should remove the quarter characters (Q1),(Q2)... between categories.
 
+import re
+text = "python is, an easy;language; to, learn."
+print(re.split('; |, ', text))
+['python is', 'an easy;language', 'to', 'learn.']
+```
 
 <a name="ex7"></a>
 
-**Exercici 7** Show all data from entries of categories: "Sports Medicine" or "Sports science"
+**Question 7** Show all data from the category with most entries.
+
+**Hint: Create a dict. The keys are the entry name, the values are the number of entres **
+
+**Expected Result**
+```python
+1 - Medicine (miscellaneous) : 2447 2 - Public Health, Environmental and Occupational Health : 560 3 - Psychiatry and Mental Health : 537 ...
+```
+
+<a name="ex8"></a>
+
+**Question 8** Show all data from entries of categories: "Sports Medicine" or "Sports science".
+
+**Hint. Use operator in "Sports".**
+
+
+<a name="ex9"></a>
+
+**Question 9** All regions covered by all entries.
+
+**Hint. Use operator in "Sports".
+
+
+<a name="ex10"></a>
+
+**Question 10** Mean of H-index by region.
+
+**Observation. Mean = Average. Promedio in Spanish. Do not get confused with Median, is another measure.**
+
+<a name="ex11"></a>
+
+**Question 11** What is the oldest publisher that is still active?
+
+**Observation. Has some publication in 2021.**
+
+
+
+
+
 
 
 
