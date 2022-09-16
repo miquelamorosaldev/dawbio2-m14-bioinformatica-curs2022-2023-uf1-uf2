@@ -68,13 +68,13 @@ entries[0]
 **Es publicaran les solucions obtingudes al final de cada sessió. Tant les del Miquel com les del Pablo i les vostres solucions proposades.**
 
 També s'enviarà codi intermig per a donar-vos pistes i solucions durant la sessió a:
-[https://etherpad.wikimedia.org/p/m14-uf1-uf2](Wiki Etherpad M14)
+[https://etherpad.wikimedia.org/p/m14-uf1-uf](https://etherpad.wikimedia.org/p/m14-uf1-uf2)
 
 
 * [Q1 - How many entries are in scimago-medicine.csv?](#ex1)
 * [Q2 - Show the first 25 entries.](#ex2)
-* [Q3 - Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)](#ex3)
-* [Q4 - Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.](#ex4)
+* [Q3 - How many entries are from Spain? (Country = Spain)](#ex3)
+* [Q4 - Show all the journals (Type = journal) published in UK (Country = United Kingdom) with an H-Index greater than 200.](#ex4)
 * [Q5 - What types of scientific publications are in the file ?](#ex5)
 * [Q6 - List all the avaliable categories. Each entry can have more than one category.](#ex6)
 * [Q7 - Show all data from the category with most entries."](#ex7)
@@ -155,7 +155,7 @@ print(entries[0:25])
 <a name="ex3"></a>
 
 **Question 3**
-Compta el número d'entrades publicades a Espanya en una llista (Country = Spain)
+How many entries are from Spain? (Country = Spain)
 
 ```python
 #Solució 31
@@ -176,7 +176,7 @@ print(len(entriesSpain))
 
 <a name="ex4"></a>
 
-**Question 4** Mostra les revistes (Type = journal) publicades a UK (Country = United Kingdom) i que tinguin un H index superior a 200.
+**Question 4** Show all the journals (Type = journal) published in UK (Country = United Kingdom) with an H-Index greater than 200.
 
 ```python
 # Solucio FUNCIONAL.
