@@ -65,8 +65,9 @@ entries[0]
 
 ## Exercicis.
 
-**Es publicaran les solucions obtingudes al final de la sessió.**
-També s'enviarà codi intermig per a donar-vos pistes durant la sessió a:
+**Es publicaran les solucions obtingudes al final de cada sessió. Tant les del Miquel com les del Pablo i les vostres solucions proposades.**
+
+També s'enviarà codi intermig per a donar-vos pistes i solucions durant la sessió a:
 [https://etherpad.wikimedia.org/p/m14-uf1-uf2](Wiki Etherpad M14)
 
 
