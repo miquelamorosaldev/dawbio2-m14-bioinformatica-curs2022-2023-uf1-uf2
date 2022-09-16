@@ -5,7 +5,7 @@
 <a name="toc"></a>
 
 * [Instal.lació PopOs o Ubuntu en un SSD](#installpopos)
-* [Instal·lació d´una versió de Python diferent del sistema Linux.](#python)
+* [Instal·lació d´una versió de Python diferent del sistema Linux amb Anaconda](#python)
 * [Comandes bàsiques gestor Conda](#conda)
 * [Intèrprets de Python](#interprets)
 * [Entorn JupyterLab](#jupyterlab)
@@ -18,7 +18,7 @@
 
 ## <strong style="color:red;"> Abans de tot, cal fer còpies de seguretat de totes les dades!</strong>
 
-**Un cop fetes, per experiència us recomanem que torneu a instal.lar des de 0 el sistema a la versió 22.04 LTS. Aquesta guia us ajudarà.** 
+** ⚠️ Un cop fetes, per experiència us recomanem que torneu a instal.lar des de 0 el sistema a la versió 22.04 LTS. Aquesta guia us ajudarà. ⚠️** 
 
 Això és deu a que, tot i que [la pàgina oficial assegura que amb dues comandes s'actualitza el sistema](https://support.system76.com/articles/upgrade-pop/), la veritat és que en ocasions poden deixar de funcionar programes i perifèrics després de l'actualització. Amb Ubuntu ens ha passat i Popos també hi ha risc que passi. 
 
@@ -46,8 +46,8 @@ El SystemBoot de la BIOS ha d'estar desactivat.
 ### Passos a seguir per l'USB bootable
 
  1. Descarregar iso escollida.
- 2. Executar el [BalenaEtcher](https://www.balena.io/etcher/), esculleixes la ISO(elegida) i t'assegures de triar el disc de 4 GB, **no el disc dur del PC**
- 3. Arrancar amb el usb en lloc del disc dur. Amb la tecla que sigui per arrancar bios(F2/F1/F8/F9)
+ 2. Executar el [BalenaEtcher](https://www.balena.io/etcher/), esculleixes la ISO(elegida) i t'assegures de triar el usb, ** ⚠️ no el disc dur del PC ⚠️**
+ 3. Arrancar amb el usb en lloc del disc dur. Amb la tecla que sigui per arrancar bios(ESC/F2/F1/F8/F9)
 
 > **Firmware**, el software dins del hardware perquè funcioni.
 >
@@ -57,10 +57,11 @@ El SystemBoot de la BIOS ha d'estar desactivat.
 >  Tabla Particiones GPT: GUID Partition table
 > UUID: Universal Unique ID
 
- 3. Arrancar en **mode UEFI el usb** → Hi ha l´opció try demo, que és recomanable per provar si funciona el sistema operatiu abans de fer la còpia al ssd,  i les opcions a escollir, preferentment serien 
-    · Software  Angles-Irlanda
-    · Elegir keyboard-Español amb especificació català si volem
-    - Escollir l´opciò **Clean Storm**, borra tots els fitxers , aquí agafes el disc dur extern. Aquest moment has de triar el disc dur (SSD) i no equivocar-te
+ 3. Arrancar en **mode UEFI el usb** → Hi ha l´opció try demo, que és recomanable per provar si funciona el sistema operatiu abans de fer la còpia al ssd,  i les opcions a escollir, preferentment serien: 
+    - Software  Angles-Irlanda
+    - Elegir keyboard-Español amb especificació català si volem
+    - Escollir l´opciò **Clean Storm**, borra tots els fitxers. 
+    - Aquí tries el disc dur extern. ⚠️ Aquest moment has de triar el disc dur (SSD) i no equivocar-te. ⚠️
     - No escollir l´opció encriptar el password, perque si hi ha un problema, des de fora es pot ajudar una mica més.
 
 ### Utilitats i comandes Ubuntu
@@ -70,7 +71,7 @@ El SystemBoot de la BIOS ha d'estar desactivat.
 https://ubunlog.com/inxi-cli-informacion-equipo/#Instalar_inxi
 
 ```sh
-sudo apt install inxi
+apt install inxi
 ```
 
 - System Monitor --> 
@@ -88,7 +89,7 @@ Recomanable [crear una drecera per activar el system-monitor per si es realentei
 	  
 	  - Per poder instal·lar la nostra versió de python, necessitem saber on es troben els python de sistema, per no fer-los malbé. Posarem la comanda **echo $PATH | sed -E "s/:/\n/g"**.
 	  
-	  Per poder instal·lar la nostra pròpia versió de python, instal·larem [**Conda - Anaconda**](https://docs.conda.io/en/latest/ "**Conda**"), que és un software que ens permet dues coses:
+	  Per poder instal·lar la nostra pròpia versió de python, instal·larem **Conda - Anaconda**, que és un software que ens permet dues coses:
 	  
 	     - **Gestor d'entorns virtuals** Un directori amb llibreries i executables, aïllats de la resta. Així evitem problemes de compatibilitat. 
 	     Anaconda els posa a anaconda3/env
@@ -97,7 +98,7 @@ Recomanable [crear una drecera per activar el system-monitor per si es realentei
 	       
 	L´instal·larem perque no permet requerir permis d'administrador (ideal per empreses)
 	
-	1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution "Python") - **64-Bit (x86) Installer ** *64-Bit(la quantitat de memoria que podem dirigir) (x86 *(Arquitectura Intel)*) *.  Extensió sh (shell)
+	1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution) - **64-Bit (x86) Installer ** *64-Bit(la quantitat de memoria que podem dirigir) (x86 *(Arquitectura Intel)*) *.  Extensió sh (shell)
 	2. Al instal·lador podem mirar dins el fitxer amb *less nom_fitxer*, i veiem quin codi hi ha.
 	3. Executem "sh nom_instal·lador.sh"  i hem de fer els passos:
 	```sh
