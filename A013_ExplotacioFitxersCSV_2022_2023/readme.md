@@ -67,6 +67,9 @@ entries[0]
 
 **Es publicaran les solucions obtingudes al final de cada sessió. Tant les del Miquel com les del Pablo i les vostres solucions proposades.**
 
+Per ara les recopilo en aquest [fitxer de codi Python](./a013-csv-scimago.py)
+
+
 També s'enviarà codi intermig per a donar-vos pistes i solucions durant la sessió a:
 [https://etherpad.wikimedia.org/p/m14-uf1-uf](https://etherpad.wikimedia.org/p/m14-uf1-uf2)
 
@@ -211,6 +214,51 @@ print(re.split('; |, ', text))
 ['python is', 'an easy;language', 'to', 'learn.']
 ```
 
+SOLUTION:
+
+``python
+import re
+
+def remove_quarter(category: str) -> str:
+    "Returns the category string without the quarter id: (Q1), (Q2), (Q3) or (Q4)"
+    " Pending apply regex. Q(*) "
+    result = category
+    result = re.sub(" ?\(Q\d\)", "", result)
+    result = result.strip()
+    return result
+
+
+categories_set: set = set() #Millor així. Desambigua
+for entry in entries:
+    #Separa, en función de los delimitadores que le pongas
+    ## entryCategories = entry.split(';')
+    entry_categories: list[str] = entry['Categories'].split(';')
+    for category in entry_categories:
+        clean_category: str = remove_quarter(category)
+        categories_set.add(clean_category)
+
+categories_list: list[str] = sorted(categories_set)
+
+#print(len(categories_set))
+#print(categories_list)
+
+# Solution from students :)
+def q6(data: list[dict[str, str]]) -> list[str]:
+    return sorted(list( set( sum([remove_quarter(dictionary['Categories']).split(';') for dictionary in data], []))))
+
+q6_result = q6(entries)
+``
+
+```python
+regiones: dict = set() #Mejor así. Desambigua
+for entrada in entries:
+    regiones.add(entrada['Region'])
+
+
+print("Q9 - REGIONS.")
+print(regiones)
+```
+
 <a name="ex7"></a>
 
 **Question 7** Show all data from the category with most entries.
@@ -222,12 +270,21 @@ print(re.split('; |, ', text))
 1 - Medicine (miscellaneous) : 2447 2 - Public Health, Environmental and Occupational Health : 560 3 - Psychiatry and Mental Health : 537 ...
 ```
 
+### VEIEM LA SOLUCIÓ DILLUNS
+
 <a name="ex8"></a>
 
 **Question 8** Show all data from entries of categories: "Sports Medicine" or "Sports science".
 
 **Hint. Use operator in "Sports".**
 
+SOLUTION:
+
+```python
+list_sports_science_entries = [entry for entry in entries if 'sports' in entry['Categories'].lower()]
+
+print('Sports',len(list_sports_science_entries))
+```
 
 <a name="ex9"></a>
 
@@ -235,18 +292,35 @@ print(re.split('; |, ', text))
 
 **Hint. Use operator in "Sports".
 
+SOLUTION:
+
+```python
+regiones: dict = set() #Mejor así. Desambigua
+for entrada in entries:
+    regiones.add(entrada['Region'])
+
+
+print("Q9 - REGIONS.")
+print(regiones)
+```
+
 
 <a name="ex10"></a>
+
 
 **Question 10** Mean of H-index by region.
 
 **Observation. Mean = Average. Promedio in Spanish. Do not get confused with Median, is another measure.**
+
+### VEIEM LA SOLUCIÓ DILLUNS
 
 <a name="ex11"></a>
 
 **Question 11** What is the oldest publisher that is still active?
 
 **Observation. Has some publication in 2021.**
+
+### VEIEM LA SOLUCIÓ DILLUNS
 
 
 
