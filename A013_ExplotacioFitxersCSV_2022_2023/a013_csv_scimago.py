@@ -1,4 +1,7 @@
 # ______ UTILS ______ #
+# How to import a notebook a file
+import csv
+from pathlib import Path
 
 # How to define a function in python with the word key
 # the type date after the : is only documentation for Python
@@ -22,11 +25,6 @@ def read_csv_file_pathlib(csv_file_path: str) -> list:
     result = [row_dict for row_dict in rows]
 
     return result
-
-
-# How to import a notebook a file
-import csv
-from pathlib import Path
 
 
 csv_file_path = "scimago-medicine.csv"

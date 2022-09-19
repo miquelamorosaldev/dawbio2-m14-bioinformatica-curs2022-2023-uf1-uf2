@@ -79,6 +79,7 @@ També s'enviarà codi intermig per a donar-vos pistes i solucions durant la ses
 * [Q3 - How many entries are from Spain? (Country = Spain)](#ex3)
 * [Q4 - Show all the journals (Type = journal) published in UK (Country = United Kingdom) with an H-Index greater than 200.](#ex4)
 * [Q5 - What types of scientific publications are in the file ?](#ex5)
+* [Q52 - What types of scientific publications are in the file ?](#ex5)
 * [Q6 - List all the avaliable categories. Each entry can have more than one category.](#ex6)
 * [Q7 - Show all data from the category with most entries."](#ex7)
 * [Q8 - Show all data from entries of categories: "Sports Medicine" or "Sports science"](#ex8)
@@ -199,6 +200,29 @@ print(len(entriesUKJournalHIndex300))
 ['journal', 'book series', 'conference and proceedings', 'trade journal']
 ```
 
+
+<a name="ex52"></a>
+
+**Question 5.2** How many scientific publications are in from each type ?
+**Expected Result:**
+```python
+{'journal': 7082, 'book series': 27, 'conference and proceedings': 5, 'trade journal': 4}
+```
+
+**SOLUTION:**
+```python
+num_entries_type = {}
+for entry in entries:
+    # if Type don't exist, we add it in the dict.
+    if (not (entry['Type'] in num_entries_type)):
+        num_entries_type[entry['Type']]=1
+    # if Type exist, we sum 1 more publication.
+    else:
+        num_entries_type[entry['Type']] = num_entries_type[entry['Type']] + 1
+
+print(num_entries_type)
+```
+
 <a name="ex6"></a>
 
 **Question 6**  List all the avaliable categories. Each entry can have more than one category.
@@ -214,8 +238,7 @@ print(re.split('; |, ', text))
 ['python is', 'an easy;language', 'to', 'learn.']
 ```
 
-SOLUTION:
-
+**SOLUTION:**
 ``python
 import re
 
