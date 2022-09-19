@@ -129,7 +129,7 @@ print(num_entries_type)
 
 import re
 
-def remove_quarter(category: str) -> str:
+def clean_entries(category: str) -> str:
     "Returns the category string without the quarter id: (Q1), (Q2), (Q3) or (Q4)"
     " and without spaces."
     result = category
@@ -144,7 +144,7 @@ for entry in entries:
     ## entryCategories = entry.split(';')
     entry_categories: list[str] = entry['Categories'].split(';')
     for category in entry_categories:
-        clean_category: str = remove_quarter(category)
+        clean_category: str = clean_entries(category)
         categories_set.add(clean_category)
 
 categories_list: list[str] = sorted(categories_set)
@@ -154,7 +154,7 @@ categories_list: list[str] = sorted(categories_set)
 
 # Solution from students :)
 def q6(data: list[dict[str, str]]) -> list[str]:
-    return sorted(list( set( sum([remove_quarter(dictionary['Categories']).split(';') for dictionary in data], []))))
+    return sorted(list( set( sum([clean_entries(dictionary['Categories']).split(';') for dictionary in data], []))))
 
 q6_result = q6(entries)
 #print(q6_result)
@@ -169,7 +169,7 @@ for entry in entries:
     # if Category don't exist, we add it in the dict.
     list_categories_entry = re.split(';', entry['Categories'])
     for category_entry in list_categories_entry:
-        clean_category_entry = remove_quarter(category_entry)
+        clean_category_entry = clean_entries(category_entry)
         if clean_category_entry in categories_num_dict:
             categories_num_dict[clean_category_entry]+=1
         else:
@@ -200,12 +200,12 @@ print('Sports',len(list_sports_science_entries))
 # EXP. RESULT 
 # {'Africa/Middle East', 'Asiatic Region', 'Latin America', 'Western Europe', 'Pacific Region', 'Middle East', 'Northern America', 'Africa', 'Eastern Europe'}
 
-regions_set: dict = set() #Mejor así. Desambigua
+regiones: dict = set() #Mejor así. Desambigua
 for entrada in entries:
-    regions_set.add(entrada['Region'])
+    regiones.add(entrada['Region'])
 
-#print("Q9 - REGIONS.")
-#print(regiones)
+print("Q9 - REGIONS.")
+print(regiones)
 
 
 # Question 10. Mean of H-index by region.
@@ -254,48 +254,53 @@ def q10():
     # pprint -> pretty data printer.
     pprint.pp(sorted_region_ranking)
 
+print("Q10 - Mean of H-index by region.")
 q10()
 
 # Question 11 - What is the oldest publisher that is still active?
-# Convert the list of dicts to a dict of lists (DataFrame-like format)
+#     (Has some publication in 2021)
 # -----------------------------------------------------------------------------
-def convert_format_v1(entries: list[dict]) -> dict[str,list]:
-    
-    # Get list of keys. All dicts have the same keys
-    entry: dict           = entries[0]
-    keys:  list[str]      = list(entry.keys())
 
-    # Empty result. df = DataFrame.
-    df: dict[str,list] = {}
-
-    # Get all values for each key
-    for key in keys:
-        df[key] = [entry[key] for entry in entries]
-
-    return df
-
-# Same as v1, but using a lambda. Slightly shorter and clearer.
 # -----------------------------------------------------------------------------
-def convert_format_v2(entries: list[dict]) -> dict[str,list]:
-    
-    # Get list of entry keys. All dicts have the same keys.
-    first_entry: dict  = entries[0]
-    keys: list[str]    = list(first_entry.keys())
-    
-    # Get all values for each key
-    get_all_values     = lambda key, entries: [entry[key] for entry in entries]
-    df: dict[str,list] = {key: get_all_values(key, entries) for key in keys}
+def get_first_year(entry: dict) -> int:
 
-    return df
+    coverage_str:   str = entry['Coverage']
+    first_year_str: str = coverage_str[0:4]
+    first_year_int: int = int(first_year_str)
+
+    return first_year_int
+
+# -----------------------------------------------------------------------------
+def get_last_year(entry: dict) -> int:
+
+    coverage_str:  str = entry['Coverage']
+    last_year_str: str = coverage_str[-4:]
+    last_year_int: int = int(last_year_str)
+
+    return last_year_int
 
 # -----------------------------------------------------------------------------
 def q11():
+    
+    # Get clean entries
+    clean_entries: list[dict] = utils.clean_entries(entries)
 
-    raw_entries: list[dict] = utils.read_csv_file("scimago-medicine.csv")
-    df:          dict[list] = convert_format_v2(raw_entries)
+    # Constants
+    CURRENT_YEAR: int = 2021
 
-    print("List of keys:")
-    pprint.pp(list(df.keys()))
+    # Filter entries: Only those who are still publishing
+    filtered_entries: list[dict] = [entry for entry in clean_entries
+                                    if get_last_year(entry) == CURRENT_YEAR]
 
-    print("List of top ten Journals:")
-    pprint.pp(df["Title"][0:10])
+    # Get oldest entry
+    first_year_list:    list[int] = [get_first_year(entry) for entry in filtered_entries]
+    oldest_year:        int       = min(first_year_list)
+    oldest_entry_index: int       = first_year_list.index(oldest_year)
+    oldest_entry:       dict      = filtered_entries[oldest_entry_index]
+
+    # Print
+    pprint.pp(oldest_entry)
+    pprint.pp(oldest_entry['Publisher'])
+
+print("11 - What is the oldest publisher that is still active?")
+q11()

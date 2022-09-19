@@ -67,7 +67,6 @@ def clean_entries(raw_entries: list[dict]) -> list[dict]:
     return clean_entries
 
 
-
 # -----------------------------------------------------------------------------
 # Get unique categories
 # -----------------------------------------------------------------------------
@@ -85,7 +84,6 @@ def get_unique_categories(clean_entries: list[dict]) -> list[str]:
 
     result: list[str] = sorted(unique_categories_set)
     return result
-
 
 
 # -----------------------------------------------------------------------------
