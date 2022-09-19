@@ -548,12 +548,12 @@ Ho podem provar en el DataSet de la planta Iris.
 És coneguda com a lliri blau a Catalunya.
 És una de les plantes que té més tipus d'espècies.
 ```python
-df.shape()
+df.describe()
 ```
 
-*[https://archive.ics.uci.edu/ml/datasets/Iris](Descripció del dataset Iris)
-*[https://archive.ics.uci.edu/ml/machine-learning-databases/iris/](Descarrega iris.data)
-*[https://www.youtube.com/watch?v=PvNKKrPE0AI](Video de l'exemple)
+* [https://archive.ics.uci.edu/ml/datasets/Iris] (Descripció del dataset Iris)
+* [https://archive.ics.uci.edu/ml/machine-learning-databases/iris/] (Descarrega iris.data)
+* [https://www.youtube.com/watch?v=PvNKKrPE0AI] (Video de l'exemple)
 
 **Exercici 1. Proveu d'aplicar les operacions i funcions vistes al dataset de la planta Iris**
 
@@ -1121,5 +1121,5 @@ students_frame.loc[[True,True,True,False],:]
 
 Pot ser que no hi arribem fins el divendres 23/09/2022.
 
-Exemple: [https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6](CSV Pokemons)
-Exemple: [http://www3.uah.es/marcos_marva/CursoSanitaria/practicas/datos/osteoporosis.csv](CSV pacients Oestoporosi)
+Exemple: [https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6] (CSV Pokemons)
+Exemple: [http://www3.uah.es/marcos_marva/CursoSanitaria/practicas/datos/osteoporosis.csv] (CSV pacients Oestoporosi)
