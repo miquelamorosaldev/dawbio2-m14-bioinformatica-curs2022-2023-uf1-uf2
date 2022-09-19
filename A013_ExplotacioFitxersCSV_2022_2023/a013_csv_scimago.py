@@ -162,8 +162,6 @@ q6_result = q6(entries)
 
 # Question 7. Order categories by num of publications.
 
-# Solucion 71. New query. 2021-2022.
-
 categories_num_dict = {}
 for entry in entries:
     # if Category don't exist, we add it in the dict.
