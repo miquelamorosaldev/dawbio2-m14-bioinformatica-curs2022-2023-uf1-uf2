@@ -1,7 +1,8 @@
 # PANDAS
 
 - [PANDAS](#pandas)
-  - [Instal·lacio Pandas a conda: Instruccions](#installacio-pandas-a-conda-instruccions)
+  - [Instal·lacio Pandas a conda:](#installacio-pandas-a-conda)
+      - [Instruccions](#instruccions)
   - [Series](#series)
   - [DTYPE. Tipus de dades que s'utilitzen a Pandas](#dtype-tipus-de-dades-que-sutilitzen-a-pandas)
   - [DataFrame](#dataframe)
@@ -19,8 +20,13 @@
         - [Masks](#masks)
 
 
-## Instal·lacio Pandas a conda: [Instruccions](https://anaconda.org/anaconda/pandas)
+## Instal·lacio Pandas a conda: 
 
+#### [Instruccions](https://anaconda.org/anaconda/pandas)
+
+```sh
+conda install -c anaconda pandas
+```
 
 Per fer una introducció a Pandas, durant varies sessions, seguirem el tutorial oficial de [pandas 10 minutes](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html "pandas 10 minutes")
 
