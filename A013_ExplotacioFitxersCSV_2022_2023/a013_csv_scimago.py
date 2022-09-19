@@ -27,7 +27,11 @@ def read_csv_file_pathlib(csv_file_path: str) -> list:
     return result
 
 
-csv_file_path = "scimago-medicine.csv"
+#csv_file_path = "scimago-medicine.csv"
+csv_file_path = "./A013_ExplotacioFitxersCSV_2022_2023/scimago-medicine.csv"
+
+print('Path = ',Path().absolute())
+
 entries = read_csv_file(csv_file_path)
 print(entries[0])
 
@@ -127,7 +131,7 @@ import re
 
 def remove_quarter(category: str) -> str:
     "Returns the category string without the quarter id: (Q1), (Q2), (Q3) or (Q4)"
-    " Pending apply regex. Q(*) "
+    " and without spaces."
     result = category
     result = re.sub(" ?\(Q\d\)", "", result)
     result = result.strip()
@@ -158,21 +162,36 @@ q6_result = q6(entries)
 
 # Question 7. Order categories by num of publications.
 
-# We get the clean categories, from question 6.
+# Solucion 71. New query. 2021-2022.
 
-# NOT TODAY.
+categories_num_dict = {}
+for entry in entries:
+    # if Category don't exist, we add it in the dict.
+    list_categories_entry = re.split(';', entry['Categories'])
+    for category_entry in list_categories_entry:
+        clean_category_entry = remove_quarter(category_entry)
+        if clean_category_entry in categories_num_dict:
+            categories_num_dict[clean_category_entry]+=1
+        else:
+            categories_num_dict[clean_category_entry]=1
+
+categories_num_dict=dict(sorted(categories_num_dict.items(), key=lambda item: item[1] , reverse=True))
+print(categories_num_dict)
+
+# We show the 20 entries with most publications.
+# We can't slice a dict, only their items as a list.
+# print(categories_num_dict[:20])
+first_twenty_pub = list(categories_num_dict.items())[:20]
+print(first_twenty_pub)
 
 
 # Question 8. Show all data from entries of categories: "Sports Medicine" or "Sports science"
-
-# Pending: Remove quarters.
 
 # Expected Result (aprox.) 355. 
 # Expected Result without removing Quarters (aprox.) 369. 
 
 list_sports_science_entries = [entry for entry in entries if 'sports' in entry['Categories'].lower()]
-
-#print('Sports',len(list_sports_science_entries))
+print('Sports',len(list_sports_science_entries))
 
 # list_result = (set(list_sports_science_entries), set(list_sports_medicine_entries) )
 
@@ -181,10 +200,102 @@ list_sports_science_entries = [entry for entry in entries if 'sports' in entry['
 # EXP. RESULT 
 # {'Africa/Middle East', 'Asiatic Region', 'Latin America', 'Western Europe', 'Pacific Region', 'Middle East', 'Northern America', 'Africa', 'Eastern Europe'}
 
-regiones: dict = set() #Mejor así. Desambigua
+regions_set: dict = set() #Mejor así. Desambigua
 for entrada in entries:
-    regiones.add(entrada['Region'])
+    regions_set.add(entrada['Region'])
+
+#print("Q9 - REGIONS.")
+#print(regiones)
 
 
-print("Q9 - REGIONS.")
-print(regiones)
+# Question 10. Mean of H-index by region.
+# Pablo Solution.
+
+# Expected Result. (moreless)
+# Northern America - 65.21652816251154, Western Europe - 54.08188428706924 ...
+# Africa - 17.75
+
+import utils
+import pprint
+
+def get_h_index_avg(filter_key: object, filter_value: object, clean_entries: list[dict]) -> float:
+    "Filters entries and returns their H-Index average."
+
+    # Filter entries
+    filtered_entries: list[dict] = [entry for entry in clean_entries if entry[filter_key] == filter_value]
+
+    # Get all H-Indexes of filtered entries
+    h_index_list: list[int] = [entry['H index'] for entry in filtered_entries]
+
+    # Calcualte H-Index average
+    h_index_avg: float = sum(h_index_list) / len(h_index_list)
+
+    return h_index_avg
+
+# -----------------------------------------------------------------------------
+def q10():
+    # Get clean entries
+    clean_entries: list[dict] = utils.clean_entries(entries)
+
+   # Get list of regions
+    region_set:  set[str]  = {entry["Region"] for entry in clean_entries}
+    region_list: list[str] = sorted(region_set)
+
+    # Calculate H-index average for each region
+    h_index_avg_list: list[float] = [get_h_index_avg('Region', region, clean_entries) for region in region_list]
+
+    # Create ranking
+    country_ranking: dict[str, float] = dict(zip(region_list, h_index_avg_list))
+
+    # Sort ranking
+    sorted_region_ranking: list[tuple[str, float]] = utils.sort_ranking(country_ranking)
+
+    # Print ranking.
+    # pprint -> pretty data printer.
+    pprint.pp(sorted_region_ranking)
+
+q10()
+
+# Question 11 - What is the oldest publisher that is still active?
+# Convert the list of dicts to a dict of lists (DataFrame-like format)
+# -----------------------------------------------------------------------------
+def convert_format_v1(entries: list[dict]) -> dict[str,list]:
+    
+    # Get list of keys. All dicts have the same keys
+    entry: dict           = entries[0]
+    keys:  list[str]      = list(entry.keys())
+
+    # Empty result. df = DataFrame.
+    df: dict[str,list] = {}
+
+    # Get all values for each key
+    for key in keys:
+        df[key] = [entry[key] for entry in entries]
+
+    return df
+
+# Same as v1, but using a lambda. Slightly shorter and clearer.
+# -----------------------------------------------------------------------------
+def convert_format_v2(entries: list[dict]) -> dict[str,list]:
+    
+    # Get list of entry keys. All dicts have the same keys.
+    first_entry: dict  = entries[0]
+    keys: list[str]    = list(first_entry.keys())
+    
+    # Get all values for each key
+    get_all_values     = lambda key, entries: [entry[key] for entry in entries]
+    df: dict[str,list] = {key: get_all_values(key, entries) for key in keys}
+
+    return df
+
+# -----------------------------------------------------------------------------
+def q11():
+
+    raw_entries: list[dict] = utils.read_csv_file("scimago-medicine.csv")
+    df:          dict[list] = convert_format_v2(raw_entries)
+
+    print("List of keys:")
+    pprint.pp(list(df.keys()))
+
+    print("List of top ten Journals:")
+    pprint.pp(df["Title"][0:10])

@@ -9,6 +9,7 @@
       - [Categorical](#categorical)
       - [Timestamp](#timestamp)
     - [Cheatsheet instruccions bàsiques.](#cheatsheet-instruccions-bàsiques)
+    - [Funcions bàsiques de Pandas.](#funcions-bàsiques-de-pandas)
         - [Mostrar les primeres línies](#mostrar-les-primeres-línies)
           - [Linea aleatòria](#linea-aleatòria)
         - [Trasposar la matriu](#trasposar-la-matriu)
@@ -417,13 +418,11 @@ students_frame
 students_frame.dtypes
 ```
 
-
-
-
     grade    int64
     dual      bool
     dtype: object
 
+### Funcions bàsiques de Pandas.
 
 <a name="head"></a>
 
@@ -433,9 +432,6 @@ students_frame.dtypes
 #Obtenir les primeres 5 linees de la taula
 students_frame.head()
 ```
-
-
-
 
 <div>
 
@@ -473,17 +469,10 @@ students_frame.head()
 </div>
 
 
-
-
-
 ```python
 # Les primeres 2 files
 students_frame.head(2)
 ```
-
-
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -511,15 +500,10 @@ students_frame.head(2)
 
 <a name="tail"></a>
 
-
 ```python
 # Les últimes 2 files
 students_frame.tail(2)
 ```
-
-
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -544,6 +528,29 @@ students_frame.tail(2)
 </table>
 </div>
 
+<a name="shape"></a>
+Mostra el número de files i columnes del dataframe.
+
+```python
+df.shape()
+```
+
+<a name="describe"></a>
+Si el dataframe o la sèrie conté dades numèriques, obté càlculs estadístics: mitjana, moda, quartils...
+
+Ho podem provar en el DataSet de la planta Iris.
+És coneguda com a lliri blau a Catalunya.
+És una de les plantes que té més tipus d'espècies.
+```python
+df.shape()
+```
+
+*[https://archive.ics.uci.edu/ml/datasets/Iris](Descripció del dataset Iris)
+*[https://archive.ics.uci.edu/ml/machine-learning-databases/iris/](Descarrega iris.data)
+*[https://www.youtube.com/watch?v=PvNKKrPE0AI](Video de l'exemple)
+
+**Exercici 1. Proveu d'aplicar les operacions i funcions vistes al dataset de la planta Iris**
+
 
 <a name="sample"></a>
 ###### Linea aleatòria
@@ -552,9 +559,6 @@ students_frame.tail(2)
 # Linea aleatoria
 students_frame.sample()
 ```
-
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -578,12 +582,9 @@ students_frame.sample()
 
 ##### Trasposar la matriu
 
-
 ```python
 students_frame.T
 ```
-
-
 
 <div>
 
@@ -618,7 +619,6 @@ students_frame.T
 
 
 
-
 ```python
 # Recupera el index (row names) i les columnes (column names)
 # Atenció! No son funcions son atributs
@@ -638,9 +638,6 @@ students_frame_sorted = students_frame.sort_index(axis=1,
                                                   ascending=True)
 students_frame_sorted
 ```
-
-
-
 
 <div>
 
@@ -680,7 +677,6 @@ students_frame_sorted
 
 <a name="sort_values"></a>
 
-
 ```python
 #Ordenació per valors axis=0 columnes 
 students_grade_sorted = students_frame.sort_values(by=['grade'], 
@@ -688,9 +684,6 @@ students_grade_sorted = students_frame.sort_values(by=['grade'],
                                                    ascending=False)
 students_grade_sorted
 ```
-
-
-
 
 <div>
 
@@ -729,9 +722,6 @@ students_grade_sorted
 
 
 
-
-
-
 <a name="coordenades"></a>
 
 ##### Sistema coordenades
@@ -751,30 +741,21 @@ Amb un daframe, el sistema de coordenades, comença per 0, i la coordenada s'ind
 # .loc rep 2 parametres('enfonsar-se','bucejar')
 students_frame.loc["Lucy","grade"]
 ```
-
 >  8
-
-
-
 
 <a name="loc"></a>
 
 
 ##### Búsqueda de varis valors en diferentes columnes
 
-
 ```python
 #busqueda de mes d'una columna
 students_frame.loc["Lucy",["grade","dual"]]
 ```
 
-
-
-
     grade        8
     dual     False
     Name: Lucy, dtype: object
-
 
 
 
@@ -784,12 +765,9 @@ students_frame.loc["Lucy",:]
 ```
 
 
-
-
     grade        8
     dual     False
     Name: Lucy, dtype: object
-
 
 
 
@@ -798,14 +776,11 @@ students_frame.loc["Lucy",:]
 students_frame.loc[:,"grade"]
 ```
 
-
-
     John     7
     Mary     9
     Lucy     8
     Peter    4
     Name: grade, dtype: int64
-
 
 
 
@@ -818,10 +793,7 @@ students_frame.iloc[0,1]
 ```
 
 
-
-
     False
-
 
 
 
@@ -831,9 +803,6 @@ students_frame.iloc[0,1]
 
 students_frame.at["Lucy","grade"]
 ```
-
-
-
 
 >  8
 
@@ -1141,3 +1110,10 @@ students_frame.loc[[True,True,True,False],:]
   </tbody>
 </table>
 </div>
+
+**Exercicis. Cercar un dataset en format CSV on fer consultes de prova de les funcions apreses.**
+
+Pot ser que no hi arribem fins el divendres 23/09/2022.
+
+Exemple: [https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6](CSV Pokemons)
+Exemple: [http://www3.uah.es/marcos_marva/CursoSanitaria/practicas/datos/osteoporosis.csv](CSV pacients Oestoporosi)

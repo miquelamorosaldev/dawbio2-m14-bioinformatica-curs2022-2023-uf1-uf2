@@ -239,7 +239,7 @@ print(re.split('; |, ', text))
 ```
 
 **SOLUTION:**
-``python
+```python
 import re
 
 def remove_quarter(category: str) -> str:
@@ -270,16 +270,6 @@ def q6(data: list[dict[str, str]]) -> list[str]:
     return sorted(list( set( sum([remove_quarter(dictionary['Categories']).split(';') for dictionary in data], []))))
 
 q6_result = q6(entries)
-``
-
-```python
-regiones: dict = set() #Mejor así. Desambigua
-for entrada in entries:
-    regiones.add(entrada['Region'])
-
-
-print("Q9 - REGIONS.")
-print(regiones)
 ```
 
 <a name="ex7"></a>
