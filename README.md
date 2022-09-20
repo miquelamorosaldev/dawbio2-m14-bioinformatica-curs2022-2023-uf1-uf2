@@ -5,7 +5,7 @@
 
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
-### A011 - Introducció a Python.
+## 🐍 A01 - Introducció a Python. 🐍
 
 ⌚ Temps previst. 12 hores.
 
@@ -58,16 +58,16 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 ### A013 - Exercicis explotació de dades amb Python.
 
 
-**[A013-Exercicis Fitxes CSV Scymago (2022-2023)](./A013_ExplotacioFitxersCSV_2022_2023/readme.md "FitxesCSVScymago")**
-	- Llegir fitxers CSV i nous exercicis d'explotació de dades.
+**[A013-Exercicis Fitxes CSV Scymago (2022-2023)](./A013_ExplotacioFitxersCSV_2022_2023/readme.md)**
+	- Llegir nou fitxer CSV i exercicis d'explotació de dades.
   
-[Fitxes CSV Scymago (2021-2022)](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B35_ExplotacioFitxersCSV/readme.md) "FitxesCSVScymago")
-	- Llegir fitxers CSV i alguns exercicis d'explotació de dades fets, anys anteriors.
+[Fitxes CSV Scymago (2021-2022)](https://github.com/mikibardaji/M15UF2_2021-22/blob/main/Sessi%C3%B35_ExplotacioFitxersCSV/readme.md)
+	- Llegir fitxers CSV i exercicis d'explotació de dades fets, anys anteriors.
   
 <hr/>
 <hr/>
 
-### A02 - Tractament de fitxers CSV amb dades de bioinfomràtica amb Python
+## 🐼 A02 - Tractament de dades biomèdiques amb Python i Pandas. 🐼
 	
 ⌚ Temps previst. 21 hores.
 
@@ -89,13 +89,13 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 <hr/>
 <hr/>
 
-### A03 - Estadística 
+## 📈 A03 - Estadística 📈
  
 ⌚ Temps previst. 18 hores.
 
-15. [Repàs estadística](./Sessió15_Estadistica "Estadística ")	
+15. [Repàs estadística](./Sessió15_Estadistica)	
 
-16. [Exercicis estadística Dades Covid)](./Sessió16_EstadisticaDadesCovid "Dades covid ")	
+16. [Exercicis estadística Dades Covid)](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques	
 	- Mitjana
