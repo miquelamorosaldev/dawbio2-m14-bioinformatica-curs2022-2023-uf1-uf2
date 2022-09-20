@@ -43,8 +43,8 @@ import pandas as pd
 ```
 
  Panda utilitza dos tipus dades bàsics:
- 1. **Series** , estructura que s'assembla a una llista.
- 2. **DataFrame**, estructura que presenta les dades com una taula, o en definitiva un conjunt de Series.
+ 1. **Series** , estructura 1D que s'assembla a una llista.
+ 2. **DataFrame**, estructura 2D que presenta les dades com una taula, o en definitiva un conjunt de Series.
  
  
  **Exemple: Crearem una taula d'alumnes que volen estudiar amb format dual**
@@ -58,7 +58,7 @@ wants_dual_ser = [False, True, False, True]
 **DataFrame**
 
 | Name  | Grade  | Wants Dual   |
-| ------------ | ------------ | ------------ |
+| -----| ----- | -------- |
 |  John | 7  | False  |
 |  Mary | 9  | True  |
 |  Lucy | 8  | False  |
@@ -70,14 +70,18 @@ wants_dual_ser = [False, True, False, True]
 
   ## Series
   
-  Té vàries característiques, de les quals 3 són les principals:
+  #### pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
   
-    1. Contingut inicialment del mateix tipus.
-    2. El dtype té que cubrir tots els possibles continguts de la sèrie.
-    3. El índex el pots configurar al meu gust, per defecte és numèric, però podem elegir d'un altre tipus segons el cas.
+  **Referència:** [Doc.Oficial Series de Pandas.](https://pandas.pydata.org/docs/reference/api/pandas.Series.html)
+  
+  Té diversos paràmetres d'entrada, dels quals 3 són els principals:
+  
+    1. **data.** Ha de cubrir tots els possibles continguts de la sèrie. Habitualment se li passa una llista plena.
+    2. **dtype** Contingut dels valors de les dades. Inicialment tots del mateix tipus.
+    3. **index.** L'índex el pots configurar al teu gust. Per defecte és numèric, però podem elegir d'un altre tipus segons el cas.
 
 
-*No es molt normal, barrejar tipus de dades dins una serie*
+**No es molt normal, barrejar tipus de dades dins una serie**
 
 Dins el contingut hi ha 3 conceptes de dades diferents:
 
@@ -94,15 +98,14 @@ Per eficiencia a *Python* i *Pandas* s'utilitza NaN quant vol dir NA.
 ## DTYPE. Tipus de dades que s'utilitzen a Pandas
 
  ·**dtype** = Data Type. Es un camp que utilitza la llibreria NumPy.
-   Numpy utilitza el seu propi tipus, codificats al llenguatge de programació C, per eficiència. Poden 
+   Numpy utilitza el seu propi tipus, codificats al llenguatge de programació C, per eficiència. 
    
-  *Exemple: float 64(bits)*
+  *Exemple: float 64(bits), int 64(bits), "string", datetime*
   
 
   ```python
 ser = pd.Series([1, 3, 5, np.nan, 6, 8])
-ser
-
+print(ser)
 ```
 
 *Sortida*
@@ -126,7 +129,7 @@ ser
 
 ```python
 ser = pd.Series([1, 3, 5, 6, 8])
-ser
+print(ser)
 ```
 
 
@@ -151,7 +154,7 @@ Si son uniformes el dtype tria un tipus de dades correctes.
 
 ```python
 ser = pd.Series([1, 3, 5, 6, 8], dtype=np.float32)
-ser
+print(ser)
 ```
 
 
@@ -179,18 +182,14 @@ student_list=["John","Mary","Lucy","Peter"]
 grades_list = [7,9,8,4]
 wants_dual_list = [False,True,False,True]
 ser = pd.Series(grades_list)
-ser
+print(ser)
 ```
 
 
 >    0    7
->    
 >    1    9
->    
 >    2    8
->    
 >    3    4
->    
 >    dtype: int64
 >    
 
@@ -200,18 +199,13 @@ Creem una llista amb indexs propis.
 ```python
 #index canviats a índex d'estudiants
 ser = pd.Series(data=grades_list,index=student_list)
-ser
+print(ser)
 ```
 
-
  >   John     7
- >   
  >   Mary     9
- >   
  >   Lucy     8
- >   
  >   Peter    4
- >   
  >   dtype: int64
 
 
@@ -231,6 +225,9 @@ print(ser.dtypes)
 
 **Referència**
 [Guia completa de tipus de dades DTYPE, web oficial NumPy](https://numpy.org/doc/stable/reference/arrays.dtypes.html)
+
+**Codi d'exemple**
+[intro_pandas_dataframes.py](./intro_pandas_dataframes.py)
 
 * * * 
 
@@ -632,6 +629,11 @@ print(type(students_frame.index))
 ```
 
     <class 'pandas.core.indexes.base.Index'>
+
+
+**Codi d'exemple**
+[intro_pandas_dataframes.py](./intro_pandas_dataframes.py)
+
 
 <a name="sort_index"></a>
 
