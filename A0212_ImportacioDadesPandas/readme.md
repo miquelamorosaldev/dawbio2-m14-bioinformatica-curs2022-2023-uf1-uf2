@@ -10,7 +10,18 @@
 
 ### Llegir fitxers CSV.
 
+Podem cercar un dataset en format CSV on fer consultes de prova de les funcions apreses.
 
+Exemple: (CSV Pokemons)[https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6]
+Exemple: (CSV pacients Oestoporosi)[http://www3.uah.es/marcos_marva/CursoSanitaria/practicas/datos/osteoporosis.csv]
+
+```python
+# Read scimago ranking
+entries: pd.DataFrame = pd.read_csv("scimagomedicine.csv", sep=";")
+print(entries)
+```
+
+### Llegir altres fitxers, iris.data
 
 Ho podem provar en el DataSet de la planta Iris.
 És coneguda com a lliri blau a Catalunya.
@@ -20,7 +31,6 @@ Ho podem provar en el DataSet de la planta Iris.
 * [https://archive.ics.uci.edu/ml/machine-learning-databases/iris/] (Descarrega iris.data)
 * [https://www.youtube.com/watch?v=PvNKKrPE0AI] (Video de l'exemple)
 
-**Proveu d'aplicar les operacions i funcions vistes al dataset de la planta Iris**
 
 <a name="scimagoexample"></a>
 
