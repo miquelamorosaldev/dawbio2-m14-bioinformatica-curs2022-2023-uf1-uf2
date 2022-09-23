@@ -52,3 +52,20 @@ print(serie_classrooms)
 
 # Print dtypes
 print(serie_numbers.dtypes)
+
+
+# Creeu una serie de noms d'animals. 
+# L'id serà el nom dels animals.
+# El valor serà el número de potes que tenen.
+# Poseu-li un dtype adient.
+animals_list=["Spider","Cat","Rat","Snake","Butterfly","Falcon"]
+animals_legs_list = [8,4,4,0,6,2]
+
+#Consultar valor dtype
+print()
+
+animals_serie = pd.Series(data=animals_legs_list, index = animals_list, dtype=int, name="student_grades")
+print("Spider legs ",animals_serie["Spider"])
+
+print("Animal info")
+print(animals_serie["Spider":"Butterfly"])
