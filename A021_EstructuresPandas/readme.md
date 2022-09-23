@@ -4,31 +4,42 @@
   - [Instal·lacio Pandas a conda:](#installacio-pandas-a-conda)
       - [Instruccions](#instruccions)
   - [Series](#series)
+      - [pandas.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)](#pandasseriesdatanone-indexnone-dtypenone-namenone-copyfalse-fastpathfalse)
   - [DTYPE. Tipus de dades que s'utilitzen a Pandas](#dtype-tipus-de-dades-que-sutilitzen-a-pandas)
   - [DataFrame](#dataframe)
     - [Altres tipus de dades.](#altres-tipus-de-dades)
       - [Categorical](#categorical)
       - [Timestamp](#timestamp)
     - [Cheatsheet instruccions bàsiques.](#cheatsheet-instruccions-bàsiques)
-    - [Funcions bàsiques de Pandas.](#funcions-bàsiques-de-pandas)
+      - [Funcions bàsiques de Pandas.](#funcions-bàsiques-de-pandas)
         - [Mostrar les primeres línies](#mostrar-les-primeres-línies)
+        - [Mostra el número de files i columnes del dataframe.](#mostra-el-número-de-files-i-columnes-del-dataframe)
+        - [Càlculs estadístics.](#càlculs-estadístics)
           - [Linea aleatòria](#linea-aleatòria)
         - [Trasposar la matriu](#trasposar-la-matriu)
         - [Ordenació dataframe per un índex](#ordenació-dataframe-per-un-índex)
-        - [Sistema coordenades](#sistema-coordenades)
-        - [Búsqueda de varis valors en diferentes columnes](#búsqueda-de-varis-valors-en-diferentes-columnes)
-        - [Masks](#masks)
+    - [Sistema coordenades, consultes.](#sistema-coordenades-consultes)
+      - [Búsqueda de varis valors en diferentes columnes.](#búsqueda-de-varis-valors-en-diferentes-columnes)
+      - [Cerca tots els valors d'una fila (element, registre)](#cerca-tots-els-valors-duna-fila-element-registre)
+      - [Cerca tots els valors d'una columna (camp)](#cerca-tots-els-valors-duna-columna-camp)
+      - [Cerca valor per fila i columna.](#cerca-valor-per-fila-i-columna)
+      - [Comandes at, iat; optimització loc e iloc.](#comandes-at-iat-optimització-loc-e-iloc)
+      - [Cerca llista de diverses files.](#cerca-llista-de-diverses-files)
+      - [Introducció al filtratge per Masks](#introducció-al-filtratge-per-masks)
+    - [Exercicis.](#exercicis)
 
 
 ## Instal·lacio Pandas a conda: 
 
 #### [Instruccions](https://anaconda.org/anaconda/pandas)
 
+Definim el nom del nostre entorn i que volem instal.lar Pandas des del repositori oficial de anaconda.
+
 ```sh
-conda install -c anaconda pandas
+conda install -n bio -c anaconda pandas
 ```
 
-Per fer una introducció a Pandas, durant varies sessions, seguirem el tutorial oficial de [pandas 10 minutes](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html "pandas 10 minutes")
+Per fer una introducció a Pandas, durant varies sessions, seguirem el tutorial oficial de [pandas 10 minutes](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html), i la [intro to data structures](https://pandas.pydata.org/docs/user_guide/dsintro.html)
 
 
 Les primeres llibreries a importar son dues:
@@ -226,8 +237,8 @@ print(ser.dtypes)
 **Referència**
 [Guia completa de tipus de dades DTYPE, web oficial NumPy](https://numpy.org/doc/stable/reference/arrays.dtypes.html)
 
-**Codi d'exemple**
-[intro_pandas_dataframes.py](./intro_pandas_dataframes.py)
+**Codi d'exemple de pd.Series fet a classe**
+[intro_pandas_dataframes.py](./intro_pandas_series.py)
 
 * * * 
 
@@ -235,7 +246,27 @@ print(ser.dtypes)
   
   Podem seguir l'exemple del tutorial [en aquest punt](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#object-creation "aqui")
 
-*Exemple:* Com poder crear un dataframe a partir de 6 mesos diferents
+**Codi d'exemple pd.Dataframe a classe**
+[intro_pandas_dataframes.py](./intro_pandas_dataframes.py)
+
+
+**Exemple 1: Dataframe d'informació d'animals.**
+
+```python
+import numpy as np
+import pandas as pd
+
+# Test dataframes
+# Podem convertir un diccionari que els seus valors siguin llistes en un Dataframe.
+dict_animals = {'num_legs': [2, 4, 0, 8], 'num_wings': [2, 0, 0, 0]}
+# Com en les sèries, el valor dels índex el podem passar com una llista.
+name_animals = ['falcon', 'dog', 'snail', 'spider']
+df_animals = pd.DataFrame(data=dict_animals, index=name_animals)
+print(df_animals)
+
+```
+
+**Exemple 2:** Com poder crear un dataframe a partir de 6 mesos diferents
 
 ![](dataframe.png)
 
@@ -245,8 +276,14 @@ Un altra forma de crear datasets, es nombrar totes les columnes i ficar la seva 
 
 **Una excepció diferent a Java, al final veieu que hi ha una coma, que amb Java donaria error, al python l'obvia i no li fa cas**
 
-En aquest segon dataframe, podem modificar alguna serie, exemple la A, de tal manera que tingui alguns valors de tipus diferents.
+**Exemple 3:** Dataframe de diversos tipus de dades.
 
+En aquest dataframe, podem modificar alguna serie, exemple la A, de tal manera que tingui alguns valors de tipus diferents.
+
+Fixeu-vos en els resultats i codi de cada columna del Dataframe: usant diversos trucs hem aconseguit un Dataframe de 
+6 columnes (camps) i 4 fileres (registres).
+
+Fixeu-vos que cada fila del dataframe és una serie, a la columna "C" es pot comprovar:
 
 ```python
 df3 = pd.DataFrame(
@@ -270,8 +307,6 @@ df3 = pd.DataFrame(
 )
 df3
 ```
-
-
 
 
 <div>
@@ -330,8 +365,6 @@ df3
 </div>
 
 
-A partir del exemple creat per nosaltres, amb les notes dels estudiants de DAWBIO que volen fer dual, veurem les principals funcions del dataframe.
-
 ### Altres tipus de dades.
 
 #### Categorical
@@ -358,9 +391,13 @@ Timestamp('2013-01-02 00:00:00')
 
 ### Cheatsheet instruccions bàsiques.
 
-<a name="dataframe"></a>
-Tenim varies llistes individuals, que al final formaran un sol dataframe:
 
+A partir del exemple creat per nosaltres, amb les notes dels estudiants de DAWBIO que volen fer dual, veurem les principals funcions del dataframe.
+
+
+<a name="dataframe"></a>
+
+Tenim varies llistes individuals, que al final formaran un sol dataframe:
 
 ```python
 #les notes de dawbio amb dataframe
@@ -373,7 +410,7 @@ students_frame = pd.DataFrame(
     index=student_list,
     data = datos
 )
-students_frame
+print(students_frame)
 ```
 
 
@@ -425,7 +462,7 @@ students_frame.dtypes
     dual      bool
     dtype: object
 
-### Funcions bàsiques de Pandas.
+#### Funcions bàsiques de Pandas.
 
 <a name="head"></a>
 
@@ -532,30 +569,53 @@ students_frame.tail(2)
 </div>
 
 <a name="shape"></a>
-Mostra el número de files i columnes del dataframe.
+
+##### Mostra el número de files i columnes del dataframe.
 
 ```python
-df.shape()
+students_frame.shape()
 ```
+
+**Resultat:**
+(4, 2)
+
+
+```python
+# Recupera el index (row names) i les columnes (column names)
+# Atenció! No son funcions son atributs
+print(type(students_frame.index))
+```
+
+    <class 'pandas.core.indexes.base.Index'>
+
+
 
 <a name="describe"></a>
-Si el dataframe o la sèrie conté dades numèriques, obté càlculs estadístics: mitjana, moda, quartils...
 
-Ho podem provar en el DataSet de la planta Iris.
-És coneguda com a lliri blau a Catalunya.
-És una de les plantes que té més tipus d'espècies.
+##### Càlculs estadístics.
+
+Si el dataframe o la sèrie conté dades numèriques, obté càlculs estadístics: mitjana, moda, quartils... només de les columnes amb valors numèrics.
+
+
 ```python
-df.describe()
+students_frame.describe()
 ```
 
-* [https://archive.ics.uci.edu/ml/datasets/Iris] (Descripció del dataset Iris)
-* [https://archive.ics.uci.edu/ml/machine-learning-databases/iris/] (Descarrega iris.data)
-* [https://www.youtube.com/watch?v=PvNKKrPE0AI] (Video de l'exemple)
-
-**Exercici 1. Proveu d'aplicar les operacions i funcions vistes al dataset de la planta Iris**
-
+**Resultat:**
+```
+          grade
+count  4.000000
+mean   7.000000
+std    2.160247
+min    4.000000
+25%    6.250000
+50%    7.500000
+75%    8.250000
+max    9.000000
+```
 
 <a name="sample"></a>
+
 ###### Linea aleatòria
 
 ```python
@@ -620,15 +680,6 @@ students_frame.T
 </table>
 </div>
 
-
-
-```python
-# Recupera el index (row names) i les columnes (column names)
-# Atenció! No son funcions son atributs
-print(type(students_frame.index))
-```
-
-    <class 'pandas.core.indexes.base.Index'>
 
 
 **Codi d'exemple**
@@ -729,18 +780,20 @@ students_grade_sorted
 </div>
 
 
-
 <a name="coordenades"></a>
 
-##### Sistema coordenades
+### Sistema coordenades, consultes.
 
 Amb un daframe, el sistema de coordenades, comença per 0, i la coordenada s'indica primera la fila i després la columna.
 
-** Regla nemotècnica (enfonsar-se i nedar)**  Primer et tires de cap i llavors vas nedant fins la columna.
+**Regla nemotècnica (enfonsar-se i nedar)**  
+1. Primer et tires de cap a la posició de la fila que vols.
+2. Llavors vas nedant fins la columna que t'interessa.
+ 
 
 <center>
  
- <img src="dive-jump.gif" alt="drawing" width="200"/>
+ <img src="dive-jump.gif" alt="dive jump" width="300"/>
 
 </center>
 
@@ -754,7 +807,7 @@ students_frame.loc["Lucy","grade"]
 <a name="loc"></a>
 
 
-##### Búsqueda de varis valors en diferentes columnes
+#### Búsqueda de varis valors en diferentes columnes.
 
 ```python
 #busqueda de mes d'una columna
@@ -766,9 +819,10 @@ students_frame.loc["Lucy",["grade","dual"]]
     Name: Lucy, dtype: object
 
 
+#### Cerca tots els valors d'una fila (element, registre)
 
 ```python
-#si vull totes les columnes de Lucy fico un slice buit
+#si vull totes les columnes de Lucy fico un slice buit a la columna
 students_frame.loc["Lucy",:]
 ```
 
@@ -778,9 +832,10 @@ students_frame.loc["Lucy",:]
     Name: Lucy, dtype: object
 
 
+#### Cerca tots els valors d'una columna (camp)
 
 ```python
-#si vull totes les notes dels estudiants
+#si vull totes les notes dels estudiants, a la fila poso un slice buit
 students_frame.loc[:,"grade"]
 ```
 
@@ -791,8 +846,10 @@ students_frame.loc[:,"grade"]
     Name: grade, dtype: int64
 
 
+#### Cerca valor per fila i columna.
 
-Ja hem utilitzat la funció **loc** , ficant el nom directament de les files primer i les columnes després. Amb les coordenades numèriques, hem d'anomenar el primer numero per columna i el segon per files.
+Ja hem utilitzat la funció **loc** , ficant el nom directament de les files primer i les columnes després. 
+Amb les coordenades numèriques, hem d'anomenar el primer numero per columna i el segon per files.
 
 
 ```python
@@ -804,6 +861,7 @@ students_frame.iloc[0,1]
     False
 
 
+#### Comandes at, iat; optimització loc e iloc.
 
 ```python
 #Les comandes at e iat son sinònimes de loc e iloc, però sol poden retornar un sol valor.
@@ -814,32 +872,22 @@ students_frame.at["Lucy","grade"]
 
 >  8
 
-
-
 ```python
 students_frame.iat[2,0]
 ```
 
-
-
-
 >  8
 
-
-
+#### Cerca llista de diverses files.
 
 ```python
 #Podemos devolver una lista de varias filas, devuelve una lista
 students_frame.loc[["Mary","Lucy"],"grade"]
 ```
 
-
-
-
 >    Mary    9
 >    Lucy    8
 >    Name: grade, dtype: int64
-
 
 
 
@@ -859,8 +907,6 @@ students_frame.loc[["Mary","Lucy"],
 ```
 
 
-
-
 <div>
 
 <table border="1" class="dataframe">
@@ -887,13 +933,9 @@ students_frame.loc[["Mary","Lucy"],
 </div>
 
 
-
-
 ```python
 students_frame.loc[students_frame.index,["grade","dual"]]
 ```
-
-
 
 
 <div>
@@ -929,8 +971,6 @@ students_frame.loc[students_frame.index,["grade","dual"]]
   </tbody>
 </table>
 </div>
-
-
 
 
 ```python
@@ -939,8 +979,6 @@ students_frame.loc[:,:]
 ```
 
 
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -977,13 +1015,10 @@ students_frame.loc[:,:]
 
 
 
-
 ```python
 #No es recomanable, ficar el interval de columnes, encara que es pot fer
 students_frame["John":"Lucy"]
 ```
-
-
 
 
 <div>
@@ -1018,10 +1053,10 @@ students_frame["John":"Lucy"]
 
 <a name="mask"></a>
 
-##### Masks
+#### Introducció al filtratge per Masks
 
 Referència:
-
+[Index and selecting data](https://pandas.pydata.org/docs/user_guide/indexing.html?highlight=mask)
 
 ```python
 # Mask = Objecte que amaga tota la informació que no volem
@@ -1031,25 +1066,18 @@ students_pass = students_frame.loc[:,"grade"] >= 5
 students_pass
 ```
 
-
 >    John      True
->
 >    Mary      True
->
 >   Lucy      True
->
 >   Peter    False
->
+
 >   Name: grade, dtype: bool
-
-
 
 
 ```python
 #A la mascara anterior puc indicar per que seleccioni, sols els de la mask
 students_frame.loc[students_pass,:]
 ```
-
 
 <div>
 <table border="1" class="dataframe">
@@ -1079,7 +1107,6 @@ students_frame.loc[students_pass,:]
   </tbody>
 </table>
 </div>
-
 
 
 
@@ -1089,7 +1116,6 @@ students_frame.loc[[True,True,True,False],:]
 ```
 
 
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1119,9 +1145,23 @@ students_frame.loc[[True,True,True,False],:]
 </table>
 </div>
 
-**Exercicis. Cercar un dataset en format CSV on fer consultes de prova de les funcions apreses.**
 
-Pot ser que no hi arribem fins el divendres 23/09/2022.
+<a name="exercicis">
 
-Exemple: [https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6] (CSV Pokemons)
-Exemple: [http://www3.uah.es/marcos_marva/CursoSanitaria/practicas/datos/osteoporosis.csv] (CSV pacients Oestoporosi)
+### Exercicis.
+
+1. Crea un nou dataframe similar als dels alumnes, que tingui 4 - 6 files més (10 està bé) i 1 o 2 columnes més (per exemple: gènere, població)
+2. L'index ha de ser el nom de l'alumne. Apart de ser índex també ha de ser un camp.
+3. Mostra la mitjana de notes de tots els alumnes.
+4. Ordena els alumnes alfabèticament.
+5. Mostra tota la info d'un alumne, a partir del seu nom.
+6. Mostra les notes dels 3 alumnes que tenen una nota més alta.
+7. Mostra els noms dels alumnes que volen fer Dual.
+8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
+
+9 i 10.
+Espai per a que creis 2 consultes i les seves solucions, a partir de les noves consultes que has creat.
+
+
+El pròxim dia veurem com tractar dataframes més grans, importats de fitxers CSV o altres formats.
+

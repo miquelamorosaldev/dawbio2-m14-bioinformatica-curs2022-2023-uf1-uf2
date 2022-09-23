@@ -3,8 +3,8 @@ import pandas as pd
 
 # Test dataframes
 # Com en el cas de les series,.
-dict_animals = {'num_legs': [2, 4, 0, 8], 'num_wings': [2, 0, 0, 0]}
-name_animals = ['falcon', 'dog', 'snail', 'spider']
+dict_animals = {'num_legs': [2, 4, 0, 8, 6], 'num_wings': [2, 0, 0, 0, 4], 'can_fly': [True, False, False, False, True]}
+name_animals = ['falcon', 'dog', 'snail', 'spider', 'butterfly']
 df_animals = pd.DataFrame(data=dict_animals, index=name_animals)
 print(df_animals)
 
@@ -29,6 +29,8 @@ print(df_days.describe())
 student_list=["John","Mary","Lucy","Peter"]
 grades_list = [7,9,8,4]
 wants_dual_list = [False,True,False,True]
+
+# Fusionem les 2 llistes en un dataframe per a que entrin com a valors del dataframe.
 datos: dict[list] = {"grade": grades_list,
       "dual": wants_dual_list}
 students_frame = pd.DataFrame(
@@ -38,6 +40,20 @@ students_frame = pd.DataFrame(
 print(students_frame)
 
 # Càlculs estadístics.
+print("Shape = ",students_frame.shape)
+
 print(students_frame.describe())
 
-# Us convido a que editeu els 2 Dataframes anteriors.
+#Ordenació per valors axis=0 columnes 
+students_grade_sorted = students_frame.sort_values(by=['grade'], 
+                                                   axis=0, 
+                                                   ascending=False)
+print(students_grade_sorted)
+
+
+#Afegir files al Pandas, tenint en compte l'index.
+students_frame.loc["Ann"]=[10,True]
+print(students_frame)
+print(students_frame.dtypes)
+# row_student = {"index": "Ann", "grade": 10, "dual": True}
+# students_frame.append(row_student, ignore_index=False)
