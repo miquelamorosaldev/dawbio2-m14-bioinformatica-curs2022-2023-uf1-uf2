@@ -71,10 +71,10 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	
 ⌚ Temps previst. 21 hores.
 
-### A021 - Llibreria Pandas.
+### A021 - Introducció a les estructures de la libreria Pandas.
 
 #### Introducció a Pandas. Sessions 4 i 5.
-1. [EstructuresPandas:Series,Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
+[Estructures Pandas : Series , Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
 	- Estructures bàsiques pandas.
 		* Sèries
 		* Dataframe
@@ -83,17 +83,24 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		* HEAD, TAIL
 		* SORT_INDEX
 		* SORT_VALUES
+		* LOC, ILOC
 		* MASKS
 
 **[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
 
+### A022 - Ús de màscares i funcions de selecció i edició dades. 
+
+<em> Aquí toca aportar teoria i exemples de les màscares. </em>
+
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
-2. [Sessió 6 - Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
+2. [Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
 	- Funcions aply, map, mapapply
 	- Afegir noves columnes, canvi d'ordre 
+
+### A023 - Funcions d'agrupació i fusió de dades.
 
 <em> En procés d'actualització i selecció d'exercicis solucionats. </em>
 
