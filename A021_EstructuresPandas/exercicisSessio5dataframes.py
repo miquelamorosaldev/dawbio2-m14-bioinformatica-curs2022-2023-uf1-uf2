@@ -1,5 +1,22 @@
 import numpy as np
 import pandas as pd
+from IPython.display import display
+
+### Exercicis.
+
+# 1. Crea un nou dataframe similar als dels alumnes, que tingui 4 - 6 files més (10 està bé) i 1 o 2 columnes més (per exemple: gènere, població)
+# 2. L'index ha de ser el nom de l'alumne. Apart de ser índex també ha de ser un camp.
+# 3. Mostra la mitjana de notes de tots els alumnes.
+# 4. Ordena els alumnes alfabèticament.
+# 5. Mostra tota la info d'un alumne, a partir del seu nom.
+# 6. Mostra les notes dels 3 alumnes que tenen una nota més alta.
+# 7. Mostra els noms dels alumnes que volen fer Dual.
+# 8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
+
+# 9 i 10.
+# Espai per a que creis 2 consultes i les seves solucions, a partir de les noves consultes que has creat.
+
+
 
 # Solució primers exercicis Dataframes
 
@@ -30,7 +47,9 @@ exercicis_frame = pd.DataFrame(
 print(exercicis_frame)
 
 #     3. Mostra la mitjana de notes de tots els alumnes.
-print(exercicis_frame["grade"].describe())
+
+# Tots els càlculs.print(exercicis_frame["grade"].describe())
+print("Ex3 ", exercicis_frame["grade"].mean())
 
 #     4. Ordena els alumnes alfabèticament.
 exercicis_frame4 = exercicis_frame.sort_values(by=["student_list"],ascending=True)
@@ -51,7 +70,7 @@ print(exercicis_frame6[0:3])
 #     7. Usant una màscara, mostra els noms dels alumnes que volen fer Dual.
 print("7. Usant una màscara, mostra els noms dels alumnes que volen fer Dual.")
 exercicis_frame7 = exercicis_frame.loc[exercicis_frame['dual'] == True]
-print(exercicis_frame7['student_list'])
+#print(exercicis_frame7.loc['student_list'])
 
 #     8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
 exercicis_frame8 = exercicis_frame.loc[exercicis_frame['grade'] >= 7]
@@ -73,3 +92,47 @@ print(exercicis_frame.loc["Mary","grade"])
 print("11. Mostra el camp index i la nota dels alumnes que tenen nota.")
 exercicis_frame11 = exercicis_frame.loc[exercicis_frame['grade'] > 0]
 print(exercicis_frame.loc[exercicis_frame11.index,'grade'])
+
+
+# Més exemples de consultes, interessants.
+
+ ## Exercice 9:
+
+    ## Mostrar només les ciutats dels estudiants que volen dual:
+        
+# dual_students_df: pd.DataFrame = students_df[students_df['dual'] == True]
+# dual_students_city_df: pd.DataFrame = dual_students_df.filter(items=['city'])
+# print(dual_students_city_df)
+
+
+# #Ejemplo ejercio 9 solo me devuelve al estudiante que termine en ia y tenga mas de 7
+# print(df.loc[df['student_list'].str.endswith('ia') & (df['grade'] >= 7), ['student_list']])
+
+
+
+# Ordenar per index y mostra els camps que volem en una sola línia.
+print(exercicis_frame.sort_index(ascending=True).loc[:, ['grade','dual']]) 
+
+# Ideal pera a Jupyter Notebook.
+display(exercicis_frame)
+
+
+## Exercice 10:
+
+    ## Insertar dues columnes:
+    ##   - Columna1: columna que mostri l'edat. La columna ha
+    ##     d'aparèixer al final:
+    ##   - Columna2: si han aprovat o no FOL. La columna ha
+    ##     d'apareixer en segona posició després de la nota.
+    ##   - Trobar els alumnes que volen fer dual i tenen suspès
+    ##     FOL. 
+    ##   - Mostrar només les columnes de nota i de si
+    ##     han aprovat FOL.
+#     students_age: list          = [27, 21, 30, 36, 30, 39, 47, 26, 23, 34]
+#     fol_success:  list[bool]    = [False, True, True, True, False, True, True, False, True, False]
+#     students_df.insert(len(students_df.keys()), 'age', students_age)
+#     students_df.insert(1, 'fol_succ', fol_success)
+#     dual_students_df3:          pd.DataFrame = students_df[students_df['dual'] == True]
+#     no_fol_dual_students:       pd.DataFrame = dual_students_df3[dual_students_df3['fol_succ'] == False] 
+#     no_fol_dual_stud_filtered:  pd.DataFrame = no_fol_dual_students.filter(items=['grade', 'fol_succ'])
+# print(no_fol_dual_stud_filtered)
