@@ -1,3 +1,4 @@
+#Codi de prova fet durant la sessió del 18/09/2022, introducció als dataframes.
 import numpy as np
 import pandas as pd
 
@@ -17,7 +18,6 @@ df2 = pd.DataFrame(
         "F": "foo",
     }
 )
-
 print(df2)
 
 
@@ -85,11 +85,10 @@ print("students_pass")
 students_pass2 = students_frame.loc[students_frame['dual'] == True]
 print(students_pass2)
 
-
 # EXERCICIS
 
-# Crea un nou dataframe similar als dels alumnes, que tingui 4 - 6 files més (10 està bé)
-#  i 1 o 2 columnes més (per exemple: gènere, població)
+# 1 i 2. Crea un nou dataframe similar als dels alumnes, que tingui 4 - 6 files més (10 està bé)
+# i 1 o 2 columnes més (per exemple: gènere, població)
 # L'index ha de ser el nom de l'alumne. Apart de ser índex també ha de ser un camp.
 
 #les notes de dawbio amb dataframe
@@ -102,7 +101,7 @@ start_date = pd.date_range("20210101", periods=9)
 genders = pd.Categorical(["Male", "Female", "Non-Binary", "Male", "Female", "I prefer not to say", "Male", "I prefer not to say", "Female"])
 
 datos: dict[list] = {
-      "grade": grades_list + 3 * [10],
+      "grade": grades_list + 3 * [0],
       "dual": wants_dual_list + 3 * [True], 
       "student_list" : student_list,
       "start_date" : start_date,
@@ -114,20 +113,38 @@ exercicis_frame = pd.DataFrame(
 )
 print(exercicis_frame)
 
-#     Mostra la mitjana de notes de tots els alumnes.
+#     3. Mostra la mitjana de notes de tots els alumnes.
 print(exercicis_frame["grade"].describe())
 
-#     Ordena els alumnes alfabèticament.
+#     4. Ordena els alumnes alfabèticament.
+exercicis_frame4 = exercicis_frame.sort_values(by=["student_list"],ascending=True)
+print(exercicis_frame4)
 
+#     5. Mostra tota la info d'un alumne, a partir del seu nom.
+print("EX5 - Info d'una alumne")
+print(exercicis_frame.loc["Mary"])
 
-#     Mostra tota la info d'un alumne, a partir del seu nom.
+# Si volguessim info sobre només un atribut d'un alumne.
+# students_frame.loc[["Mary"],"grade"]
 
-#     Mostra les notes dels 3 alumnes que tenen una nota més alta.
+#     6. Mostra les notes dels 3 alumnes que tenen una nota més alta.
+#Possible solució - ordenar els alumnes per nota i mostrar els 3 primers.
+exercicis_frame6 = exercicis_frame.sort_values(by=["grade"],axis=0,ascending=False)
+print(exercicis_frame6[0:3])
 
-#     Mostra els noms dels alumnes que volen fer Dual.
+#     7. Usant una màscara, mostra els noms dels alumnes que volen fer Dual.
+exercicis_frame7 = exercicis_frame.loc[exercicis_frame['dual'] == True]
+print(exercicis_frame7)
 
-#     Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
+#     8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
+exercicis_frame8 = exercicis_frame.loc[exercicis_frame['grade'] >= 7]
+print("8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.")
+print(exercicis_frame8)
 
 # 9 i 10. Espai per a que creis 2 consultes i les seves solucions, a partir de les noves consultes que has creat.
 # El pròxim dia veurem com tractar dataframes més grans, importats de fitxers CSV o altres formats.
 
+
+# 9. Consulta tota la info dels alumnes Ann, Lucy i John.
+
+# 10. 

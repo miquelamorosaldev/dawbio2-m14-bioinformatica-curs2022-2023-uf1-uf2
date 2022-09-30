@@ -1,3 +1,4 @@
+#Codi de prova fet durant la sessió del 18/09/2022, introducció a les series.
 import numpy as np
 import pandas as pd
 
