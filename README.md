@@ -73,6 +73,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A021 - Llibreria Pandas.
 
+<em>Sessions 4 i 5.</em>
 1. [EstructuresPandas:Series,Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
 	- Estructures bàsiques pandas.
 		* Sèries
@@ -84,7 +85,16 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		* SORT_VALUES
 		* MASKS
 
-<em> En procés d'actualització </em>
+**[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
+
+2. [Sessió 6 - Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
+	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
+	- Seleccionar diferents registres a partir d'una condició d'un camp
+	- Detecció Valors na, eliminació de registres amb valors incoherents.
+	- Funcions aply, map, mapapply
+	- Afegir noves columnes, canvi d'ordre 
+
+<em> En procés d'actualització i selecció d'exercicis solucionats. </em>
 
 <hr/>
 <hr/>
