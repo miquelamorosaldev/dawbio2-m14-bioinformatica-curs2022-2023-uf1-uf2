@@ -1166,16 +1166,39 @@ entries3.head(5)
 Modificar el valor de tots els Publisher, que actualment esta informat a null, passar-los a np.nan.
 
 ```python
+# Modificar el valor de tots els Publisher, que actualment esta informat a null, passar-los a np.nan.
 # Clean NAs
 
 entries4 = copy.deepcopy(entries)
 
-entries4.loc[:,"Publisher"].isnull().value_counts()
+# Pas 1. Cercar valors nuls amb la màscara.
+print("Valors Publisher nuls o buits ??")
 
+entries4.loc[:,"Publisher"].isnull().value_counts()
 null_publisher_mask = entries4.loc[:,"Publisher"].isnull()
 
+# Pas 2. Comprovem el resultat de la màscara. 
+# En general: df.loc(MASK,FIELD)
+print(entries4.loc[null_publisher_mask,"Publisher"] )
+```
+
+Valors Publisher nuls o buits ??
+62      NaN
+485     NaN
+662     NaN
+1481    NaN
+1545    NaN
+
+...
+
+
+```python
+# Pas 3. Substituïr els nulls per np.nan, aplicant la màscara.
+# En general: df.loc(MASK,FIELD) = VALUE.
 entries4.loc[null_publisher_mask,"Publisher"] = np.nan
-entries4.iloc[644,:]
+
+# Pas 4. Mostrem un resultat per a provar.
+print(entries4.iloc[62,:])
 ```
 
 

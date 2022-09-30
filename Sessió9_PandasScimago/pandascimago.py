@@ -39,6 +39,8 @@ print(entries2.loc[:,["Title","H index"]])
 # Canviem el tipus de publicació, de Journal a Diari.
 
 # Opcions de mask.
+# Amb el loc, indiquem clarament quina fila i columna volem seleccionar.
+
 journals = entries2.loc[:,"Type"] == 'journal'
 #journals = entries2.loc[:,"Type"].str.contains('journal')
 print(journals.head(100))
@@ -53,3 +55,37 @@ print(entries2.loc[:,["Title","Type"]])
 
 entries3 = entries2.replace('journal','diari')
 print(entries3.loc[:,["Title","Type"]])
+
+# Modificar el valor de tots els Publisher, que actualment esta informat a null, passar-los a np.nan.
+# Clean NAs
+
+entries4 = copy.deepcopy(entries)
+
+# Pas 1. Cercar valors nuls amb la màscara.
+print("Valors Publisher nuls o buits ??")
+
+entries4.loc[:,"Publisher"].isnull().value_counts()
+null_publisher_mask = entries4.loc[:,"Publisher"].isnull()
+
+# Pas 2. Comprovem el resultat de la màscara. 
+# En general: df.loc(MASK,FIELD)
+print(entries4.loc[null_publisher_mask,"Publisher"] )
+
+# Pas 3. Substituïr els nulls per np.nan, aplicant la màscara.
+# En general: df.loc(MASK,FIELD) = VALUE.
+entries4.loc[null_publisher_mask,"Publisher"] = np.nan
+
+# Pas 4. Mostrem un resultat per a provar.
+print(entries4.iloc[62,:])
+
+# Actualitzar tots els registres que es troben a nulls, o a nan, 
+# amb un valor fixe de String="Unkown Publisher".
+
+entries5 = copy.deepcopy(entries4)
+#2 opcions , aquestes dues linees, fan el mateix que utilitzant el parametre inplace
+update_publisher = entries5.loc[:,"Publisher"].fillna(value="Unkown Publisher")
+entries5.loc[:,"Publisher"] = update_publisher
+#segona opcio amb inplace, ho canvia a la mateixa linea (abans no)
+#entries5.loc[:,"Publisher"].fillna(value="Unkown Publisher",inplace=True)
+
+print(entries5.iloc[485,:])
