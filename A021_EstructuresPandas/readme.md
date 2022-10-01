@@ -15,9 +15,11 @@
         - [Mostrar les primeres línies](#mostrar-les-primeres-línies)
         - [Mostra el número de files i columnes del dataframe.](#mostra-el-número-de-files-i-columnes-del-dataframe)
         - [Càlculs estadístics.](#càlculs-estadístics)
-          - [Linea aleatòria](#linea-aleatòria)
+         - [Linea aleatòria](#linea-aleatòria)
         - [Trasposar la matriu](#trasposar-la-matriu)
-        - [Ordenació dataframe per un índex](#ordenació-dataframe-per-un-índex)
+    - [Ordenació dataframes](#ordenació-dataframe-per-un-índex)
+       - [Ordenació per index](#sort_index)
+       - [Ordenació per valors](#sort_values)
     - [Sistema coordenades, consultes.](#sistema-coordenades-consultes)
       - [Búsqueda de varis valors en diferentes columnes.](#búsqueda-de-varis-valors-en-diferentes-columnes)
       - [Cerca tots els valors d'una fila (element, registre)](#cerca-tots-els-valors-duna-fila-element-registre)
@@ -27,6 +29,7 @@
       - [Cerca llista de diverses files.](#cerca-llista-de-diverses-files)
       - [Introducció al filtratge per Masks](#introducció-al-filtratge-per-masks)
     - [Exercicis.](#exercicis)
+    - [Exercicis.](#sol_exercicis)
 
 
 ## Instal·lacio Pandas a conda: 
@@ -688,8 +691,9 @@ students_frame.T
 
 <a name="sort_index"></a>
 
-##### Ordenació dataframe per un índex
+#### Ordenació dataframes.
 
+##### Ordenació dataframes per un índex
 
 ```python
 #Ordenació per index axis=0 el index de la primera columna, axis=1 ordena els index de la primera columna (dual,grade)
@@ -735,6 +739,8 @@ students_frame_sorted
 
 
 <a name="sort_values"></a>
+
+##### Ordenació dataframes per valors de columnes.
 
 ```python
 #Ordenació per valors axis=0 columnes 
@@ -784,12 +790,15 @@ students_grade_sorted
 
 ### Sistema coordenades, consultes.
 
-Amb un daframe, el sistema de coordenades, comença per 0, i la coordenada s'indica primera la fila i després la columna.
+Amb un dataframe, el sistema de coordenades, comença per 0, i la coordenada s'indica primera la fila i després la columna.
 
 **Regla nemotècnica (enfonsar-se i nedar)**  
 1. Primer et tires de cap a la posició de la fila que vols.
 2. Llavors vas nedant fins la columna que t'interessa.
  
+La funció més habitual per fer-ho és loc. Sintaxi general:
+
+## dataframe.loc[<fila o llista de files>,<columna o fila de columnes >]
 
 <center>
  
@@ -826,7 +835,6 @@ students_frame.loc["Lucy",["grade","dual"]]
 students_frame.loc["Lucy",:]
 ```
 
-
     grade        8
     dual     False
     Name: Lucy, dtype: object
@@ -845,8 +853,7 @@ students_frame.loc[:,"grade"]
     Peter    4
     Name: grade, dtype: int64
 
-
-#### Cerca valor per fila i columna.
+#### Cerca valor per fila i columna, iloc.
 
 Ja hem utilitzat la funció **loc** , ficant el nom directament de les files primer i les columnes després. 
 Amb les coordenades numèriques, hem d'anomenar el primer numero per columna i el segon per files.
@@ -1156,12 +1163,14 @@ students_frame.loc[[True,True,True,False],:]
 4. Ordena els alumnes alfabèticament.
 5. Mostra tota la info d'un alumne, a partir del seu nom.
 6. Mostra les notes dels 3 alumnes que tenen una nota més alta.
-7. Mostra els noms dels alumnes que volen fer Dual.
+7. Usant una màscara, mostra els noms dels alumnes que volen fer Dual.
 8. Usant una màscara, mostra els alumnes que tenen una nota superior o igual a 7.
 
 9 i 10.
 Espai per a que creis 2 consultes i les seves solucions, a partir de les noves consultes que has creat.
 
+<a name="sol_exercicis">
 
-El pròxim dia veurem com tractar dataframes més grans, importats de fitxers CSV o altres formats.
+Podeu trobar les solucions fetes a classe al link:
+(Exercicis Sessió5 Dataframes)[./A021_EstructuresPandas/exercicisSessio5dataframes.py]
 
