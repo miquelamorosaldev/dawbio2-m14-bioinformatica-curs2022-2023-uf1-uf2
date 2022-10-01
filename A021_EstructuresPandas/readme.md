@@ -28,8 +28,8 @@
       - [Comandes at, iat; optimització loc e iloc.](#comandes-at-iat-optimització-loc-e-iloc)
       - [Cerca llista de diverses files.](#cerca-llista-de-diverses-files)
       - [Introducció al filtratge per Masks](#introducció-al-filtratge-per-masks)
-    - [Exercicis.](#exercicis)
-    - [Exercicis.](#sol_exercicis)
+    - [Exercicis Pandas.](#exercicis)
+    - [Solució Exercicis Pandas.](#sol_exercicis)
 
 
 ## Instal·lacio Pandas a conda: 
@@ -1172,5 +1172,6 @@ Espai per a que creis 2 consultes i les seves solucions, a partir de les noves c
 <a name="sol_exercicis">
 
 Podeu trobar les solucions fetes a classe al link:
-(Exercicis Sessió5 Dataframes)[./A021_EstructuresPandas/exercicisSessio5dataframes.py]
+  
+[Exercicis Sessió5 Dataframes](./A021_EstructuresPandas/exercicisSessio5dataframes.py)
 
