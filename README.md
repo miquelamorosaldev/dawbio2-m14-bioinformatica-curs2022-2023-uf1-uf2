@@ -74,26 +74,28 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 ### A021 - Introducció a les estructures de la libreria Pandas.
 
 #### Introducció a Pandas. Sessions 4 i 5.
-[Estructures Pandas : Series , Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
+1. [Estructures Pandas : Series , Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
 	- Estructures bàsiques pandas.
 		* Sèries
 		* Dataframe
 		* DTYPES
-    - Funcions bàsiques pandas.
+	- Funcions bàsiques pandas.
 		* HEAD, TAIL
 		* SORT_INDEX
 		* SORT_VALUES
 		* LOC, ILOC
 		* MASKS
-
-**[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
+	- **[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
 
 ### A022 - Ús de màscares i funcions de selecció i edició dades. 
 
 <em> Aquí toca aportar teoria i exemples de les màscares. </em>
+2. [Com importar un fitxer de dades a un Dataframe de Pandas.](./A0212_ImportacioDadesPandas/readme.md)
+
+3. [Repàs ús de màscares, selecció i edició de màscares.]()
 
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
-2. [Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
+4. [Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
@@ -115,7 +117,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 15. [Repàs estadística](./Sessió15_Estadistica)	
 
-16. [Exercicis estadística Dades Covid)](./Sessió16_EstadisticaDadesCovid)	
+16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques	
 	- Mitjana
