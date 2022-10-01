@@ -5,6 +5,8 @@
 
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
+# UF1 - Informàtica mèdica.
+
 ## 🐍 A01 - Introducció a Python. 🐍
 
 ⌚ Temps previst. 12 hores.
@@ -89,10 +91,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A022 - Ús de màscares i funcions de selecció i edició dades. 
 
-<em> Aquí toca aportar teoria i exemples de les màscares. </em>
 2. [Com importar un fitxer de dades a un Dataframe de Pandas.](./A0212_ImportacioDadesPandas/readme.md)
 
-3. [Repàs ús de màscares, selecció i edició de màscares.]()
+3. [Repàs ús de màscares, selecció i edició de màscares.](./A021_EstructuresPandas/mascares_readme.md)
 
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
 4. [Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
@@ -106,7 +107,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas.
 
-<em> En procés d'actualització i selecció d'exercicis solucionats. </em>
+<em> 🚧 Actualitzant 🚧 </em>
 
 <hr/>
 <hr/>
@@ -125,8 +126,18 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Mediana
 	- Quartils 
 
-<em> En procés d'actualització </em>
+<em> 🚧 Actualitzant 🚧 </em>
 
+<hr/>
+
+
+# 🧬 UF2 - Ciències Òmniques. 🧬
+
+<em> 🚧 Pròximament 🚧 </em>
+
+
+<hr/>
+<hr/>
 
 ### Agraïments.
 
