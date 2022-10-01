@@ -84,27 +84,18 @@ print(pokedex.loc[:,['Name','HP']])
 ...
 799            Volcanion   80
 
-
+ 
 ## Seleccionar diverses files.
 
-El requisito es que en los valors de las filas hay que indicar las del índice.
+ 
+El requisit es que en los valors de les files cal indicar les de l'index.
 
 ```python
 print(pokedex.loc[ [152,153] , : ] )
 ```
 
-
-# Y para sacar info. de varias filas y columnas:
-print(pokedex.loc[ [5,6,9,10] , ['Name','HP'] ] )
-
-# Valor de un campo de un Pokemon.
-# Por ejemplo el nombre del primer Pokemon.
-# Podemos usar loc o iloc
-print(pokedex.loc[ 0, : 'Name'])
-
-print("Bulbasaur Type",pokedex.iloc[0,1])
-
-
+ <em> Ampliant </em>
+ 
 <a name="mask"></a>
 
 ## Masks
