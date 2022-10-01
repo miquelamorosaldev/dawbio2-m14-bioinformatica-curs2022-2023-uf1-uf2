@@ -102,6 +102,8 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A023 - Funcions d'agrupació i fusió de dades.
 
+### A024 - Creació de gràfics amb Matplotlib i Pandas.
+
 <em> En procés d'actualització i selecció d'exercicis solucionats. </em>
 
 <hr/>
