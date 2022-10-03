@@ -1431,11 +1431,10 @@ def mult5(num: int)-> int:
     return num * 5
 
 ser3: pd.Series = pd.Series([2,4,6,8,10,12])
-ser3.map(mult5)
+ser3 = ser3.map(mult5)
 
 print(ser3)
 ```
-
 
 
 ```python
@@ -1443,6 +1442,14 @@ ser4: pd.Series = pd.Series(["John","Lucy","Mary","Peter"])
 ser4.map(lambda x: "Hello " + x)
 ```
 
+```python
+def helloName(name: str)-> str:
+    return "Hello " + name
+
+ser4: pd.Series = pd.Series(["John","Lucy","Mary","Peter"])
+ser4 = ser4.map(helloName)
+print(ser4)
+```
 
 
 
