@@ -25,7 +25,7 @@ from IPython.display import display
 # L'index ha de ser el nom de l'alumne. Apart de ser índex també ha de ser un camp.
 
 #les notes de dawbio amb dataframe
-student_list=["John","Mary","Lucy","Peter","Ann","Tom", "Pablo", "Miquel", "Roser"]
+student_list=["John","Mary","Lucy","Peter","Ann","Tom", "Oliver", "Luna", "Aria"]
 grades_list = [7,9,8,4,10,6,np.nan,np.nan,np.nan] 
 wants_dual_list = [False,True,False,True,True,True]
 wants_dualipa_list = [True]
@@ -96,18 +96,15 @@ print(exercicis_frame.loc[exercicis_frame11.index,'grade'])
 
 # Més exemples de consultes, interessants.
 
- ## Exercice 9:
-
-    ## Mostrar només les ciutats dels estudiants que volen dual:
+## Mostrar només les ciutats dels estudiants que volen dual:
         
 # dual_students_df: pd.DataFrame = students_df[students_df['dual'] == True]
 # dual_students_city_df: pd.DataFrame = dual_students_df.filter(items=['city'])
 # print(dual_students_city_df)
 
-
-# #Ejemplo ejercio 9 solo me devuelve al estudiante que termine en ia y tenga mas de 7
+# #Ejemplo ejercio 9 solo me devuelve al estudiante que su nombre
+# termine en ia y tenga mas de 7
 # print(df.loc[df['student_list'].str.endswith('ia') & (df['grade'] >= 7), ['student_list']])
-
 
 
 # Ordenar per index y mostra els camps que volem en una sola línia.
@@ -118,7 +115,6 @@ display(exercicis_frame)
 
 
 ## Exercice 10:
-
     ## Insertar dues columnes:
     ##   - Columna1: columna que mostri l'edat. La columna ha
     ##     d'aparèixer al final:
@@ -126,13 +122,17 @@ display(exercicis_frame)
     ##     d'apareixer en segona posició després de la nota.
     ##   - Trobar els alumnes que volen fer dual i tenen suspès
     ##     FOL. 
-    ##   - Mostrar només les columnes de nota i de si
-    ##     han aprovat FOL.
-#     students_age: list          = [27, 21, 30, 36, 30, 39, 47, 26, 23, 34]
-#     fol_success:  list[bool]    = [False, True, True, True, False, True, True, False, True, False]
-#     students_df.insert(len(students_df.keys()), 'age', students_age)
-#     students_df.insert(1, 'fol_succ', fol_success)
-#     dual_students_df3:          pd.DataFrame = students_df[students_df['dual'] == True]
-#     no_fol_dual_students:       pd.DataFrame = dual_students_df3[dual_students_df3['fol_succ'] == False] 
-#     no_fol_dual_stud_filtered:  pd.DataFrame = no_fol_dual_students.filter(items=['grade', 'fol_succ'])
-# print(no_fol_dual_stud_filtered)
+    ##   - Mostrar només les columnes de nota i de si han aprovat FOL.
+
+students_age: list          = [27, 21, 30, 36, 30, 39, 47, 26, 23]
+fol_success:  list[bool]    = [True, True, True, True, True, True, False, False, False]
+
+# Podem inserir automàticament 2 noves columnes sense refer el df.
+
+exercicis_frame.insert(len(exercicis_frame.keys()), 'age', students_age)
+exercicis_frame.insert(1, 'fol_succ', fol_success)
+print(exercicis_frame)
+dual_students_df3:          pd.DataFrame = exercicis_frame[exercicis_frame['dual'] == True]
+no_fol_dual_students:       pd.DataFrame = dual_students_df3[dual_students_df3['fol_succ'] == False] 
+no_fol_dual_stud_filtered:  pd.DataFrame = no_fol_dual_students.filter(items=['grade', 'fol_succ'])
+print(no_fol_dual_stud_filtered)

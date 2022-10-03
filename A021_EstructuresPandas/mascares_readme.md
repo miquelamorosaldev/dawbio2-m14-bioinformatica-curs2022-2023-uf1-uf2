@@ -98,13 +98,26 @@ print(pokedex.loc[ [152,153] , : ] )
  
 <a name="mask"></a>
 
-## Masks
+## Màscares
 
-### Mascares de selecció
+### Màscares de selecció
 
 ```python
 # Mask = Objecte que amaga tota la informació que no volem
 ```
-### Mascares de substitució de valors.
 
+### Màscares de substitució de valors.
+```python
+# Mask = Objecte que reemplaça els valors dels registres que hem filtrat amb una màscara de selecció.
+```
 
+### Màscares per a reemplaçar els valors nulls (np.nan)
+```python
+# Mask = Objecte que amaga tota la informació que no volem
+```
+
+Les practicarem totes en aquest quadern.
+
+<a href="./A021_EstructuresPandas/pandaspokemons.ipynb">pandaspokemons.ipynb</a>
+
+Posteriorment, ho aplicarem al fitxer de Scimago.

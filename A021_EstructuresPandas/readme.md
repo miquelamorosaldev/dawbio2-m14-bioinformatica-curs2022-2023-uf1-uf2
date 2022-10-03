@@ -21,7 +21,6 @@
         - [Ordenació dataframes per un índex](#ordenació-dataframes-per-un-índex)
         - [Ordenació dataframes per valors de columnes.](#ordenació-dataframes-per-valors-de-columnes)
     - [Sistema coordenades, consultes.](#sistema-coordenades-consultes)
-  - [dataframe.loc[<fila o llista de files>,<columna o fila de columnes >]](#dataframelocfila-o-llista-de-filescolumna-o-fila-de-columnes-)
       - [Búsqueda de varis valors en diferentes columnes.](#búsqueda-de-varis-valors-en-diferentes-columnes)
       - [Cerca tots els valors d'una fila (element, registre)](#cerca-tots-els-valors-duna-fila-element-registre)
       - [Cerca tots els valors d'una columna (camp)](#cerca-tots-els-valors-duna-columna-camp)
@@ -796,9 +795,11 @@ Amb un dataframe, el sistema de coordenades, comença per 0, i la coordenada s'i
 1. Primer et tires de cap a la posició de la fila que vols.
 2. Llavors vas nedant fins la columna que t'interessa.
  
-La funció més habitual per fer-ho és loc. Sintaxi general:
+La funció més habitual per fer-ho és loc. 
+Sintaxi general:
 
-## dataframe.loc[<fila o llista de files>,<columna o fila de columnes >]
+<em><strong>dataframe.loc [ --fila o llista de files-- , --columna o fila de columnes -- ] </em></strong>
+
 
 <center>
  
@@ -1173,5 +1174,5 @@ Espai per a que creis 2 consultes i les seves solucions, a partir de les noves c
 
 Podeu trobar les solucions fetes a classe al link:
   
-[Exercicis Sessió5 Dataframes](./A021_EstructuresPandas/exercicisSessio5dataframes.py)
+[Exercicis Sessió5 Dataframes](./exercicisSessio5dataframes.py)
 
