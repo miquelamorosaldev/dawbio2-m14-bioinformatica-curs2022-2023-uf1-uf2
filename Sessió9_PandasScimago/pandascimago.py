@@ -101,10 +101,10 @@ if __name__ == "__main__":
     entries: pd.DataFrame = pd.read_csv(csv_file_path, sep=";")
     print(entries)
 
-    #q1_hindex_gt_450(entries)
-    #q2_hindex_lesser_750(entries)
-    #q3_pub_journal_to_diari(entries)
-    #q4_publisher_nan(entries)
+    q1_hindex_gt_450(entries)
+    q2_hindex_lesser_750(entries)
+    q3_pub_journal_to_diari(entries)
+    q4_publisher_nan(entries)
     q5_unknown_publishers(entries)
 
 # -----------------------------------------------------------------------------

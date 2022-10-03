@@ -105,6 +105,8 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A023 - Funcions d'agrupació i fusió de dades.
 
+1. [Merge and Join Pandas](./Sessió10_JoinPandas "Sessió 10")
+
 ### A024 - Creació de gràfics amb Matplotlib i Pandas.
 
 <em> 🚧 Actualitzant 🚧 </em>
