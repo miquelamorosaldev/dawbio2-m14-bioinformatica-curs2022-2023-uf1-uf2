@@ -1452,7 +1452,6 @@ print(ser4)
 ```
 
 
-
 >    0     Hello John
 >
 >    1     Hello Lucy
@@ -1470,8 +1469,8 @@ print(ser4)
 
 ```python
 # DataFrame.mapaply(). Works elements wise for rows
-data = {"A": [1,2],
-       "B": [3,4]}
+data = {"A": [1,2,3,9,6],
+       "B": [3,4,8,6,9]}
 df3 = pd.DataFrame(data)
 df3.applymap(lambda x:x*2)
 ```
