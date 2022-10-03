@@ -1397,7 +1397,7 @@ ser2
 
 ### MAP,MAPAPPLY, APPLY
 
-###### Instrucció MAP
+#### Instrucció MAP
 
 Aplicar una transformació(en aquest cas, doblar el valor) a tota la fila
 
@@ -1406,9 +1406,6 @@ Aplicar una transformació(en aquest cas, doblar el valor) a tota la fila
 ser3: pd.Series = pd.Series([0,1,2,3])
 ser3.map(lambda x:x*2)
 ```
-
-
-
 
 >    0    0
 >
@@ -1419,6 +1416,27 @@ ser3.map(lambda x:x*2)
 >    3    6
 >
 >    dtype: int64
+
+**Optimització**
+
+No es recomana usar funcions lambda en series o dataframes molt grans, perquè el temps que es triga creant la 
+funció anònima és alt i això fa que el rendiment sigui més dolent que creant la funció apart.
+
+Per tant, aquest codi tindria més bon rendiment.
+
+
+```python
+#1 Map
+def mult5(num: int)-> int:
+    return num * 5
+
+ser3: pd.Series = pd.Series([2,4,6,8,10,12])
+ser3.map(mult5)
+
+print(ser3)
+```
+
+
 
 ```python
 ser4: pd.Series = pd.Series(["John","Lucy","Mary","Peter"])
