@@ -100,15 +100,34 @@ print(pokedex.loc[ [152,153] , : ] )
 
 ## Màscares
 
+Seguirem els següents apartats de la web Pandas in 10 minuts 
+[https://pandas.pydata.org/docs/user_guide/10min.html#selection](Doc.Pandas-10min-Selection)
+
+1. Boolean indexing = Màscares de Selecció
+2. Setting = Màscares de Substitució.
+
 ### Màscares de selecció
 
+Serveixen per filtrar només les files que segueixin unes determinades condicions.
 ```python
-# Mask = Objecte que amaga tota la informació que no volem
+# Mask = Objecte que amaga tota la informació que no volem, per exemple, en aquest cas
+# filtra els que tenen atac major o igual a 50.
+mask_at_50 = (df.loc[ : , ['Attack'] >= 50 ])
+print(df[mask_at_50, : ])
 ```
 
 ### Màscares de substitució de valors.
 ```python
 # Mask = Objecte que reemplaça els valors dels registres que hem filtrat amb una màscara de selecció.
+
+#1. Filtra.
+mask_min_at_50 = (df.loc[ : , ['Attack'] <= 50 ])
+
+#2. Substitueix.
+df.loc[mask_min_at_50, ['Attack'] = 50 ]
+
+#3. Valida.
+print(df[mask_min_at_50, : ])
 ```
 
 ### Màscares per a reemplaçar els valors nulls (np.nan)
