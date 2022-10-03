@@ -118,6 +118,6 @@ print(pokedex.loc[ [152,153] , : ] )
 
 Les practicarem totes en aquest quadern.
 
-<a href="./A021_EstructuresPandas/pandaspokemons.ipynb">pandaspokemons.ipynb</a>
+<a href="./pandaspokemons.ipynb">pandaspokemons.ipynb</a>
 
 Posteriorment, ho aplicarem al fitxer de Scimago.
