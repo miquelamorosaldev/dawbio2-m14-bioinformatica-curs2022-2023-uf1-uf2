@@ -100,14 +100,17 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
+Dins del mateix fitxer, introduïm aquests conceptes:
 	- Funcions aply, map, mapapply
 	- Afegir noves columnes, canvi d'ordre 
 
 ### A023 - Funcions d'agrupació i fusió de dades.
 
-1. [Merge and Join Pandas](./Sessió10_JoinPandas "Sessió 10")
+5. [Merge and Join Pandas](./Sessió10_JoinPandas "Sessió 10")
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas.
+
+6. [Gràfiques amb Matplotlib i Pandas](./Sessió11_Grafiques "Sessió 11")
 
 <em> 🚧 Actualitzant 🚧 </em>
 
