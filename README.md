@@ -114,6 +114,12 @@ Dins del mateix fitxer, introduïm aquests conceptes:
 
 <em> 🚧 Actualitzant 🚧 </em>
 
+Pendent mirar aquest banc de dades, casos SIDA EEUU.
+https://wonder.cdc.gov/controller/datarequest/D14
+
+Organització de què és cada dada.
+https://wonder.cdc.gov/wonder/help/aids.html
+
 <hr/>
 <hr/>
 
