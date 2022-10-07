@@ -1,6 +1,7 @@
 # Imports
 import csv
 import copy
+import re
 from numbers import Number
 
 
@@ -20,11 +21,6 @@ def read_csv_file(csv_file_path: str) -> list[dict]:
 
     return result
 
-
-
-# -----------------------------------------------------------------------------
-# Clean entries
-# -----------------------------------------------------------------------------
 
 # Uses unnecessary copy(). replace() returns a new copy each time.
 # Instead of replace() you can use a regexp.
@@ -79,11 +75,8 @@ def clean_entry(entry: dict) -> dict:
 # -----------------------------------------------------------------------------
 def clean_entries(raw_entries: list[dict]) -> list[dict]:
     "Returns a copy of the entries with cleanup values: Categories, H-Index"
-
     clean_entries: list[dict] = [clean_entry(entry) for entry in raw_entries]
-
     return clean_entries
-
 
 
 # -----------------------------------------------------------------------------

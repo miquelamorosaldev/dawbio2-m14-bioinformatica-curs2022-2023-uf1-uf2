@@ -16,7 +16,7 @@ def get_unique_types(entries: list[dict]) -> list[str]:
 # -----------------------------------------------------------------------------
 def q2():
     
-    entries: list[dict] = utils.read_csv_file("scimago-medicine.csv")
+    entries: list[dict] = utils.read_csv_file("A0132_ProjecteExplotacioFitxersCSV_2022_2023/scimago-medicine.csv")
 
     unique_types_list: list[str] = get_unique_types(entries)
     num:               int       = len(unique_types_list)

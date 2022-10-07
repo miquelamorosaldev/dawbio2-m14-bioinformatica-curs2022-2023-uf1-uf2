@@ -41,7 +41,7 @@ def convert_format_v2(entries: list[dict]) -> dict[str,list]:
 # -----------------------------------------------------------------------------
 def q11():
 
-    raw_entries: list[dict] = utils.read_csv_file("scimago-medicine.csv")
+    raw_entries: list[dict] = utils.read_csv_file("A0132_ProjecteExplotacioFitxersCSV_2022_2023/scimago-medicine.csv")
     df:          dict[list] = convert_format_v2(raw_entries)
 
     print("List of keys:")

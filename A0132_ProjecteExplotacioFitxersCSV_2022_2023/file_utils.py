@@ -1,6 +1,7 @@
 # Imports
 import csv
 import copy
+import re
 from numbers import Number
 
 
@@ -25,6 +26,15 @@ def read_csv_file(csv_file_path: str) -> list[dict]:
 # -----------------------------------------------------------------------------
 # Clean entries
 # -----------------------------------------------------------------------------
+
+def simple_clean_entries(category: str) -> str:
+    "Returns the category string without the quarter id: (Q1), (Q2), (Q3) or (Q4)"
+    " and without spaces."
+    result = category
+    result = re.sub(" ?\(Q\d\)", "", result)
+    result = result.strip()
+    return result
+
 
 # Uses unnecessary copy(). replace() returns a new copy each time.
 # Instead of replace() you can use a regexp.

@@ -11,7 +11,7 @@ import pprint
 # -----------------------------------------------------------------------------
 def q9():
     # Get clean entries
-    raw_entries:   list[dict] = utils.read_csv_file("scimago-medicine.csv")
+    raw_entries:   list[dict] = utils.read_csv_file("A0132_ProjecteExplotacioFitxersCSV_2022_2023/scimago-medicine.csv")
     clean_entries: list[dict] = utils.clean_entries(raw_entries)
 
     # Get list of regions

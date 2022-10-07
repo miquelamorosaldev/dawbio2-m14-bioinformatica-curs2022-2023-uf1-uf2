@@ -9,7 +9,7 @@ import pprint
 # -----------------------------------------------------------------------------
 def q1():
     
-    entries: list[dict] = utils.read_csv_file("scimago-medicine.csv")
+    entries: list[dict] = utils.read_csv_file("A0132_ProjecteExplotacioFitxersCSV_2022_2023/scimago-medicine.csv")
     num:     int        = len(entries)
     
     print("First entry:")
