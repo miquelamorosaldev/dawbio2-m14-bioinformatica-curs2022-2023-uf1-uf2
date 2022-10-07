@@ -50,3 +50,24 @@ students_duals: pd.DataFrame = (copy.deepcopy(students_frame)
 print(students_duals)
 
 # El merge, el pròxim dia.
+
+#join with the 2 dataFrame
+join: pd.DataFrame = pd.merge(students_grades,students_duals, how="outer", on="name")
+print(join)
+
+
+
+## Exemple per crear columnes i series amb un bucle 
+# i números aleatoris.
+
+from random import randint
+
+students_frame = pd.DataFrame({
+    'id' : [True, False, True, False],
+    'times' : [2, 3, 1, 5]
+})
+
+# pd.DataFrame.loc
+students_frame.loc[students_frame.index.repeat(randint(1,5))]
+# pd.Index.repeat
+students_frame.loc[students_frame.index.repeat(randint(1,5))].reset_index(drop=True)
