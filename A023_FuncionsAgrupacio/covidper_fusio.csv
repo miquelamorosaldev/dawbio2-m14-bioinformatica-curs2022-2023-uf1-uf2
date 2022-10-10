@@ -1,0 +1,20 @@
+id,hospital,evolució,dosi
+0,1,Bellvitge,bona,t1-1mg
+1,2,Tarragona,molt bona,t1-2mg
+2,3,VallHebron,molt bona,t1-1mg
+3,4,VallHebron,sense canvis,t1-1mg
+4,5,Bellvitge,sense canvis,t2-1mg
+5,6,AltPenedes,bona,t2-1mg
+6,7,Tarragona,desconeguda,t2-2mg
+7,8,VallHebron,desconeguda,t1-1mg
+8,9,Bellvitge,bona,t1-2mg
+9,10,VallHebron,desconeguda,t2-2mg
+10,11,VallHebron,desconeguda,t2-2mg
+11,11,AltPenedes,pendent,t2-2mg
+12,12,Tarragona,empitjora,t2-2mg
+13,13,Bellvitge,sense canvis,t2-2mg
+14,14,VallHebron,empitjora,t2-2mg
+15,15,Bellvitge,molt bona,t2-2mg
+16,16,AltPenedes,bona,t2-1mg
+17,17,Bellvitge,bona,placebo
+18,18,AltPenedes,sense canvis,placebo

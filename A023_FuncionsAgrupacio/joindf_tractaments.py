@@ -16,16 +16,38 @@ import copy
 if __name__ == "__main__":
 
     # Exercici 0. 
-    csv_file_path = "./Sessió10_JoinPandas/covidper_evolucio.csv"
+    csv_file_path1 = "./A023_FuncionsAgrupacio/covidper_evolucio.csv"
     # Read Evolution File.
-    df_evolucio: pd.DataFrame = pd.read_csv(csv_file_path, sep=";")
-    print(df_evolucio)
+    df_evolucio: pd.DataFrame = pd.read_csv(csv_file_path1, sep=";")
+    #print(df_evolucio)
 
-    csv_file_path = "./Sessió10_JoinPandas/covidper_tractaments.csv"
+    csv_file_path2 = "./A023_FuncionsAgrupacio/covidper_tractaments.csv"
     # Read Evolution File.
-    df_tractament: pd.DataFrame = pd.read_csv(csv_file_path, sep=",")
-    print(df_tractament)
+    df_tractament: pd.DataFrame = pd.read_csv(csv_file_path2, sep=",")
+    #print(df_tractament)
 
     # Exercici 1. Fer una outer join dels 2 dataframes.
     joinDfs: pd.DataFrame = pd.merge(df_evolucio,df_tractament, how="outer", on="id")
+    #print(joinDfs)
+
+    joinDfsCopy = copy.deepcopy(joinDfs)
+
+    # Exercici 2. Substituïr els valors ?? de la columna evolució pel valor desconeguda.
+    # https://kanoki.org/2019/07/17/pandas-how-to-replace-values-based-on-conditions/
+    joinDfs['evolució'].mask(joinDfs['evolució'] == '???', 'desconeguda', inplace=True)
     print(joinDfs)
+
+    # Exercici 3. Substituïr els valors NaN de la columna dosis per placebo.
+    joinDfs['dosis'] = joinDfs['dosis'].fillna("placebo")
+    print(joinDfs)
+
+    # Exercici 4. Compta quants pacients s'han aplicat cada dosi (columna 'dosis').
+    print(joinDfs.groupby('dosis')['id'].count())
+
+    # Exercici 5. En català, es diu dosi, no dosis. Canvia el nom de la columna.
+    joinDfs.rename({'dosis': 'dosi'}, axis=1, inplace=True)
+    print(joinDfs)
+
+    # Exercici 6. Fes una còpia de seguretat del dataframe en un fitxer anomenat
+    # covidper_fusio.csv
+    joinDfs.to_csv("./A023_FuncionsAgrupacio/covidper_fusio.csv")

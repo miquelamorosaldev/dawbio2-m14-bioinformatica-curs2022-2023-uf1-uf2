@@ -15,6 +15,8 @@ https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Ca
 ### Exercicis fets a classe (2022).
 
 * [Merge i altres funcions d'agrupament](joindframes.ipynb)
+* [Categorical de les notes dels alumnes (Exc.,Not...](grades_categorical.ipynb)
+* [Auto categorical de les notes dels alumnes (Exc.,Not...](AutoCategoricalGrade.ipynb)
 * [Fitxers CSV Tractaments](joindf_tractaments.py)
 
 ### Teoria
@@ -22,6 +24,7 @@ https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Ca
 * [Agrupacions per valors de columnes](#grouping)
 * [TimeSeries](#timeseries)
 * [Categoricals](#categoricals)
+* [Assignar categoricals automàticament](#auto_categoricals)
 
 <a name="dividir"></a>
 
@@ -963,3 +966,10 @@ students_frame.sort_values(by=["cat_grade","grade"],ascending=False)
   </tbody>
 </table>
 </div>
+
+
+### Com crear una nova columna calculada a partir d'una de les columnes, la de les notes.
+
+Tenint les dades dels alumnes amb una columna de notes, crear una nova columna que classifiqui aquella nota, amb les expressions Insuf, Suficient, Bé, Notable o Excel·lent.
+
+· [Click per veure diferents solucions del mateix exercici](AutoCategoricalGrade.ipynb "Diferents Solucions Exercici")

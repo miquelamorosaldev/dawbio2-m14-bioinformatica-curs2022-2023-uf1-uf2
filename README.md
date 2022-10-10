@@ -109,7 +109,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 5. [Merge and Join Pandas](./A023_FuncionsAgrupacio "Sessió 8")
 
-Practiquem funcions d'agrupació.
+6. [Practiquem funcions d'agrupació, fitxers evolució i tractament pacients CSV](./A023_FuncionsAgrupacio/joindf_tractaments.py)**
+
+7. [Practiquem funcions d'agrupació, fitxer pacients random](./A023_FuncionsAgrupacio/pd_grups_pacients_random.ipynb)**
 
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas. Sessió 9.
