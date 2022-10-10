@@ -15,4 +15,6 @@ students_frame = pd.DataFrame(
 )
 students_frame = students_frame.sort_values(by=['grade'], ascending=False)
 students_frame.loc[:,"grade"].plot(kind="bar")
+
+#Cal posar aquesta instrucció a Python per a que mostri el gràfic.
 plt.show()
