@@ -116,7 +116,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas. Sessió 9.
 
-6. [Gràfiques amb Matplotlib i Pandas](./A024_Grafiques "Sessió 9")
+8. [Gràfiques amb Matplotlib i Pandas](./A024_Grafiques "Sessió 9")
 
 <em> 🚧 Actualitzant 🚧 </em>
 
