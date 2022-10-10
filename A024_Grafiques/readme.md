@@ -118,6 +118,11 @@ df.plot(title="Temperatures últims 5 anys",legend=True);
 
 ### Exercici resolt Gràfics. Diagrama circular amb etiquetes (sense Pandas i amb Pandas).
 
+Les dades les he obtingut manualment del mitjà:
+https://www.naciodigital.cat/municipals2019/municipi/08101/hospitalet-llobregat
+
+També s'haurien de poder extreure en fitxers CSV de portals de dades obertes, però no sempre estan actualitzats.
+
 [Fitxer font, sense Pandas](exemple3-gcircular.py)
 
 [Fitxer font, amb Pandas](exemple3-gcircular-pandas.ipynb)
