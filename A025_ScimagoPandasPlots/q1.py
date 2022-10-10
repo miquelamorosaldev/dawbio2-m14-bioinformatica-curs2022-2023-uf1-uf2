@@ -11,7 +11,7 @@ import pandas as pd
 # -----------------------------------------------------------------------------
 def q1():
     
-    entries: pd.DataFrame = utils.read_csv_file("scimago-medicine.csv")
+    entries: pd.DataFrame = utils.read_csv_file("./A025_ScimagoPandasPlots/scimago-medicine.csv")
     num:     int          = len(entries)
     
     print("Exporting all entries to html...")

@@ -11,12 +11,15 @@ import pandas as pd
 def q2():
 
     # Get regions
-    entries:      pd.DataFrame = utils.read_csv_file("scimago-medicine.csv")
+    entries:      pd.DataFrame = utils.read_csv_file("./A025_ScimagoPandasPlots/scimago-medicine.csv")
+
+    #drop_duplicates
     unique_types: pd.Series    = (entries.loc[:, "Type"]
                                          .drop_duplicates()
                                          .sort_values()
                                          .reset_index(drop=True)
     )
+    print(unique_types)
 
     # Prepare output
     num:              int          = len(unique_types)

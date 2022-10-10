@@ -13,7 +13,7 @@ import pandas as pd
 def q12():
 
     # Read entries
-    entries: pd.DataFrame = utils.read_csv_file("scimago-medicine.csv")
+    entries: pd.DataFrame = utils.read_csv_file("./A025_ScimagoPandasPlots/scimago-medicine.csv")
 
     # Are there empty strings? No.
     empty_strings_mask:             pd.DataFrame = (entries.loc[:, :] == '')

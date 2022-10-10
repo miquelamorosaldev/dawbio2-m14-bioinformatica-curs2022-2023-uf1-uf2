@@ -12,7 +12,7 @@ from   pandas.api.types import CategoricalDtype
 # -----------------------------------------------------------------------------
 def read_csv_file(csv_file_path: str) -> pd.DataFrame:
     
-    entries: pd.DataFrame = pd.read_csv("scimago-medicine.csv", sep=";")
+    entries: pd.DataFrame = pd.read_csv(csv_file_path, sep=";")
     return entries
 
 

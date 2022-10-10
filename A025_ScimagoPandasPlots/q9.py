@@ -12,7 +12,7 @@ import pandas as pd
 def q9():
 
     # Get regions
-    entries:          pd.DataFrame = utils.read_csv_file("scimago-medicine.csv")
+    entries:          pd.DataFrame = utils.read_csv_file("./A025_ScimagoPandasPlots/scimago-medicine.csv")
     unique_regions:   pd.Series    = (entries.loc[:, "Region"]
                                              .drop_duplicates()
                                              .sort_values()
