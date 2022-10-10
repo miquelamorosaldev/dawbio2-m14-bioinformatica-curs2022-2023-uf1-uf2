@@ -15,6 +15,7 @@ import copy
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
 
+    # Exercici 0. 
     csv_file_path = "./Sessió10_JoinPandas/covidper_evolucio.csv"
     # Read Evolution File.
     df_evolucio: pd.DataFrame = pd.read_csv(csv_file_path, sep=";")
@@ -25,5 +26,6 @@ if __name__ == "__main__":
     df_tractament: pd.DataFrame = pd.read_csv(csv_file_path, sep=",")
     print(df_tractament)
 
+    # Exercici 1. Fer una outer join dels 2 dataframes.
     joinDfs: pd.DataFrame = pd.merge(df_evolucio,df_tractament, how="outer", on="id")
     print(joinDfs)

@@ -13,8 +13,9 @@ def read_csv_file(csv_file_path: str) -> list:
 
 
 # Obtingudes de: https://www.naciodigital.cat/municipals2019/municipi/08101/hospitalet-llobregat
+csv_file_path_home: str = "./Sessió11_Grafiques/vots-lh-mun-2019.csv"
 csv_file_path: str = "vots-lh-mun-2019.csv"
-election19Results: dict = read_csv_file(csv_file_path)
+election19Results: dict = read_csv_file(csv_file_path_home)
 
 print(election19Results[0])
 

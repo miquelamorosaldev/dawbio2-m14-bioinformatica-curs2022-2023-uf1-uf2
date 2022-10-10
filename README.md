@@ -96,21 +96,25 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 3. [Repàs ús de màscares, selecció i edició de màscares.](./A021_EstructuresPandas/mascares_readme.md)
 
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
-4. [Apliquem Pandas a la BBDD de Scimago.](./Sessió9_PandasScimago "Sessió 9")
+4. [Apliquem Pandas a la BBDD de Scimago.](./A022_Consultes_PandasScimago "Sessió 9")
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
-Dins del mateix fitxer, introduïm aquests conceptes:
+  
+**Dins del mateix fitxer, introduïm aquests conceptes:**
 	- Funcions aply, map, mapapply
 	- Afegir noves columnes, canvi d'ordre 
 
-### A023 - Funcions d'agrupació i fusió de dades.
+### A023 - Funcions d'agrupació i fusió de dades. Sessió 8.
 
-5. [Merge and Join Pandas](./Sessió10_JoinPandas "Sessió 10")
+5. [Merge and Join Pandas](./A023_FuncionsAgrupacio "Sessió 8")
 
-### A024 - Creació de gràfics amb Matplotlib i Pandas.
+Practiquem funcions d'agrupació.
 
-6. [Gràfiques amb Matplotlib i Pandas](./Sessió11_Grafiques "Sessió 11")
+
+### A024 - Creació de gràfics amb Matplotlib i Pandas. Sessió 9.
+
+6. [Gràfiques amb Matplotlib i Pandas](./A024_Grafiques "Sessió 9")
 
 <em> 🚧 Actualitzant 🚧 </em>
 
@@ -123,6 +127,8 @@ Dins del mateix fitxer, introduïm aquests conceptes:
 
 15. [Repàs estadística](./Sessió15_Estadistica)	
 
+<em> 🚧 Actualitzant 🚧 </em>
+
 16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques	
@@ -130,7 +136,7 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Moda
 	- Mediana
 	- Quartils 
-
+	- 
 <em> 🚧 Actualitzant 🚧 </em>
 
 <hr/>

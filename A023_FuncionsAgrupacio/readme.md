@@ -7,16 +7,21 @@ Per aquesta part on farem diferents exercicis, utilitzarem la taula d'alumnes-du
 https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh/data
 
 
-### Exercicis
+### Exemples.
 
 * [Desglossar el dataframe amb dos dataframes, un amb els grades i el altre amb el dual](#dividir)
 * [Realitzar un join amb els dos dataframes anteriors](#joins)
 
+### Exercicis fets a classe (2022).
+
+* [Merge i altres funcions d'agrupament](joindframes.ipynb)
+* [Fitxers CSV Tractaments](joindf_tractaments.py)
+
 ### Teoria
+
 * [Agrupacions per valors de columnes](#grouping)
 * [TimeSeries](#timeseries)
 * [Categoricals](#categoricals)
-
 
 <a name="dividir"></a>
 
@@ -426,7 +431,8 @@ students_duals
 
 ```python
 #join with the 2 dataFrame
-join: pd.DataFrame = pd.merge(students_grades,students_duals, on="name")
+#how = inner fa intersecció, outer fa union. 
+join: pd.DataFrame = pd.merge(students_grades,students_duals, on="name", how="outer")
 join
 ```
 
@@ -527,7 +533,7 @@ join
 
 <a name="grouping"></a>
 
-#### Grouping - Agrupacions
+## Grouping - Agrupacions
 
 Per realitzar el que amb sql coneixem amb la comanda **Group by**. [grouping documentació oficial](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#grouping "grouping documentacion oficial")
 
@@ -772,7 +778,7 @@ df3_grouped.cumcount()
 
 <a name="timeseries"></a>
 
-#### Time Series
+## Time Series
 
 [Consultar la documentació oficial de time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#time-series "time series documentacion oficial")
 
@@ -780,7 +786,7 @@ df3_grouped.cumcount()
 
 <a name="category"></a>
 
-#### Categoricals
+## Categoricals
 
 
 Es pot marcar els diferents valors d'una de les columnes, del tipus *Categories*, marcant-la com categories dins la columna, no com a valors.
