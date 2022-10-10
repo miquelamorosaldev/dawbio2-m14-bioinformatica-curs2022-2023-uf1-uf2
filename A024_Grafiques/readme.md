@@ -6,15 +6,16 @@ A estadística, existeixen 2 tipus:
 
 Per ajudar-nos en l'estadística que veurem, seria visualitzar i aprendre de la web [khan academy](https://es.khanacademy.org/ "khan academy").
 
-Per realitzar gràfiques, tenim que instal·lar la llibreria **matplotlib**. Llibreria que utilitzara Pandas per sota, nosaltres no la cridarem
+Per realitzar gràfiques, tenim que instal·lar la llibreria **matplotlib**. 
+Llibreria que utilitzara Pandas per sota, és una dependència de Pandas des de versions recents de Pandas. Per tant, no cal instal·lar-la apart.
 
-Per gràfiques utilitzarem la llibreria Matplotlib(baix nivell) que l'utilitzaran el panda's o seaBorn (alt nivell)
-
+<strike>
 *Comandes d'instal·lació*
 
 ```shell
 conda install -n bio -c conda-forge matplotlib
 ```
+</strike>
 
 A partir d'aqui seguirem el apartat de [plotting](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#plotting "plotting") al tutorial 10 minutes panda.
 
@@ -26,6 +27,8 @@ Posteriorment, seguim el tutorial [chart visualization](https://pandas.pydata.or
 ```python
 import numpy as np 
 import pandas as pd
+import matplotlib.pyplot as plt
+
 #np --> numerical panda, es una llibreria per a realitzar càlcul numèric
 #les notes de dawbio amb series
 student_list=["John","Mary","Lucy","Peter"]
@@ -38,6 +41,7 @@ students_frame = pd.DataFrame(
     data = datos
 )
 students_frame.loc[:,"grade"].plot(kind="bar")
+plt.show()
 ```
 
 >   <AxesSubplot:>
