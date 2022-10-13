@@ -102,8 +102,11 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
   
 **Dins del mateix fitxer, introduïm aquests conceptes:**
+	
 	- Funcions aply, map, mapapply
-	- Afegir noves columnes, canvi d'ordre 
+	
+	- Afegir noves columnes **(columnes calculades)**
+	- Canvi d'ordre dels camps. 
 
 ### A023 - Funcions d'agrupació i fusió de dades. Sessió 8.
 
@@ -111,7 +114,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 6. [Practiquem funcions d'agrupació, fitxers evolució i tractament pacients CSV](./A023_FuncionsAgrupacio/joindf_tractaments.py)**
 
-7. [Practiquem funcions d'agrupació, fitxer pacients random](./A023_FuncionsAgrupacio/pd_grups_pacients_random.ipynb)**
+7. [Practiquem funcions d'agrupació, gràfiques i columnes calculades, fitxer pacients random](./A023_FuncionsAgrupacio/pd_grups_pacients_random.ipynb)**
 
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas. Sessió 9.
@@ -121,6 +124,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 
 <em> 🚧 Actualitzant 🚧 </em>
+
 
 Pendent mirar aquest banc de dades, casos SIDA EEUU.
 https://wonder.cdc.gov/controller/datarequest/D14
