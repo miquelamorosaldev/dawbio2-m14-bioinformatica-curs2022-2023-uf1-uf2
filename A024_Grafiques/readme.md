@@ -1,13 +1,15 @@
 # Gràfiques amb Pandas
 
-A estadística, existeixen 2 tipus:
+**[Exemples de gràfics fets a classe](./A024_Grafiques/exemples-grafics-pandas.ipynb)**
+
+### A estadística, existeixen 2 grans tipus:
   - Descriptiva (Gràfiques)
   - Inferencia (Previssions)
 
-Per ajudar-nos en l'estadística que veurem, seria visualitzar i aprendre de la web [khan academy](https://es.khanacademy.org/ "khan academy").
+Per ajudar-nos en l'estadística que veurem, és recomanable aprendre de la web [Khan academy](https://es.khanacademy.org/ "khan academy").
 
-Per realitzar gràfiques, tenim que instal·lar la llibreria **matplotlib**. 
-Llibreria que utilitzara Pandas per sota, és una dependència de Pandas des de versions recents de Pandas. Per tant, no cal instal·lar-la apart.
+Per realitzar gràfiques, hem d'instal·lar la llibreria **matplotlib**. 
+Llibreria que utilitzara Pandas per sota, és una dependència de Pandas des de versions recents.
 
 **Comandes d'instal·lació, última versió estable.**
 
