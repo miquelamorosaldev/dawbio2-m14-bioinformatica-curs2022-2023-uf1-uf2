@@ -87,16 +87,18 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		* SORT_VALUES
 		* LOC, ILOC
 		* MASKS
-	- **[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
+2. **[Solució Exercicis Sessió 5, introducció als Dataframes.](./A021_EstructuresPandas/exercicisSessio5dataframes.py)**
+	
+3. [Com importar un fitxer de dades a un Dataframe de Pandas.](./A0212_ImportacioDadesPandas/readme.md)
 
 ### A022 - Ús de màscares i funcions de selecció i edició dades. 
 
-2. [Com importar un fitxer de dades a un Dataframe de Pandas.](./A0212_ImportacioDadesPandas/readme.md)
+4. [Repàs ús de màscares, selecció i edició de màscares.](./A021_EstructuresPandas/mascares_readme.md)
 
-3. [Repàs ús de màscares, selecció i edició de màscares.](./A021_EstructuresPandas/mascares_readme.md)
+**[Exercicis solucionats Pokemons](./A021_EstructuresPandas/pandaspokemons.ipynb)**
 
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
-4. [Apliquem Pandas a la BBDD de Scimago.](./A022_Consultes_PandasScimago "Sessió 9")
+5. [Apliquem Pandas a la BBDD de Scimago.](./A022_Consultes_PandasScimago "Sessió 9")
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
 	- Detecció Valors na, eliminació de registres amb valors incoherents.
@@ -110,27 +112,39 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A023 - Funcions d'agrupació i fusió de dades. Sessió 8.
 
-5. [Merge and Join Pandas](./A023_FuncionsAgrupacio "Sessió 8")
+5. [Teoria i exemples. Merge and Join Pandas](./A023_FuncionsAgrupacio "Sessió 8")
 
-6. [Practiquem funcions d'agrupació, fitxers evolució i tractament pacients CSV](./A023_FuncionsAgrupacio/joindf_tractaments.py)**
+6. [Practiquem funcions d'agrupació, fitxers evolució i tractament pacients CSV](./A023_FuncionsAgrupacio/joindf_tractaments.py)
 
-7. [Practiquem funcions d'agrupació, gràfiques i columnes calculades, fitxer pacients random](./A023_FuncionsAgrupacio/pd_grups_pacients_random.ipynb)**
+7. [Practiquem funcions d'agrupació, gràfiques i columnes calculades, fitxer pacients random](./A023_FuncionsAgrupacio/pd_grups_pacients_random.ipynb)
 
 
 ### A024 - Creació de gràfics amb Matplotlib i Pandas. Sessió 9.
 
-8. [Gràfiques amb Matplotlib i Pandas](./A024_Grafiques "Sessió 9")
-9. [Exercicis SCImago amb Pandas)](./A025_ScimagoPandasPlots/ "Sessió 10")
+8. [Exemples de Gràfiques amb Matplotlib i Pandas](./A024_Grafiques "Sessió 9")
 
+9. [Exercicis de SCImago amb Pandas i gràfics Matplotlib](./A025_ScimagoPandasPlots/ "Sessió 10")
 
-<em> 🚧 Actualitzant 🚧 </em>
+#### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
 
+* [HealthData, EEUU](https://healthdata.gov/browse?tags=hhs+covid-19)
+* [Casos SIDA EEUU.](https://wonder.cdc.gov/controller/datarequest/D14)
+* [NCBI, USA](https://www.ncbi.nlm.nih.gov/datasets/)
+* [World Health Organization/OMS](https://www.who.int/data/collections)
+* [Dades obertes organitzacions mundials com la UNESCO](https://data.un.org/)
+* [Unicef](https://data.unicef.org/dv_index/?q=)
+* [Dades de salut i altres, Govern Espanya](https://datos.gob.es/en/catalogo?theme_id=salud)
+* [Nou portal dades malalties víriques Catalunya](https://sivic.salut.gencat.cat/dades_obertes)
+* [Portal dades Covid19 a Catalunya, inactiu des del juliol del 2022](https://dadescovid.cat/descarregues)
+* [Dades obertes Institut Estadística Catalunya](https://www.idescat.cat/dades/)
 
-Pendent mirar aquest banc de dades, casos SIDA EEUU.
-https://wonder.cdc.gov/controller/datarequest/D14
-
-Organització de què és cada dada.
-https://wonder.cdc.gov/wonder/help/aids.html
+#### Com transformar bancs de dades en format Tidy.
+    1. Cada fila és una observació.
+    2. Cada columna és una variable.
+    3. Cada cel·la conté només una dada.
+       
+[Tutorial de com convertir datasets a format Tidy en Pandas](https://www.jeannicholashould.com/tidy-data-in-python.html)
+[Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
 
 <hr/>
 <hr/>
@@ -145,18 +159,23 @@ https://wonder.cdc.gov/wonder/help/aids.html
 
 16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
-Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques	
+Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques.
 	- Mitjana
 	- Moda
 	- Mediana
 	- Quartils 
 	- 
+
+Nota: Encara que des del juliol del 2022 no s'actualitza dadescovid.cat, l'estudi fet segueix sent vàlid i útil.
+
 <em> 🚧 Actualitzant 🚧 </em>
+
 
 <hr/>
 
 
 # 🧬 UF2 - Ciències Òmniques. 🧬
+
 
 <em> 🚧 Pròximament 🚧 </em>
 
