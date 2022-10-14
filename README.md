@@ -125,6 +125,10 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 9. [Exercicis de SCImago amb Pandas i gràfics Matplotlib](./A025_ScimagoPandasPlots/ "Sessió 10")
 
+### A025 - Exemple codi de la pràctica Pt1 (alguns apartats), fet pels professors.
+
+**[Exemple codi de la pràctica Pt1, fet pels professors.](./A026_PracticaExemple_Covid19Variants/ "Sessió 12")**
+
 #### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
 
 * [HealthData, EEUU](https://healthdata.gov/browse?tags=hhs+covid-19)
