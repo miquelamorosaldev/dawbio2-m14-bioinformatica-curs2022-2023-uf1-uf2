@@ -141,6 +141,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 * [Nou portal dades malalties víriques Catalunya](https://sivic.salut.gencat.cat/dades_obertes)
 * [Portal dades Covid19 a Catalunya, inactiu des del juliol del 2022](https://dadescovid.cat/descarregues)
 * [Dades obertes Institut Estadística Catalunya](https://www.idescat.cat/dades/)
+* [Cens persones desaparegudes durant la Guerra Civil, Gencat](https://analisi.transparenciacatalunya.cat/Legislaci-just-cia/Cens-de-persones-desaparegudes-durant-la-Guerra-Ci/u2ix-2jr6)
 
 #### Com transformar bancs de dades en format Tidy.
     1. Cada fila és una observació.
@@ -149,6 +150,11 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
        
 [Tutorial de com convertir datasets a format Tidy en Pandas](https://www.jeannicholashould.com/tidy-data-in-python.html)
 [Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
+
+#### Altres tutorials amb exemples resolts:
+- [Kaggle, molt ben resumit tot el que hem vist](https://www.kaggle.com/learn/pandas)
+- [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
+- [Exercicis Pandas SQL Queries](https://www.w3resource.com/python-exercises/pandas/sql/index.php)
 
 <hr/>
 <hr/>
@@ -167,8 +173,7 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Mitjana
 	- Moda
 	- Mediana
-	- Quartils 
-	- 
+	- Quartils
 
 Nota: Encara que des del juliol del 2022 no s'actualitza dadescovid.cat, l'estudi fet segueix sent vàlid i útil.
 
