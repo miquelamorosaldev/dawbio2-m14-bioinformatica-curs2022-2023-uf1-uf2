@@ -159,7 +159,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ## Solucions del Simulacre de prova de Pandas.
 
-- [Carpeta Codis Solucions](./pandas-sim1-questions/ )
+- [Carpeta Codis Solucions, revisats el 04/11/2022](https://github.com/miquelamorosaldev/pandas-sim-solutions)
+
+- [Solucions Prova Pandas 2021-2022](https://github.com/mikibardaji/M15UF2_2021-22)
 
 <hr/>
 <hr/>
