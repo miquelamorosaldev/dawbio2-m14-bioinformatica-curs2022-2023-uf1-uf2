@@ -158,7 +158,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ## Solucions del Simulacre de prova de Pandas.
 
-
+- [Carpeta Codis Solucions](./pandas-sim1-questions/ )
 
 <hr/>
 <hr/>
