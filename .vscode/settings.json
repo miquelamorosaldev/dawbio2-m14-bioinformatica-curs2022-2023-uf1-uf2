@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "pandas-sim1-questions"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

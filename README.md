@@ -156,6 +156,10 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 - [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
 - [Exercicis Pandas SQL Queries](https://www.w3resource.com/python-exercises/pandas/sql/index.php)
 
+## Solucions del Simulacre de prova de Pandas.
+
+
+
 <hr/>
 <hr/>
 
