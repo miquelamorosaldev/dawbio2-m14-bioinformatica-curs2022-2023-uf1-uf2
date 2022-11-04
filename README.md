@@ -148,8 +148,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
     2. Cada columna és una variable.
     3. Cada cel·la conté només una dada.
        
-[Tutorial de com convertir datasets a format Tidy en Pandas](https://www.jeannicholashould.com/tidy-data-in-python.html)
-[Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
+- [Tutorial de com convertir datasets a format Tidy en Pandas](https://www.jeannicholashould.com/tidy-data-in-python.html)
+
+- [Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
 
 #### Altres tutorials amb exemples resolts:
 - [Kaggle, molt ben resumit tot el que hem vist](https://www.kaggle.com/learn/pandas)
