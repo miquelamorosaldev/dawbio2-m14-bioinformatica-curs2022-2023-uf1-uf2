@@ -172,8 +172,6 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 15. [Repàs estadística](./Sessió15_Estadistica)	
 
-<em> 🚧 Actualitzant 🚧 </em>
-
 16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques.
@@ -183,6 +181,10 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Quartils
 
 Nota: Encara que des del juliol del 2022 no s'actualitza dadescovid.cat, l'estudi fet segueix sent vàlid i útil.
+
+<strong>Actualment les dades les podeu obtenir al SIVIC:
+
+<a href="https://sivic.salut.gencat.cat/dades_obertes">Nou portal dades malalties víriques Catalunya</a>
 
 <em> 🚧 Actualitzant 🚧 </em>
 
