@@ -125,7 +125,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 9. [Exercicis de SCImago amb Pandas i gràfics Matplotlib](./A025_ScimagoPandasPlots/ "Sessió 10")
 
-### A025 - Exemple codi de la pràctica Pt1 (alguns apartats), fet pels professors.
+### A025 - Recursos per a realitzar una pràctica Pt1.
 
 **[Exemple codi de la pràctica Pt1, fet pels professors.](./A026_PracticaExemple_Covid19Variants/ "Sessió 12")**
 
@@ -144,6 +144,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 * [Cens persones desaparegudes durant la Guerra Civil, Gencat](https://analisi.transparenciacatalunya.cat/Legislaci-just-cia/Cens-de-persones-desaparegudes-durant-la-Guerra-Ci/u2ix-2jr6)
 
 #### Com transformar bancs de dades en format Tidy.
+
     1. Cada fila és una observació.
     2. Cada columna és una variable.
     3. Cada cel·la conté només una dada.
@@ -157,11 +158,12 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 - [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
 - [Exercicis Pandas SQL Queries](https://www.w3resource.com/python-exercises/pandas/sql/index.php)
 
-## Solucions del Simulacre de prova de Pandas.
+### Simulacre Pandas amb solucions, any 2021-2022
+- [Solucions Prova Pandas 2021-2022](https://github.com/mikibardaji/M15UF2_2021-22)
+
+## Solucions del Simulacre de prova de Pandas, any 2022-2023.
 
 - [Carpeta Codis Solucions, revisats el 04/11/2022](https://github.com/miquelamorosaldev/pandas-sim-solutions)
-
-- [Solucions Prova Pandas 2021-2022](https://github.com/mikibardaji/M15UF2_2021-22)
 
 <hr/>
 <hr/>
@@ -179,6 +181,7 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Moda
 	- Mediana
 	- Quartils
+	- Desviació típica.
 
 Nota: Encara que des del juliol del 2022 no s'actualitza dadescovid.cat, l'estudi fet segueix sent vàlid i útil.
 
