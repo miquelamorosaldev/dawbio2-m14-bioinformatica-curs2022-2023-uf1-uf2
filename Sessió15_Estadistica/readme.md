@@ -2,6 +2,9 @@
 # Teoria i explicació classe
 
 - La teoria realitzada, la farem amb les instruccion al fitxer --> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
+- La pràctica la realitzarem amb:
+--> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
+--> [https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid](Sessió estadística dades Covid19)
 
 ## Installation Packages.
 ```sh
