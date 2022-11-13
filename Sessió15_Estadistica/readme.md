@@ -3,8 +3,8 @@
 
 - La teoria realitzada, la farem amb les instruccion al fitxer --> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
 - La pràctica la realitzarem amb:
---> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
---> [https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid](Sessió estadística dades Covid19)
+* [Funcions agrupació i gràfiques.](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/pd_grups_pacients_random.ipynb)
+* [Sessió estadística dades Covid19](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid)
 
 ## Installation Packages.
 ```sh
