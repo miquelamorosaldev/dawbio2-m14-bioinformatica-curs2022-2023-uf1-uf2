@@ -177,11 +177,18 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques.
+
 	- Mitjana
 	- Moda
 	- Mediana
 	- Quartils
 	- Desviació típica.
+
+I gràfics com:
+	- Linies
+	- Diagrames de barres
+	- Plotbox
+	
 
 <em> 🚧 Actualitzant 🚧 </em>
 
