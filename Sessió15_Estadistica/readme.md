@@ -49,6 +49,10 @@ Les dades les publiquen al portal Sivic a partir d'aquesta dada, juntament amb l
 
 <em>Nota: Encara que des del juliol del 2022 no s'actualitza dadescovid.cat, l'estudi fet segueix sent vàlid i útil.</em>
 
+Exercicis interessants:
+
+- <a href="Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercici-tempbcn.ipynb">Possible Solució. Gràfic Scatter Plot del Co·lapse Climàtic a Barcelona</a>
+
 
 ## Charset conversion:
 - From Windows encoding to UTF-8:

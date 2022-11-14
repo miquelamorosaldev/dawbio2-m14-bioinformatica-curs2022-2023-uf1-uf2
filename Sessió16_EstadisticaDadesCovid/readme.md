@@ -9,3 +9,4 @@ Primer, ens descarregarem executarem les operacions al document  [readme-covid-2
 
 Despres, com a exercici, hem creat un diagrama de línies i un plotbox de les dades d'altres comarques, només dels anys 2020 i 2021.
  [readme-covid-2020-2021.ipynb](readme-miquel-covid.ipynb "readme-covid-2020-2021")
+
