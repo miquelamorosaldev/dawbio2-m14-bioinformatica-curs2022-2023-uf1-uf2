@@ -186,21 +186,45 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Mediana
 	- Quartils
 	- Desviació típica.
+	- Gràfics Plotbox
 
-I gràfics com:
+### Sessió 17. Nous gràfics i exercicis. 
 
-	- Linies
-	- Diagrames de barres
-	- Plotbox
-
-### Sessió 17. Nous gràfics, regressió lineal i heatmaps. [Recta de regressió, augment temperatures](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
+[Recta de regressió, augment temperatures a Londres i Barcelona](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
 
 #### [Actualització apunts estadística](./Sessió15_Estadistica)	
 
-### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)	
+Nous conceptes introduïts:
 
-#### Inici pràctica d'estadística.
+- Diagrames de punts (scatter) i rectes de regressió (comparar 2 variables).
+- Gràfic distribució normal
+- Mapes de calor (heatmap).
+- Creació de mapes del món (per a què investigueu):
+    * <a href="https://www.python-graph-gallery.com/map-read-geojson-with-python-geopandas">Geopandas i GeoJSON.</a>
+    * <a href="https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html">Plot.ly</a>
 
+<em>No són la única opció, també es poden fer gràfics interactius amb 3dJS</em>
+
+### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)
+
+#### Recursos per entendre millor com usar rectes de regressió aplicades a fer prediccions i a Machine Learning.
+
+** Gràcies a aquests recursos podem fer prediccions. (estadistica inferencial). ** 
+
+- https://naps.com.mx/blog/3-ejemplos-explicados-de-machine-learning-en-python/
+- https://www.iartificial.net/arboles-de-decision-con-ejemplos-en-python/
+
+![](https://static.javatpoint.com/tutorial/ai/images/subsets-of-ai.png)
+
+### Sessions 19-22. Pràctica d'estadística, simulacre i prova final.
+
+Punts a tractar:
+- Revisem un exemple de pràctica (sobretot els gràfics)
+- Enumero els recursos vistos i organitzats d'estadística.
+- Introducció a com insta·lar les llibreries de mapes del món (qui vulgui)
+- Recursos rectes de regressió i ML (qui vulgui)
+
+<hr/>
 <hr/>
 
 # 🧬 UF2 - Ciències Òmniques. 🧬
