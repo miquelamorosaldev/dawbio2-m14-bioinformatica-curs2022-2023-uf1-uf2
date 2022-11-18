@@ -125,11 +125,11 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 9. [Exercicis de SCImago amb Pandas i gràfics Matplotlib](./A025_ScimagoPandasPlots/ "Sessió 10")
 
+## Sessions 10 - 14. Pràctica, simulacre i prova de Pandas.
+
 ### A025 - Recursos per a realitzar una pràctica Pt1.
 
 **[Exemple codi de la pràctica Pt1, fet pels professors.](./A026_PracticaExemple_Covid19Variants/ "Sessió 12")**
-
-## Sessions 11 - 14. Pràctica, simulacre i prova de Pandas.
 
 ### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
 
@@ -155,7 +155,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 - [Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
 
-#### Altres tutorials amb exemples resolts:
+#### Altres tutorials amb exemples resolts.
 - [Kaggle, molt ben resumit tot el que hem vist](https://www.kaggle.com/learn/pandas)
 - [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
 
@@ -205,7 +205,7 @@ Creació de mapes del món (per a què investigueu):
 * https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html
 	     
 
-<em>No són la única opció, també es poden fer gràfics interactius amb (https://d3js.org)[3dJS] </em>
+<em>No són la única opció, també es poden fer gràfics interactius amb [3dJS](https://d3js.org) </em>
 
 ### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)
 
