@@ -156,7 +156,6 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 #### Altres tutorials amb exemples resolts:
 - [Kaggle, molt ben resumit tot el que hem vist](https://www.kaggle.com/learn/pandas)
 - [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
-- [Exercicis Pandas SQL Queries](https://www.w3resource.com/python-exercises/pandas/sql/index.php)
 
 ### Simulacre Pandas amb solucions, any 2021-2022
 - [Solucions Prova Pandas 2021-2022](https://github.com/mikibardaji/M15UF2_2021-22)
