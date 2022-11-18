@@ -214,15 +214,15 @@ Nous conceptes introduïts:
 - https://naps.com.mx/blog/3-ejemplos-explicados-de-machine-learning-en-python/
 - https://www.iartificial.net/arboles-de-decision-con-ejemplos-en-python/
 
-![](https://static.javatpoint.com/tutorial/ai/images/subsets-of-ai.png)
-
 ### Sessions 19-22. Pràctica d'estadística, simulacre i prova final.
 
 Punts a tractar:
+
 - Revisem un exemple de pràctica (sobretot els gràfics)
 - Enumero els recursos vistos i organitzats d'estadística.
-- Introducció a com insta·lar les llibreries de mapes del món (qui vulgui)
-- Recursos rectes de regressió i ML (qui vulgui)
+- Recursos rectes de regressió i ML.
+- Introducció a com insta·lar les llibreries de mapes del món.
+- Consells per resoldre la pràctica.
 
 <hr/>
 <hr/>
