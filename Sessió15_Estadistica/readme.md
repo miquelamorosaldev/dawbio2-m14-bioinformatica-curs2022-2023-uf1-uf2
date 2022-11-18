@@ -4,7 +4,7 @@
 - La teoria realitzada, la farem amb les instruccion al fitxer --> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
 - La pràctica la realitzarem amb:
 * [Sessió 16 - estadística dades Covid19](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid)
-* [Sessió 16 - estadística dades Covid19](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid)
+* [Sessió 17 - Rectes regressió per comparar si les temperatures pugen cada any més](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3)
 
 
 ## Installation Packages.
