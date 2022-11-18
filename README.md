@@ -194,35 +194,37 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 
 #### [Actualització apunts estadística](./Sessió15_Estadistica)	
 
-Nous conceptes introduïts:
+Nous conceptes introduïts.
 
-- Diagrames de punts (scatter) i rectes de regressió (comparar 2 variables).
-- Gràfic distribució normal
-- Mapes de calor (heatmap).
-- Creació de mapes del món (per a què investigueu):
-    * <a href="https://www.python-graph-gallery.com/map-read-geojson-with-python-geopandas">Geopandas i GeoJSON.</a>
-    * <a href="https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html">Plot.ly</a>
+	- Diagrames de punts (scatter) i rectes de regressió (comparar 2 variables).
+	- Gràfic distribució normal
+	- Mapes de calor (heatmap).
+	
+Creació de mapes del món (per a què investigueu):
+* https://www.python-graph-gallery.com/map-read-geojson-with-python-geopandas
+* https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html
+	     
 
-<em>No són la única opció, també es poden fer gràfics interactius amb 3dJS</em>
+<em>No són la única opció, també es poden fer gràfics interactius amb [https://d3js.org/](3dJS)</em>
 
 ### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)
 
 #### Recursos per entendre millor com usar rectes de regressió aplicades a fer prediccions i a Machine Learning.
 
-** Gràcies a aquests recursos podem fer prediccions. (estadistica inferencial). ** 
+**Gràcies a aquests recursos podem fer prediccions. (estadistica inferencial).** 
 
 - https://naps.com.mx/blog/3-ejemplos-explicados-de-machine-learning-en-python/
 - https://www.iartificial.net/arboles-de-decision-con-ejemplos-en-python/
 
 ### Sessions 19-22. Pràctica d'estadística, simulacre i prova final.
 
-Punts a tractar:
+Punts a tractar.
 
-- Revisem un exemple de pràctica (sobretot els gràfics)
-- Enumero els recursos vistos i organitzats d'estadística.
-- Recursos rectes de regressió i ML.
-- Introducció a com insta·lar les llibreries de mapes del món.
-- Consells per resoldre la pràctica.
+	- Revisem un exemple de pràctica (sobretot els gràfics)
+	- Enumero els recursos vistos i organitzats d'estadística.
+	- Recursos rectes de regressió i ML.
+	- Introducció a com insta·lar les llibreries de mapes del món.
+	- Consells per resoldre la pràctica.
 
 <hr/>
 <hr/>
