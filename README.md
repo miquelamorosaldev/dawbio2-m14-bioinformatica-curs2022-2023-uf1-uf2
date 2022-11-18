@@ -184,9 +184,12 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Desviació típica.
 
 I gràfics com:
+
 	- Linies
 	- Diagrames de barres
 	- Plotbox
+
+17. [Recta de regressió, augment temperatures](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
 	
 
 <em> 🚧 Actualitzant 🚧 </em>
