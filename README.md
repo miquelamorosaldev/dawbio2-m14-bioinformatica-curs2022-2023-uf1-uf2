@@ -129,7 +129,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 **[Exemple codi de la pràctica Pt1, fet pels professors.](./A026_PracticaExemple_Covid19Variants/ "Sessió 12")**
 
-#### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
+## Sessions 11 - 14. Pràctica, simulacre i prova de Pandas.
+
+### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
 
 * [HealthData, EEUU](https://healthdata.gov/browse?tags=hhs+covid-19)
 * [Casos SIDA EEUU.](https://wonder.cdc.gov/controller/datarequest/D14)
@@ -164,6 +166,8 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 - [Carpeta Codis Solucions, revisats el 04/11/2022](https://github.com/miquelamorosaldev/pandas-sim-solutions)
 
+## Solucions de la prova (Pròximament) 
+
 <hr/>
 <hr/>
 
@@ -171,9 +175,9 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
  
 ⌚ Temps previst. 18 hores.
 
-15. [Repàs estadística](./Sessió15_Estadistica)	
+### Sessió 15. [Repàs estadística](./Sessió15_Estadistica)	
 
-16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
+### Sessió 16. [Exercicis estadística Dades Covid](./Sessió16_EstadisticaDadesCovid)	
 
 Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadístiques.
 
@@ -189,16 +193,17 @@ I gràfics com:
 	- Diagrames de barres
 	- Plotbox
 
-17. [Recta de regressió, augment temperatures](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
+### Sessió 17. Nous gràfics, regressió lineal i heatmaps. [Recta de regressió, augment temperatures](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
 
-18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)	
+#### [Actualització apunts estadística](./Sessió15_Estadistica)	
 
+### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)	
+
+#### Inici pràctica d'estadística.
 
 <hr/>
 
-
 # 🧬 UF2 - Ciències Òmniques. 🧬
-
 
 <em> 🚧 Pròximament 🚧 </em>
 
