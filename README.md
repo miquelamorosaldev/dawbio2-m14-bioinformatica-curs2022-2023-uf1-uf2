@@ -205,7 +205,7 @@ Creació de mapes del món (per a què investigueu):
 * https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html
 	     
 
-<em>No són la única opció, també es poden fer gràfics interactius amb (https://d3js.org/)[3dJS]</em>
+<em>No són la única opció, també es poden fer gràfics interactius amb (https://d3js.org)[3dJS] </em>
 
 ### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)
 
