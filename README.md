@@ -225,6 +225,11 @@ Punts a tractar.
 	- Recursos rectes de regressió i ML.
 	- Introducció a com insta·lar les llibreries de mapes del món.
 	- Consells per resoldre la pràctica.
+	- Com tractar els outliers.
+
+Recursos útils:
+
+<a href="Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercici-tempbcn.ipynb">Valors outliers temperatures a Barcelona i Londres</a>
 
 <hr/>
 <hr/>
