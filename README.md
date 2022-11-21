@@ -229,7 +229,7 @@ Punts a tractar.
 
 Recursos útils:
 
-<a href="Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercici-tempbcn.ipynb">Valors outliers temperatures a Barcelona i Londres</a>
+[Valors outliers temperatures a Barcelona i Londres](./Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercicis-metereologia.ipynb)
 
 <hr/>
 <hr/>
