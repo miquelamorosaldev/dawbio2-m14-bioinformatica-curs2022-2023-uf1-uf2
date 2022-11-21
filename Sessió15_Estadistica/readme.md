@@ -3,24 +3,34 @@
 
 - La teoria realitzada, la farem amb les instruccion al fitxer --> [Stats and theory.ipynb](stats-theory.ipynb "stats-theory")
 - La pràctica la realitzarem amb:
-* [Funcions agrupació, estadística i gràfiques.](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/pd_grups_pacients_random.ipynb)
 * [Sessió 16 - estadística dades Covid19](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B316_EstadisticaDadesCovid)
+* [Sessió 17 - Rectes regressió per comparar si les temperatures pugen cada any més](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/tree/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3)
+
 
 ## Installation Packages.
 ```sh
 conda activate bio
 conda list
 
-conda install -n bio -c anaconda numpy
-conda install -n bio -c anaconda scipy
-conda install -n bio -c anaconda matplotlib  # Comandos básicos de R
-conda install -n bio -c anaconda pandas
-conda install -n bio -c anaconda seaborn        # Equivalente a ggplot2
+# Paquets necessaris per a la estadística.
+conda install -n bio -c anaconda jupyterlab  # Antigament estava només a conda-forge
+conda install -n bio -c anaconda pandas   # Comandos básicos de R
+conda install -n bio -c anaconda seaborn  # Equivalente a ggplot2 de R
+
+# Paquet opcional si us mola la IA i Machine Learning.
+conda install -c anaconda scikit-learn
+
+# Paquets que ja us venen instal·lats amb pandas
+# Només cal insta·lar-los si no us funcionen.
+# conda install -n bio -c anaconda numpy
+# conda install -n bio -c anaconda pytest
+# conda install -n bio -c anaconda scipy
+# conda install -n bio -c anaconda matplotlib  # Comandos básicos de R
 
 ## Installation Optional Packages.
 
-conda install -n bio -c anaconda statsmodels
-conda install -n bio -c conda-forge pymc3
+#conda install -n bio -c anaconda statsmodels
+#conda install -n bio -c conda-forge pymc3
 
 cd workspace
 jupyter lab

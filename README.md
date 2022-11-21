@@ -125,11 +125,11 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 9. [Exercicis de SCImago amb Pandas i gràfics Matplotlib](./A025_ScimagoPandasPlots/ "Sessió 10")
 
+## Sessions 10 - 14. Pràctica, simulacre i prova de Pandas.
+
 ### A025 - Recursos per a realitzar una pràctica Pt1.
 
 **[Exemple codi de la pràctica Pt1, fet pels professors.](./A026_PracticaExemple_Covid19Variants/ "Sessió 12")**
-
-## Sessions 11 - 14. Pràctica, simulacre i prova de Pandas.
 
 ### Recull de bancs de dades mèdiques obertes per a fer pràctiques.
 
@@ -155,7 +155,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 - [Codi dels exemples usats](https://github.com/nickhould/tidy-data-python)
 
-#### Altres tutorials amb exemples resolts:
+#### Altres tutorials amb exemples resolts.
 - [Kaggle, molt ben resumit tot el que hem vist](https://www.kaggle.com/learn/pandas)
 - [AprendeconAlf, exercicis 7 i 8 molt interessants](https://aprendeconalf.es/docencia/python/ejercicios/pandas/)
 
@@ -186,21 +186,47 @@ Amb dades de dadescovid.cat, veurem les diferents variables descriptores Estadí
 	- Mediana
 	- Quartils
 	- Desviació típica.
+	- Gràfics Plotbox
 
-I gràfics com:
+### Sessió 17. Nous gràfics i exercicis. 
 
-	- Linies
-	- Diagrames de barres
-	- Plotbox
-
-### Sessió 17. Nous gràfics, regressió lineal i heatmaps. [Recta de regressió, augment temperatures](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
+[Recta de regressió, augment temperatures a Londres i Barcelona](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/Sessi%C3%B315_Estadistica/Estadistica_Rectes_Regressi%C3%B3/exercicis-metereologia.ipynb)	
 
 #### [Actualització apunts estadística](./Sessió15_Estadistica)	
 
-### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)	
+Nous conceptes introduïts.
 
-#### Inici pràctica d'estadística.
+	- Diagrames de punts (scatter) i rectes de regressió (comparar 2 variables).
+	- Gràfic distribució normal
+	- Mapes de calor (heatmap).
+	
+Creació de mapes del món (per a què investigueu):
+* https://www.python-graph-gallery.com/map-read-geojson-with-python-geopandas
+* https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html
+	     
 
+<em>No són la única opció, també es poden fer gràfics interactius amb [3dJS](https://d3js.org) </em>
+
+### Sessió 18. [Jornades IA a la FP, 2020. Video i Codi font](https://github.com/miquelamorosaldev/dawbio2-m14-bioinformatica-uf1-uf2/blob/main/A01_JornadesIAXFP_WineQuality/Wine_Quality_Amor%C3%B3s_2022.ipynb)
+
+#### Recursos per entendre millor com usar rectes de regressió aplicades a fer prediccions i a Machine Learning.
+
+**Gràcies a aquests recursos podem fer prediccions. (estadistica inferencial).** 
+
+- https://naps.com.mx/blog/3-ejemplos-explicados-de-machine-learning-en-python/
+- https://www.iartificial.net/arboles-de-decision-con-ejemplos-en-python/
+
+### Sessions 19-22. Pràctica d'estadística, simulacre i prova final.
+
+Punts a tractar.
+
+	- Revisem un exemple de pràctica (sobretot els gràfics)
+	- Enumero els recursos vistos i organitzats d'estadística.
+	- Recursos rectes de regressió i ML.
+	- Introducció a com insta·lar les llibreries de mapes del món.
+	- Consells per resoldre la pràctica.
+
+<hr/>
 <hr/>
 
 # 🧬 UF2 - Ciències Òmniques. 🧬
