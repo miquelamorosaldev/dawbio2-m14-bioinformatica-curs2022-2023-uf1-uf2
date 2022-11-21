@@ -202,7 +202,7 @@ Nous conceptes introduïts.
 	
 Creació de mapes del món (per a què investigueu):
 * https://www.python-graph-gallery.com/map-read-geojson-with-python-geopandas
-* https://dev.socrata.com/blog/2016/02/02/plotly-pandas.html
+* https://plotly.com/python/mapbox-county-choropleth/
 	     
 
 <em>No són la única opció, també es poden fer gràfics interactius amb [3dJS](https://d3js.org) </em>
@@ -230,6 +230,7 @@ Punts a tractar.
 Recursos útils:
 
 [Valors outliers temperatures a Barcelona i Londres](./Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercicis-metereologia.ipynb)
+[Codi font mapa atur als EEUU](./Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercicis-metereologia.ipynb)
 
 <hr/>
 <hr/>
