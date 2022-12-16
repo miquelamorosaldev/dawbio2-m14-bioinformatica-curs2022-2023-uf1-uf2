@@ -5,6 +5,31 @@
 
 [Professorat de l'Institut Provençana.](https://www.proven.cat/intraweb/index.php)
 
+<br/>
+<hr/>
+
+# 🧬 UF2 - Ciències Òmniques. 🧬
+
+
+## 🖧 Preparació d'un entorn amb Docker 🖧
+
+1. [Sessió 1 - Conceptes previs, instal·lació de Docker](./UF2_Sessions1+2_Docker)
+
+<br/>
+<hr/>
+
+## UF2_A01 - Biopython, per a tractar informació de gens.
+
+<br/>
+<hr/>
+
+## UF2_A02 - Alineament de diversos gens i bases de dades de gens.
+
+<br/>
+<hr/>
+<hr/>
+<br/>
+
 # UF1 - Informàtica mèdica.
 
 ## 🐍 A01 - Introducció a Python. 🐍
@@ -232,16 +257,9 @@ Recursos útils:
 [Valors outliers temperatures a Barcelona i Londres](./Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercicis-metereologia.ipynb)
 [Codi font mapa atur als EEUU](./Sessió15_Estadistica/Estadistica_Rectes_Regressió/exercicis-metereologia.ipynb)
 
+<br/>
 <hr/>
-<hr/>
-
-# 🧬 UF2 - Ciències Òmniques. 🧬
-
-<em> 🚧 Pròximament 🚧 </em>
-
-
-<hr/>
-<hr/>
+<br/>
 
 ### Agraïments.
 
