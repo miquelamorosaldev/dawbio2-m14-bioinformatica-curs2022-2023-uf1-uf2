@@ -10,15 +10,22 @@
 
 **Bioinformàtica.-** La bioinformàtica és l'aplicació de tecnologies computacionals i l'estadística a la gestió i anàlisi de dades biològiques; amb la intenció d'estudiar, analitzar i processar informació genètica, molecular i clínica per generar nou coneixement, noves eines diagnòstiques i noves teràpies.
 
-**Omicas** , es un sufix grec que significa molts, en aquest cas moltes opcions per treballar sobre les lleis de la genètica.
+### Omicas
+
+És un sufix grec que significa molts, en aquest cas moltes opcions per treballar sobre les lleis de la genètica.
 
 **Genètica** és l'estudi d'un gen: cromosomes, herència...
 
-**Rosalind Franklin** Creadora de la foto de l'ADN i la doble hèlix. 
+**Rosalind Franklin** 
+
+Creadora de la foto de l'ADN i la doble hèlix. (anys 50)
+Quan es va publicar el descobriment van atorgar tot el mèrit a 2 dels investigadors de l'equip, que els van donar el premi Nobel, i a ella no.
+Fins fa pocs anys no se li ha donat el reconeixement que mereixia, molts anys després de la seva mort.
+La ESA (Agència Especial d'Europa) ha fabricat un robot anomenat Rosalind Franklin, que investigarà la superfície del planeta Mart.
 
 **Genòmica** és l'estudi de molts gens. 
 
-Gràcies al descobriment de la secuenciació completa de l'ADN aplicant la informàtica, que es va aconseguir l'2000, 
+Gràcies al descobriment de la secuenciació completa de l'ADN aplicant la informàtica, que es va aconseguir l'2000,la genòmica ha avançat moltíssim.
 
 Altres ciències ômniques són:
 
@@ -66,27 +73,17 @@ Primerament, hem de comparar Docker amb un programari que realitza operacions ap
 També hi ha altres virtualitzadors com VMWare, QEMU.
 
 
-### A VirtualBox hi ha les següents capes:
-
-- Programari emulat
-- SO emulat (o guest): Linux, Mac, Windows, Android, iOS ...
-- Hardware emulat: VDI, RAM, ISO, ... 
-- **Virtualizador:**  VirtualBox, VMWare, QEMU.
-- Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ...
-- Hardware (host): 16 GB RAM, Intel / AMD processador
+| VirtualBox  | Docker      |
+| :---        | :---        |
+| - Programari emulat |  - Programari emulat |
+|- SO emulat (o guest): Linux, Mac, Windows, Android, iOS ...| - SO emulat (o guest): Linux, Mac, Windows, Android, iOS ...|
+|- Hardware emulat: VDI, RAM, ISO, ... |  - Hardware emulat: VDI, RAM, ISO, ... |
+|- **Virtualizador:**  VirtualBox, VMWare, QEMU.|  - **Container Engine-> Docker Daemon**|
+|- Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ... | - Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ...|
+|- Hardware (host): 16 GB RAM, Intel / AMD processador   |- Hardware (host): 16 GB RAM, Intel / AMD processador | 
 
 VirtualBox emula el hardware (les VDI)
-
-### A Docker, hi ha les següents capes:
-
-- Programari emulat
-- SO emulat (o guest): Linux, Mac, Windows, Android, iOS ...
-- Hardware emulat: VDI, RAM, ISO, ... 
-- **Container Engine-> Docker Daemon**
-- Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ...
-- Hardware (host): 16 GB RAM, Intel / AMD processador
-
-A diferència de VirtualBox, no hi ha una emulació; comparteixein el hardware del host.
+A diferència de VirtualBox, no hi ha una emulació a Docker; comparteixein el hardware del host.
 Si tinc un processador amb 8 nuclis al meu PC, a Docker també els tenim.
 
 Un contenidor (de Docker) és un procés aïllat.
@@ -110,7 +107,7 @@ Un segon avantatge és que ens assegurem que els serveis i el programari que use
 
 Evitem el meme: "a la meva màquina funciona".
 
-![[Meme: a la meva màquina funciona]](cmeme_workmymachine.jpg)
+![[Meme: a la meva màquina funciona]](https://external-preview.redd.it/aR6WdUcsrEgld5xUlglgKX_0sC_NlryCPTXIHk5qdu8.jpg?auto=webp&s=5fe64dd318eec71711d87805d43def2765dd83cd)
 
 
 ### Programari que necessitem per usar Docker.
