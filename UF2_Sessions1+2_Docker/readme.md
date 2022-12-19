@@ -1,6 +1,7 @@
 # M15_UF2 Ciencies Òmiques - Primeres sessions. Definicions i muntatge d'un entorn amb Docker.
 
-### Autors: Pablo Garcia, Miquel Angel Amorós
+### Autor: Pablo Garcia
+### Redacció: Miquel Angel Amorós
 
 <hr/>
 
@@ -140,7 +141,7 @@ A les últimes versions d'Ubuntu (i PopOS) es diu docker compose.
 
 ### Permisos necessaris per a usar Docker com a developers.
 
-Primer, hem d'assignar-nos el grup de docker al nostre usuari.
+Primer, hem d'assignar-nos el grup de docker (que s'ha creat automàticament a l'instal·lar docker) al nostre usuari.
 
 ```sh
 sudo usermod -aG docker $USER
@@ -148,7 +149,9 @@ sudo usermod -aG docker $USER
 
 $USER -> És una variable d'entorn (del Sistema Opeatiu) que té 
 
-L'any que es va crear la Shell de Unix, i aquestes variables d'entorn. S'hereden de Perl. 
+L'any que es va crear la Shell de Unix, també es van crear aquestes variables d'entorn, que avui en dia s'usen en tots els sistemes operatius. S'hereden de Perl. 
+
+Aquesta tècnica també la podem usar per assignar 
 
 #### Provem si s'ha instal·lat Docker:
 
@@ -262,7 +265,7 @@ hello-world   latest    feb5d9fea6a5   14 months ago   13.3kB
 
 ## Com arrenquem el contenidor ? 
 
-docker container run <imatge>
+docker container run nom_de_la_imatge
 
 ```sh
 (base) mamorosal@pop-os:~$ docker container run hello-world
@@ -290,5 +293,7 @@ For more examples and ideas, visit:
 ```
 
 ☺☺ Enhorabona, ja hem arrencat el nostre primer programa amb Docker. ☺☺
+
+## <a href="../UF2_Sessió2_Docker/readme.md"> Seguim muntant imatges de Docker més potents ? </a>
 
 <hr/>
