@@ -1,0 +1,49 @@
+[
+    {
+        "title":            "Latest vaccines against SARS-CoV-2",
+        "authors":          "Researcher A",
+        "keywords":         "Vaccine, SARS-CoV-2",
+        "submission_date":  "2022-05-10",
+        "DOI":              "55.1000/vaccines.2022.12345"
+    }
+    ,
+    {
+        "title":            "SARS-CoV-2 effects on dogs",
+        "authors":          "Researcher A",
+        "keywords":         "Dogs, SARS-CoV-2",
+        "submission_date":  "2022-01-10",
+        "DOI":              "55.1000/dogs.2022.731"
+    }
+    ,
+    {
+        "title":            "SARS-CoV-2 effects on birds",
+        "authors":          "Researcher B",
+        "keywords":         "Birds, SARS-CoV-2",
+        "submission_date":  "2022-04-10",
+        "DOI":              "55.1000/birds.2022.19995"
+    }
+    ,
+    {
+        "title":            "SARS-CoV-2 effects on cats",
+        "authors":          "Researcher B",
+        "keywords":         "Cats, SARS-CoV-2",
+        "submission_date":  "2022-03-10",
+        "DOI":              "55.1000/cats.2022.14003"
+    }
+    ,
+    {
+        "title":            "Research on potato color",
+        "authors":          "Researcher X",
+        "keywords":         "Potato",
+        "submission_date":  "2000-01-01",
+        "DOI":              "55.1000/wrong.2000.1"
+    }
+    ,
+    {
+        "title":            "Research on olive color",
+        "authors":          "Researcher X",
+        "keywords":         "Olive",
+        "submission_date":  "2000-01-01",
+        "DOI":              "55.1000/wrong.2000.1"
+    }
+]

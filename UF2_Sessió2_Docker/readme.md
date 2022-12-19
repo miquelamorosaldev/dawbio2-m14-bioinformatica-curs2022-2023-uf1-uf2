@@ -165,3 +165,251 @@ Instal·lem més coses:
 apt install tree
 nano
 ```
+
+### Parem i reiniciem el contenidor.
+
+Parem contenidor amb una de les 2 opcions:
+
+Ctrl + D 
+o 
+Exit + INTRO
+
+Veiem l'historial:
+
+```sh
+(base) mamorosal@pop-os:~$ docker container ls --all
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                          PORTS     NAMES
+c8c6f009ed71   ubuntu    "bash"                   38 minutes ago   Exited (0) About a minute ago             modest_yalow
+872b974adb0d   ubuntu    "bash -name ubuntu22…"   38 minutes ago   Exited (1) 38 minutes ago                 peaceful_elion
+18eb0948f45e   ubuntu    "-name ubuntu22amoros"   42 minutes ago   Created                                   quirky_antonelli
+```
+
+### Com reanudem un contenidor parat ? 
+
+#### Opció 1. 
+Amb aquestes comandes el reanudem, però esta corrent en segon pla (background)
+
+```sh
+(base) mamorosal@pop-os:~$ docker container start modest_yalow
+modest_yalow
+(base) mamorosal@pop-os:~$ docker container ls --all
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+c8c6f009ed71   ubuntu    "bash"                   41 minutes ago   Up 31 seconds                         modest_yalow
+872b974adb0d   ubuntu    "bash -name ubuntu22…"   41 minutes ago   Exited (1) 41 minutes ago             peaceful_elion
+18eb0948f45e   ubuntu    "-name ubuntu22amoros"   46 minutes ago   Created                               quirky_antonelli
+```
+
+Faltaria la commanda per posar-lo en primer pla, attach:
+```sh
+(base) mamorosal@pop-os:~$ docker container attach modest_yalow
+root@c8c6f009ed71:/#
+```
+
+#### Opció 2.
+
+Les 2 anteriors comandes les podem resumir en aquesta:
+
+```sh
+(base) mamorosal@pop-os:~$ docker container start -a modest_yalow
+```
+
+### Com parar un contenidor des de fora del terminal.
+
+És molt important, si tanquem accidentalment el terminal o per tancar bé la sessió de Linux.
+
+```sh
+(base) mamorosal@pop-os:~$ docker container stop -t 1 modest_yalow
+```
+
+**-t** ==> Número de segons abans de tancar.
+
+
+### Eliminar contenidors.
+
+Només podem eliminar contenidors parats.
+
+```sh
+(base) mamorosal@pop-os:~$ docker container rm modest_yalow
+```
+
+### Tornar a arrencar contenidor eliminat.
+
+Ctrl+R al terminal -> cerquem la comanda a l'historial.
+
+```sh
+docker container run -it ubuntu bash
+```
+
+Penseu que s'ha eliminat tot el contingut que teníem abans; torna a l'estat que tenia a l'iamtge. 
+
+
+## Com podem crear una imatge pròpia del meu contenidor ? 
+
+Amb el commit, com github.
+
+```sh
+(base) mamorosal@pop-os:~$ docker container commit tender_austin bio:v1
+sha256:36959837ed46a3303977ab65af744bd9a8b7495b6036402a1ebc8c42c536386b
+```
+
+Ens surt un hash, l'id de la imatge.
+
+Provem que ha funcionat :) 
+
+```sh
+docker container run -it bio:v1 bash
+```
+
+Ara, podriem instal·lar els programes que necessitem: Python, Jupyter, Pandas....
+
+Fins i tot ho podriem automatitzar amb un fitxer .sh
+
+Però molt millor usar imatges amb tot el programari configurat.
+
+
+# Com muntar un entorn de BioPython automàticament ? 
+
+## Creem un contenidor amb el codi que teniu dins les carpetes.
+
+Mirem el fitxer:
+
+[./0-configs/dev.Dockerfile]
+
+On tenim comandes no interactives que ens permeten instal·lar automàticament tot el necessari.
+
+**-y** -> No ens cal confirmar res.
+
+Fixeu-vos com automatitzem la instal·lació de tot el necessari per programar amb Python 3:
+
+```code
+# Basic system utilities
+RUN apt-get install -y dialog nano tree zip git sqlite3 curl lynx
+
+# Python packages. python3 is already installed but write it for completeness.
+RUN apt-get install -y python3 python3-venv python3-pip python-is-python3
+```
+
+### I Conda ? El necessitem o no ? 
+
+Amb Docker, no necessitem Conda, perquè ja tenim l'entorn aïllat (que és el que fa Conda en en nostre entorn de Pandas, Seaborn...)
+
+La altra funció de Conda és instal·lar llibreries, podem usar pip i/o venv per aquest propòsit.
+
+Amb tot, per garanitzar la seguretat, creem un entorn virtual dins el contenidor:
+```code
+ENV VIRTUAL_ENV=/opt/bio-venv
+RUN python -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+```
+
+Curiositats:
+
+/opt/ ---> Carpeta on instal·lar els nostres propis paquets 
+
+La tercera línia és l'equivalent al "conda activate bio"
+
+## Construim el contenidor.
+
+Usem la comanda: 
+**docker image build --tag bio --file dev.Dockerfile .**
+
+```sh
+(base) mamorosal@pop-os:~/Documents/0-configs$ docker image build --tag bio --file dev.Dockerfile .
+Sending build context to Docker daemon   7.68kB
+Step 1/15 : FROM ubuntu
+ ---> 6b7dfa7e8fdb
+Step 2/15 : ENV DEBIAN_FRONTEND noninteractive
+ ---> Running in 29501aac4011
+Removing intermediate container 29501aac4011
+
+....
+
+ ---> a947c077c180
+Successfully built a947c077c180
+Successfully tagged bio:latest
+--file dev.Dockerfile
+```
+
+Punts importants:
+
+* image build 
+* --tag bio
+* --file dev.Dockerfile
+* . (és important, indica que volem usar els fitxers de la mateixa carpeta)
+
+Al cap de 2-3 minuts (amb una bona connexió) ja ho tenim tot instal·lat.
+
+Ja podriem començar.
+
+**Funciona:**
+
+```sh
+root@6251c0c6584d:/# python
+Python 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> list1=[5,6,2,7]
+>>> list1
+[5, 6, 2, 7]
+```
+
+Si voleu instal·lar llibreries, usem la pàgina de pip:
+
+https://pypi.org/project/pip/
+
+Solen ser comandes del tipus:
+pip install <library>
+
+Una altra comprovació:
+
+echo $PATH
+
+Tindreu les variables d'entorn necessaries.
+
+
+### Carpeta compartida per interactuar des del Host amb el Docker.
+
+Primer, heu de crear una carpeta del vostre disc que sigui localitzable. Heu de copiar la ruta absoluta.
+
+```sh
+docker container run -it --name bio --mount=src='/home/mamorosal/Documents/docker-code',target='/bio',type='bind', bio bash
+```
+
+Comentaris:
+Nom imatge == Nom Contenidor
+El mount és super important que sigui exacte, és el que crea la carpeta compartida, l'src és la ruta de la carpeta del disc, i el target de la carpeta compartida dins de Docker.
+
+Comprovem-ho:
+
+1. Apliquem la comanda. 
+2. Posem un fitxer .txt dins de la carpeta del host
+3. Fem un ls dins del contenidor de docker, dins la carpeta /bio
+4. Fixem-nos que funciona.
+
+Tingueu en compte que heu d'estar com a root dins de docker.
+
+```sh
+(base) mamorosal@pop-os:~/Documents/0-configs$ docker container run -it --name bio --mount=src='/home/mamorosal/Documents/docker-code',target='/bio',type='bind' bio bash
+root@6251c0c6584d:/# ls
+bin  bio  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@6251c0c6584d:/# cd bio
+root@6251c0c6584d:/bio# ls
+Instalar-Sessio1m14.txt
+```
+
+Si teniu problemes de permisos, dins del docker, canvieu els permisos d'usuari:
+
+```sh
+sudo chown -R <usuari>:<usuari> .
+```
+
+## Com treballar amb Docker i VSCode? 
+
+Extensions a instal·lar a VSCode:
+- Docker
+- Dev Containers
+
+Us sortiran noves icona a sota: 
+- Docker -> forma de balena.
+- Dev Containers > Forma pantalla. 
+
+

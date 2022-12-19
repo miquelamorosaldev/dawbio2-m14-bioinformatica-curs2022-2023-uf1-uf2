@@ -1,0 +1,15 @@
+# Python dev utilities
+black
+pytest
+pylint
+mypy
+
+# Science packages
+jupyterlab
+pandas
+seaborn
+biopython
+
+# Web dev packages
+Flask
+Django
