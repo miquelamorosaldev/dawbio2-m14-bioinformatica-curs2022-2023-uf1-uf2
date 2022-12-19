@@ -13,7 +13,8 @@
 
 ## 🖧 Preparació d'un entorn amb Docker 🖧
 
-1. [Sessió 1 - Conceptes previs, instal·lació de Docker](./UF2_Sessions1+2_Docker)
+1. [Sessió 1 - Conceptes previs, instal·lació de Docker i el nostre primer contenidor](./UF2_Sessions1+2_Docker)
+2. [Sessió 2 - Creem més contenidors de Docker](./UF2_Sessió2_Docker)
 
 <br/>
 <hr/>
