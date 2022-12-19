@@ -248,7 +248,7 @@ Status: Downloaded newer image for hello-world:latest
 docker.io/library/hello-world:latest
 ```
 
-Tag: La versió.
+Tag: La versió. Si surt **lastest** és que és la última versió.
 Hash: És un codi que conté la firma que idenfifica un usuari de forma segura en un servidor. En aquest cas usa l'algoritme d'encriptació amb SHA256. Té el més important d'un fitxer.
 
 Per entendre-ho, quan fem commit a Git des del terminal surt el codi de Hash.
