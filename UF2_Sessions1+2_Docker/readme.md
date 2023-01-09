@@ -294,6 +294,6 @@ For more examples and ideas, visit:
 
 ☺☺ Enhorabona, ja hem arrencat el nostre primer programa amb Docker. ☺☺
 
-## <a href="../UF2_Sessió2_Docker/readme.md"> Seguim muntant imatges de Docker més potents ? </a>
+## <a href="../UF2_Sessió2_Docker/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
 
 <hr/>
