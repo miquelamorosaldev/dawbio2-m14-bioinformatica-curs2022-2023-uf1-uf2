@@ -21,6 +21,10 @@
 
 ## UF2_A01 - Biopython, per a tractar informació de gens.
 
+#### Expressions regulars:
+* Validador d'expressions regulars https://regex101.com/ 
+* Reptes per aprendre expressions regulars. https://regexone.com/
+
 <br/>
 <hr/>
 

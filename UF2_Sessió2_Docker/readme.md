@@ -5,6 +5,8 @@
 
 Avui investigarem i provarem algunes de les imatges que disposa DockerHub per muntar un contenidor amb un entorn de desenvolupament (Python, PHP...)
 
+⚠Les carpetes que pengen (configs,pathlib,flask) les utilitzem a la última part d'aquesta sessió.⚠
+
 Al final de la sessió 1 vam muntar un HelloWorld. Repassem:
 - Imatge: Fitxers i directoris comprimits que contenen tot el necessari.
 - Contenidor: Procés aïllat 
@@ -412,4 +414,5 @@ Us sortiran noves icona a sota:
 - Docker -> forma de balena.
 - Dev Containers > Forma pantalla. 
 
+![[Captura dels plugins de VSCode que gestionen els nostres contenidors de Docker]](Docker-VSCoder.png)
 
