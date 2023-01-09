@@ -1,0 +1,11 @@
+# VSCode
+.vscode
+.devcontainer
+
+# Composer
+composer.phar
+vendor
+
+# Other
+zz-this-is-a-git-repo.txt
+

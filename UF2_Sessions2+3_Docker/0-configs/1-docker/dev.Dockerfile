@@ -13,9 +13,27 @@
 # Beware:         The dot at the end is the build context.
 
 # Run:            docker container run   -it --name bio --mount src=DIR_OUTSIDE,target=DIR_INSIDE,type=bind bio bash
+# Example:        docker container run   -it --name bio --mount src='/home/kise/data/proven/2022-2023/3-cicles/dawbio/dawbio2/3-moduls/dawbio2-m14-bio/2-uf2/code/',target='/bio',type=bind bio bash
 # Note:           Directories must be absolute paths
 
 # VSCode:         Remember to install Python extensions in each container.
+
+
+
+# TODO
+# -----------------------------------------------------------------------------
+
+# - IMPORTANT: Remove your path from the docker run -it example
+
+# - Add user? That would be great for matching it to the host user! Cumbersome...
+# - https://jtreminio.com/blog/running-docker-containers-as-current-host-user/
+
+# - VSCode solution:
+# - https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+
+# - Do I need to configure sudo inside the docker?
+# - No, but it's an option...
+
 
 
 

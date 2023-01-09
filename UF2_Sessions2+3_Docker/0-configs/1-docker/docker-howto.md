@@ -9,9 +9,8 @@
 - groups
 
 
-# 2. Create an image with PHP environment
-- Use the Dockerfile!
-- But if you want to do it manually:
+# 2. Create an image: Manual method
+- The Dockerfile method is preferred, but here is how to do it manually:
 - docker image pull ubuntu
 - docker run -it --name CONTAINER_NAME ubuntu bash
   Example: docker run -it --name bio ubuntu bash
@@ -37,7 +36,13 @@
   Example: docker container commit bio bio
 
 
-# 3. Run new container with shared folder and published port
+# 3. Create an image: Dockerfile method (recommended)
+- Command: docker image build --tag IMAGE-NAME:TAG --file Dockerfile     .
+- Example: docker image build --tag bio            --file dev.Dockerfile .
+- Dockerfile reference: https://docs.docker.com/engine/reference/builder/
+
+
+# 4. Run new container with shared folder
 docker container prune
 
 docker run \
@@ -52,7 +57,22 @@ bio bash
 - (Open web browser pop-os to localhost:8000)
 
 
-# 4. VS Code configuration
+# 5. Ports
+- Publish ports:
+  - https://www.mend.io/free-developer-tools/blog/docker-expose-port/
+
+
+# 6. Volumes
+- Volumes:
+  - https://earthly.dev/blog/docker-mysql/
+  - https://docs.docker.com/storage/volumes/
+
+- Volume backups:
+  - https://onelinerhub.com/docker/how-to-extract-file-from-docker-image
+  - https://www.howtogeek.com/devops/how-to-back-up-your-docker-volumes/
+
+
+# 7. VS Code configuration
 - Extensions to install on VSCode
   - 'Docker' by Microsoft
   - 'Dev Containers' by Microsoft

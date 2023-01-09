@@ -14,6 +14,8 @@ Al final de la sessió 1 vam muntar un HelloWorld. Repassem:
 
 ## Imatges de dockerhub.
 
+#### ⚠ De cara a muntar un projecte de final de grau, us pot anar molt bé trobar un DockerHub que contingui el sistema operatiu Ubuntu o similar i el programari necessari (Python,SQL,...) 
+
 DockerHub:
 https://hub.docker.com
 
@@ -269,13 +271,17 @@ Fins i tot ho podriem automatitzar amb un fitxer .sh
 Però molt millor usar imatges amb tot el programari configurat.
 
 
+
 # Com muntar un entorn de BioPython automàticament ? 
+
+Podem utilitzar un fitxer dockerfile que contingui tots els passos que volem automatitzar.
+Us donem un fitxer ja fet.
 
 ## Creem un contenidor amb el codi que teniu dins les carpetes.
 
 Mirem el fitxer:
 
-[./0-configs/dev.Dockerfile]
+[./0-configs/1-docker/dev.Dockerfile]
 
 On tenim comandes no interactives que ens permeten instal·lar automàticament tot el necessari.
 
@@ -295,7 +301,7 @@ RUN apt-get install -y python3 python3-venv python3-pip python-is-python3
 
 Amb Docker, no necessitem Conda, perquè ja tenim l'entorn aïllat (que és el que fa Conda en en nostre entorn de Pandas, Seaborn...)
 
-La altra funció de Conda és instal·lar llibreries, podem usar pip i/o venv per aquest propòsit.
+La altra funció de Conda és instal·lar llibreries, però tenim altres alternatives famoses com **pip** i/o **venv** per aquest propòsit.
 
 Amb tot, per garanitzar la seguretat, creem un entorn virtual dins el contenidor:
 ```code
@@ -367,6 +373,12 @@ echo $PATH
 
 Tindreu les variables d'entorn necessaries.
 
+#### Llistat de llibreries que instal·lem automàticament
+
+Les tenim dins del fitxer: 
+
+<a href="./0-configs/1-docker/requirements.txt">./0-configs/1-docker/requirements.txt</a>
+
 
 ### Carpeta compartida per interactuar des del Host amb el Docker.
 
@@ -415,4 +427,62 @@ Us sortiran noves icona a sota:
 - Dev Containers > Forma pantalla. 
 
 ![[Captura dels plugins de VSCode que gestionen els nostres contenidors de Docker]](Docker-VSCoder.png)
+
+### Resultat final 
+
+Arrencant aquests plugins aconseguim arrencar/parar i accedir a la carpeta compartida on tenim el contenidor amb el VSCode.
+
+![[Captura de la carpeta compartida del contenidor ja muntada i accessible des de  VSCode]](Docker_VSCode_Full.png)
+
+<hr/>
+<hr/>
+
+<a name="Sessió3_Debug">
+
+# Sessió 3. Part 1. Com treballem amb Docker ?
+
+Hem repassat tot el que vam fer:
+- Teoria de Docker: imatges i contenidors 
+- Crear un contenidor d'Ubuntu a partir d'una imatge de DockerHub
+- Crear un contenidor d'Ubuntu i totes les eines de Python preparades mitjançant 
+- Crear una carpeta compartida entre el contenidor docker i el nostre SO Host.
+- Gestionar el contenidor i la carpeta compartida des de VSCode.
+
+## Com executar i debugar un codi Python/Flask/PHP... independentment de la carpeta
+
+Els projectes de VSCode tenen una carpeta oculta amb la configuració de debug (entre d'altres) del projecte.
+Podeu consultar-la amb **ls -la** des del terminal o amb **Ctrl+F8** des del explorador gràfic
+
+Es troba a:
+<projecte>
+  .vscode 
+    launch.json
+
+Esborreu aquesta carpeta i podreu crear una configuració de debug personalitzada.
+
+La podeu generar amb VSCode, que és el més recomanable.
+
+Aneu al botó de Debug i us sortirà el següent; pitgeu a crear Launch.JSON
+
+![[Captura del botó de Debug]](Launch_JSON.png)
+
+### Més informació del launch.json 
+
+La teniu en aquests apunts, per a què recordeu com es fa ? 
+
+<a href="./0-configs/2-debug/howto.md">./0-configs/2-debug/howto.md</a>
+
+Recurs opcional:
+
+https://towardsdatascience.com/how-to-debug-flask-applications-in-vs-code-c65c9bdbef21
+
+
+### I que passa si no volem usar VSCode ? 
+
+Usarem el fitxer **no_interpreter.py**
+
+<a href="./1-pathlib/no_interpreter.py">no_interpreter.py</a>
+
+Aquest fitxer serveix per a fer que no sigui obligatori trobar-nos a la mateixa carpeta on està el fitxer Python per a poder executar el fitxer. 
+Compleix la mateixa funció del launch.json per si no useu VSCode.
 
