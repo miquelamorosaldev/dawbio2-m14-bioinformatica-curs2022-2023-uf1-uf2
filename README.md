@@ -25,7 +25,7 @@
 
 #### Introducció ciències Òmniques
 3. [Sessió 3 - Part 2. Dogma central de la Biologia Molecular. Investigacions genòmiques del SARSCov2.](./UF2_Sessió3_IntroCiènciesÒmniques1)
-4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr-)
+4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
 
 
