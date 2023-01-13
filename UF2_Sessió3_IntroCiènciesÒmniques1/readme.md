@@ -50,3 +50,58 @@ Molt recomanable també <a href="https://www.youtube.com/@Lahiperactina">molts d
 Algunes fonts més populars i actualitzades que podem trobar són els següents Papers (articles de revistes científiques)
 * Informàtica -> ACM, IEEE
 * Biologia -> Nature
+
+<hr/>
+
+
+<a name="S4_Part1_Crispr"></a>
+
+## CRISPR.
+
+Sigles de CRISPR es un acrónimo para **Clustered Regularly Interspaced Short Palindromic Repeats.**
+
+És una tècnica d'edició genètica CRISPR/Cas9. Aquesta tècnica permet “editar” l'ADN canviant la seva seqüència original en una mutació controlada.
+
+Per tant, s'agafen un munt de mostres i se seleccionen les més interessants per a l'estudi.
+
+S'està investigant com aplicar-la en assaigs clínics per tractar malalties com ara el càncer, distròfies musculars, malalties degeneratives o alguns tipus de ceguesa.
+
+"Son com encimas de restricción, pero con más precisión."
+
+![[crispr]](crispr.png "Crispr")
+
+Monsanto, una empresa d'EEUU, ha aconseguit la plantació d'aliments modificats genèticament. Només creix a EEUU.
+
+Ara per ara encara està prohibit aplicar aquestes tècniques en humans en pràcticament tot el món. 
+
+Però en el futur, qui sap si donar i guardar per sempre el nostre ADN, tal i com podem donar els òrgans per a què la ciència els investigui :)
+
+
+#### Curiositats sobre el VIH i el Càncer.
+
+El VIH i Cancer encara no tenen cura, només tenen tractaments paliatius. 
+
+El cancer s'expandeix molt ràpidament, i més amb gent jove.
+Sobretot el de pángrees, el de pell, el de mama (és més genètic, BRACA1 i BRACA2).
+El cancer de pulmó és més adquirit per fumadors, contaminació...
+
+
+Però Conforme la ciència avanci preveiem que serà legal aplicar CRISPR.
+
+
+Els gens estan al nucli de la cel·lula, i compostos per cromosomes.
+
+OMIM -> Página de enfermedades hereditarias.
+
+
+#### Passi del video:
+
+
+
+
+### Pel·licula recomanada sobre el Crispr: Gattaca (1997)
+
+OMIM -> Página de enfermedades hereditarias.
+
+
+Ya hay una selección artificial aparte de la natural.
