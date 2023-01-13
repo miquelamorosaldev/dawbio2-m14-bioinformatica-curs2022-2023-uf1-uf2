@@ -70,7 +70,16 @@ S'està investigant com aplicar-la en assaigs clínics per tractar malalties com
 
 ![[crispr]](crispr.png "Crispr")
 
+
+### Aliments transgènics. 
+
 Monsanto, una empresa d'EEUU, ha aconseguit la plantació d'aliments modificats genèticament. Només creix a EEUU.
+
+De tota manera, ja podem comprar a molts llocs del món moltes plantes transgèniques.
+Els seus defensors afirmen que els transgènics permeten crear més varietat de fruita i verdures i evitar les plagues. Fins i tot permeten eliminar la fam a tot el món a la llarga.
+
+
+### S'aplica CRISPR a l'ésser humà?
 
 Ara per ara encara està prohibit aplicar aquestes tècniques en humans en pràcticament tot el món. 
 
@@ -94,14 +103,7 @@ Els gens estan al nucli de la cel·lula, i compostos per cromosomes.
 OMIM -> Página de enfermedades hereditarias.
 
 
-#### Passi del video:
 
-
-
+#### A classe, comentem alguns punts del video: La Noche Temática - CRISPR: editar el genoma.
 
 ### Pel·licula recomanada sobre el Crispr: Gattaca (1997)
-
-OMIM -> Página de enfermedades hereditarias.
-
-
-Ya hay una selección artificial aparte de la natural.
