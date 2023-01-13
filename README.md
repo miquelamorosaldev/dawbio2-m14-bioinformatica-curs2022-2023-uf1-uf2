@@ -27,6 +27,8 @@
 3. [Sessió 3 - Part 2. Dogma central de la Biologia Molecular. Investigacions genòmiques del SARSCov2.](./UF2_Sessió3_IntroCiènciesÒmniques1)
 4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
+### Introducció a BioPython.
+1. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
 
 
 #### Expressions regulars:

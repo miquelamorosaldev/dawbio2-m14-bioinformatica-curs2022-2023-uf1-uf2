@@ -51,8 +51,11 @@ Algunes fonts més populars i actualitzades que podem trobar són els següents 
 * Informàtica -> ACM, IEEE
 * Biologia -> Nature
 
-<hr/>
+<pre>
+</pre>
 
+<hr/>
+<hr/>
 
 <a name="S4_Part1_Crispr"></a>
 
@@ -60,24 +63,39 @@ Algunes fonts més populars i actualitzades que podem trobar són els següents 
 
 Sigles de CRISPR es un acrónimo para **Clustered Regularly Interspaced Short Palindromic Repeats.**
 
-És una tècnica d'edició genètica CRISPR/Cas9. Aquesta tècnica permet “editar” l'ADN canviant la seva seqüència original en una mutació controlada.
+### A classe, comentem alguns punts del video: La Noche Temática - CRISPR: editar el genoma.
+
+### Pel·licula recomanada sobre el Crispr: Gattaca (1997)
+
+### Video interessant sobre el Crisper, programa Orbita Laika de TVE:
+https://www.youtube.com/watch?v=IPW9EDI5kTM
+
+<hr/>
+
+### Què és i per a què serveix ? 
+
+**CRISPR/Cas9 És una tècnica d'edició genètica.** Aquesta tècnica permet “editar” l'ADN canviant la seva seqüència original en una mutació controlada.
+
+"Son com encimas de restricción, pero con más precisión."
 
 Per tant, s'agafen un munt de mostres i se seleccionen les més interessants per a l'estudi.
 
-S'està investigant com aplicar-la en assaigs clínics per tractar malalties com ara el càncer, distròfies musculars, malalties degeneratives o alguns tipus de ceguesa.
+S'està investigant com aplicar-la en assaigs clínics per tractar malalties com ara el càncer, distròfies musculars, malalties degeneratives o alguns tipus de ceguesa.  
 
-"Son com encimas de restricción, pero con más precisión."
+OMIM -> Página que investiga les enfermedats hereditaries.
+
 
 ![[crispr]](crispr.png "Crispr")
 
 
 ### Aliments transgènics. 
 
-Monsanto, una empresa d'EEUU, ha aconseguit la plantació d'aliments modificats genèticament. Només creix a EEUU.
+Monsanto, una empresa d'EEUU, ha aconseguit la plantació d'aliments modificats genèticament. També lluiten per a ser un monopoli, desaconsellant altres llavors. Només creix a EEUU.
 
 De tota manera, ja podem comprar a molts llocs del món moltes plantes transgèniques.
 Els seus defensors afirmen que els transgènics permeten crear més varietat de fruita i verdures i evitar les plagues. Fins i tot permeten eliminar la fam a tot el món a la llarga.
 
+<hr/>
 
 ### S'aplica CRISPR a l'ésser humà?
 
@@ -86,7 +104,7 @@ Ara per ara encara està prohibit aplicar aquestes tècniques en humans en pràc
 Però en el futur, qui sap si donar i guardar per sempre el nostre ADN, tal i com podem donar els òrgans per a què la ciència els investigui :)
 
 
-#### Curiositats sobre el VIH i el Càncer.
+### Curiositats sobre el VIH i el Càncer.
 
 El VIH i Cancer encara no tenen cura, només tenen tractaments paliatius. 
 
@@ -94,16 +112,5 @@ El cancer s'expandeix molt ràpidament, i més amb gent jove.
 Sobretot el de pángrees, el de pell, el de mama (és més genètic, BRACA1 i BRACA2).
 El cancer de pulmó és més adquirit per fumadors, contaminació...
 
-
 Però Conforme la ciència avanci preveiem que serà legal aplicar CRISPR.
 
-
-Els gens estan al nucli de la cel·lula, i compostos per cromosomes.
-
-OMIM -> Página de enfermedades hereditarias.
-
-
-
-#### A classe, comentem alguns punts del video: La Noche Temática - CRISPR: editar el genoma.
-
-### Pel·licula recomanada sobre el Crispr: Gattaca (1997)
