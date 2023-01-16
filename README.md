@@ -29,7 +29,7 @@
 
 ### Introducció a BioPython.
 1. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
-
+1. [Sessió 5 - Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
 
 #### Expressions regulars:
 * Validador d'expressions regulars https://regex101.com/ 
@@ -43,7 +43,6 @@
 <br/>
 <hr/>
 <hr/>
-<br/>
 
 # UF1 - Informàtica mèdica.
 

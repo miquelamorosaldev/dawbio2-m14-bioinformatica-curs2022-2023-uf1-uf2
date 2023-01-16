@@ -69,6 +69,8 @@ Totes les bases de dades del NCBI, de les quals la que ara ens interessa més é
 <hr/>
 <hr/>
 
+<a name="s5-genbank"></a>
+
 ### Estructura bàsica de Biopython
 
 Quan fem 
