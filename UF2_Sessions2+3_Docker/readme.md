@@ -459,6 +459,13 @@ Un cop seguides aquestes instruccions ja ens deix seleccionar l'entorn virtual.
 source activate
 ```
 
+Un cop ha reconegut l'entorn; necessitarem instal·lar-hi les llibreries.
+
+La forma més fàcil és usar el fitxer requirements.txt que tenim a la carpeta de docker:
+
+```sh
+pip install -U requirements.txt
+```
 
 ## Com treballar amb Docker i VSCode? 
 
@@ -481,7 +488,7 @@ Arrencant aquests plugins aconseguim arrencar/parar i accedir a la carpeta compa
 <hr/>
 <hr/>
 
-<a name="Sessió3_Debug">
+<a name="Sessió3_Debug" > </a>
 
 # Sessió 3. Part 1. Com treballem amb Docker ?
 

@@ -8,7 +8,7 @@ La transcripció es ADN(**ATCG**) que dona pas a les cadenes ARN(**UTCG**) (dobl
 
 ![[Dogma]](dogma.png "Dogma")
 
-ARNm és l'ARN Missatger, trasfereix el codi genètic del nucli de l'ADN, el que determina el orden en que se unirán los aminoácidos de una proteína y actúa como plantilla o patrón para la síntesis de dicha proteína.
+ARNm és l'ARN Missatger, transfereix el codi genètic del nucli de l'ADN, el que determina l'ordre en què s'uniran els aminoàcids d'una proteïna i actua com a plantilla o patró per a la síntesi d'aquesta proteïna.
 
 
 ### Codom Tables. Taules de transcrió i traducció.
@@ -114,3 +114,36 @@ El cancer de pulmó és més adquirit per fumadors, contaminació...
 
 Però Conforme la ciència avanci preveiem que serà legal aplicar CRISPR.
 
+
+
+## Conceptes bàsics sobre les cel·lules i els virus.
+
+### Cel·lula
+Unitat més petita d'ésser viu. Les agrupació de cel·lules formen organismes vivents. 
+
+Els organismes vivents es poden classificar pel número de cel·lules.
+
+- Unicel·lular.
+Protozous o bacteris.
+
+- Pluricel·lular.
+Molta variabilitat d'animals i vegetals. L'ésser humà en té més de 100 ^ 12, bil·lions.
+
+##### Cèl·lules proariotes: No tenen nucli.
+
+##### Cèl·lules eucariotes, tenen nucli i n'hi ha de 2 tipus: l'animal i la vegetal.
+
+#### Ribosomes. Part de la cel·lula MOLT important.
+
+Una seqüència genètica d'ADN és copiada en una molècula d'ARN missatger (ARNm). Després els ribosomes llegeixen la informació d'aquest ARNm i la utilitzen per crear proteïnes. 
+Els ribosomes també reuneixen la proteïna suficient per arreglar els defectes de la cèl·lula.[1]
+
+### Virus: 
+El virus, tot i ser més petit que la cel·lula, encara no està universalment reconegut com a ésser viu. 
+És un agent infecciós microscòpic acel·lular que només es pot **replicar dins de les cèl·lules d'altres organismes.**
+**Els virus estan constituïts per gens que contenen àcids nucleics que formen molècules llargues d'ADN o ARN**, envoltades de proteïnes.
+
+
+Fonts:
+http://viatgecell.blogspot.com/2009/01/hkjg-cghjkjhg-c.html
+https://es.wikipedia.org/wiki/Virus
