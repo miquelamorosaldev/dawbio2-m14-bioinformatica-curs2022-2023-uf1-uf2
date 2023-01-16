@@ -410,11 +410,55 @@ root@6251c0c6584d:/bio# ls
 Instalar-Sessio1m14.txt
 ```
 
-Si teniu problemes de permisos, dins del docker, canvieu els permisos d'usuari:
+### FAQ'S 1. No em funciona Python dins la carpeta compartida.
+
+Es deu a un problema de permisos.
+Dins del docker, canvieu els permisos d'usuari:
 
 ```sh
 sudo chown -R <usuari>:<usuari> .
 ```
+
+### FAQ'S 2. No em reconeix l'entorn de Python /opt/venv.
+
+A alguns equips no reconeix una carpeta que hauria de reconèixer a VSCode, la que hi ha l'entorn virtual:
+**/opt/bio-venv/bin/python**
+
+El que farem és crear un entorn nou igual a l'anterior, per a què el VSCode el reconegui,
+
+```sh
+root@39afbdb94c74:/bio# which -a python
+/opt/bio-venv/bin/python
+/usr/bin/python
+/bin/python
+root@39afbdb94c74:/bio# /bin/python -m venv bio-env2
+root@39afbdb94c74:/bio# ls
+2023-01-09-code  bio-env2
+root@39afbdb94c74:/bio# cd bio-env2/
+root@39afbdb94c74:/bio/bio-env2# ls
+bin  include  lib  lib64  pyvenv.cfg
+root@39afbdb94c74:/bio/bio-env2# cd ..
+root@39afbdb94c74:/bio# cd bio-env2/bin/
+root@39afbdb94c74:/bio/bio-env2/bin# ls
+Activate.ps1  activate  activate.csh  activate.fish  pip  pip3  pip3.10  python  python3  python3.10
+root@39afbdb94c74:/bio/bio-env2/bin# source activate.
+activate.csh   activate.fish  
+root@39afbdb94c74:/bio/bio-env2/bin# source activate
+(bio-venv) root@39afbdb94c74:/bio/bio-env2/bin# source activate
+(bio-venv) root@39afbdb94c74:/bio/bio-env2/bin# which -a python
+/opt/bio-venv/bin/python
+/opt/bio-venv/bin/python
+/usr/bin/python
+/bin/python
+```
+
+Un cop seguides aquestes instruccions ja ens deix seleccionar l'entorn virtual.
+
+És especialment important: 
+```sh
+source activate
+```
+
 
 ## Com treballar amb Docker i VSCode? 
 
