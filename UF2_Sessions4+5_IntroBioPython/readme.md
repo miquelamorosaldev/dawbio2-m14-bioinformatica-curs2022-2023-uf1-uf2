@@ -65,17 +65,18 @@ Per cada seqüència, hi ha dos coses:
 Si es un fitxer MULTI-FASTA, és separa seqüència amb seqüència amb una linea de capçalera ( > ), 
 
 
-#### Proves amb Mòdul Biopython 
+## Proves amb Mòdul Biopython 
 
  -->[./biopython-v1.ipynb](biopython-v1.ipynb "biopython-v1.ipynb")
 
- Tindrem que recordar la nomenclatura de -->[./biopython-v1.ipynb](https://iupac.org/ "biopython-v1.ipynb")
+ Haurem de recordar la nomenclatura de -->[./biopython-v1.ipynb](https://iupac.org/ "biopython-v1.ipynb")
 
- Per alguns dels exercicis, tindrem que tenir present la **traducció** [aminoacids_table](https://upload.wikimedia.org/wikipedia/commons/7/70/Aminoacids_table.svg"biopython.ipynb")
+ Per alguns dels exercicis, hem de tenir present la **traducció** [aminoacids_table](https://upload.wikimedia.org/wikipedia/commons/7/70/Aminoacids_table.svg"biopython.ipynb")
 
  Treballarem també amb el GENBANK de coronavirus.
 
-# FI SESSIÓ 4, DIA 12/01/2023
+## FI SESSIÓ 4, DIA 12/01/2023
+
 
 <hr/>
 <hr/>
@@ -91,14 +92,23 @@ Si es un fitxer MULTI-FASTA, és separa seqüència amb seqüència amb una line
  **Locus** identificació
 
  · **29903** posició de la seqüencia en la que acaba la seqüència.
+
  · **DBLINK** projecte d'on ha sortit aquesta seqüència.
+
  · **ORGANISM** Diferents classificacions del coronavirus.
+
  · **Reference Authors** tots els que l'han seqüenciat
+
  · **Title** Títol del article on han publicat.
+
  · **JOURNAL** Mitjà on ho han publicat 
+
  · **PUBMED** link del article (si el volem llegir podem intentar buscar a SCI HUB)
+
  · **REFERENCE** de otras personas que han estat treballant sobre el tema.
+
  · **FEATURES** les diferents anotacions que tenen el fitxer.
+
   ![[anotacions]](anotacions.png "anotacions")
  · **ORIGIN** On comença la seqüencia
 
