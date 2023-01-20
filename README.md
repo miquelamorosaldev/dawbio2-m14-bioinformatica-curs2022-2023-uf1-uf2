@@ -32,14 +32,19 @@
 6. [Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
 7. [Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres](./UF2_Sessions6_BioPython/readme.md)
 
-#### Expressions regulars:
-* Validador d'expressions regulars https://regex101.com/ 
-* Reptes per aprendre expressions regulars. https://regexone.com/
-
 <br/>
 <hr/>
 
-## UF2_A02 - Alineament de diversos gens i bases de dades de gens.
+## UF2_A02 - Alineament de diversos gens i bases de dades.
+
+⚠ Pròximament ⚠ 
+
+#### Mètode 1. Expressions regulars:
+* Validador d'expressions regulars https://regex101.com/ 
+* Reptes per aprendre expressions regulars. https://regexone.com/
+
+#### Mètode 2. Algorismes com BLAST
+
 
 <br/>
 <hr/>
