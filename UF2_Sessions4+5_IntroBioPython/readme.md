@@ -63,7 +63,7 @@ En aquesta sessió usarem el:
 Totes les bases de dades del NCBI, de les quals la que ara ens interessa més és la [Genbank](https://www.ncbi.nlm.nih.gov/genbank/), estan disponibles en línia de manera gratuïta, i són accessibles usant el cercador [Entrez](https://www.ncbi.nlm.nih.gov/search/).
 
 
-## FI SESSIÓ 4, DIA 12/01/2023
+## FI SESSIÓ 4, DIA 12/01/2023. INICI SESSIÓ 5.
 
 <hr/>
 <hr/>
@@ -197,3 +197,6 @@ Observació: S'utilitzen fitxers Genbank per retrocompatibilitat, ja que quan es
  · **PUBMED** link del article (si el volem llegir podem intentar buscar a SCI HUB)
 
 El fitxer // es el final d'un fitxer genbank
+
+
+[Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)

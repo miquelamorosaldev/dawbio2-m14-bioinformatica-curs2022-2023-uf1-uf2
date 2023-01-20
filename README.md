@@ -21,15 +21,16 @@
 <br/>
 <hr/>
 
-## UF2_A01 - Biopython, per a tractar informació de gens.
+## 🦠 UF2_A01 - Biopython, per a tractar informació de gens. 🦠
 
 #### Introducció ciències Òmniques
 3. [Sessió 3 - Part 2. Dogma central de la Biologia Molecular. Investigacions genòmiques del SARSCov2.](./UF2_Sessió3_IntroCiènciesÒmniques1)
 4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
 ### Introducció a BioPython.
-1. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
-1. [Sessió 5 - Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
+5. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
+6. [Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
+7. [Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres](./UF2_Sessions6_BioPython/readme.md)
 
 #### Expressions regulars:
 * Validador d'expressions regulars https://regex101.com/ 
