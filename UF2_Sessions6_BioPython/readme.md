@@ -1,4 +1,4 @@
-# Ciències Òmniques amb BioPython (2022-01-20)
+# Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres (1) (2022-01-20)
 
 Ens vam quedar consultant la fitxa (SeqRecord) del virus Sars-Cov-2.
 
@@ -134,3 +134,6 @@ Idees, comparar el genoma de:
 - estudiar els virus, i com s'infiltren a éssers vius
 - diversos fongs: rovellons vs bolets verinosos vs altres plantes
 - d'essers humans i altres mamífers: rates, gats, gossos.
+
+
+[Sessió 7 - Biopython. Tractament avançat de fitxers Genbank altres](./UF2_Sessions7_BioPython/readme.md)

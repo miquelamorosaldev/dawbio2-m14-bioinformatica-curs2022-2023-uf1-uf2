@@ -28,9 +28,10 @@
 4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
 ### Introducció a BioPython.
-5. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
-6. [Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
-7. [Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres](./UF2_Sessions6_BioPython/readme.md)
+4. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
+5. [Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
+6. [Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres (1)](./UF2_Sessions6_BioPython/readme.md)
+7. [Sessió 7 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2 i altres (2)](./UF2_Sessions7_BioPython/readme.md)
 
 <br/>
 <hr/>

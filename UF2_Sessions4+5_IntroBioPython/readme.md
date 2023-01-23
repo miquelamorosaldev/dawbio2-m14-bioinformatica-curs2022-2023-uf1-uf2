@@ -198,5 +198,6 @@ Observació: S'utilitzen fitxers Genbank per retrocompatibilitat, ja que quan es
 
 El fitxer // es el final d'un fitxer genbank
 
+## Link següent sessió
 
-[Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
+[Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2](./UF2_Sessions6_BioPython/readme.md)
