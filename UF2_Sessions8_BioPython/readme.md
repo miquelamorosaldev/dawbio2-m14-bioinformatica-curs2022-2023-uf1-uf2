@@ -2,4 +2,4 @@
 
 ## Repàs anteriors sessions.
 
-Muy útil. 
+Muy útil.
