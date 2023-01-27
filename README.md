@@ -38,14 +38,15 @@
 
 ## UF2_A02 - Alineament de diversos gens i bases de dades.
 
-⚠ Pròximament ⚠ 
-
 #### Mètode 1. Expressions regulars:
 * Validador d'expressions regulars https://regex101.com/ 
 * Reptes per aprendre expressions regulars. https://regexone.com/
 
+8. [Sessió 8 - Introducció Expressions regulars](./UF2_Sessions8_IntroRegexp/readme.md)
+
 #### Mètode 2. Algorismes com BLAST
 
+⚠ Pròximament ⚠ 
 
 <br/>
 <hr/>

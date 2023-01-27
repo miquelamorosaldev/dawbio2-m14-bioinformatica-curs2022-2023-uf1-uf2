@@ -77,4 +77,4 @@ El Pablo també ha trobat, dins del genbank, l'article PubMed que parla del Sars
 
 ## Link següent sessió
 
-[Sessió 8 - Biopython](./UF2_Sessions8_BioPython/readme.md)
+[Sessió 8 - Regexp](./UF2_Sessions8_IntroRegexp/readme.md)
