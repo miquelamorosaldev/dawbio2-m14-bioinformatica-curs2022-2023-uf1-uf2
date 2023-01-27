@@ -144,7 +144,7 @@ Busca els espais.
 
 ![[exemple1exp.png]](./img/exemple1exp.png "exemple1exp.png")
 
-**2.4.caràcter ^ (CARET o NEGACIÓ)** 
+**2.4.Caràcter ^ (CARET o NEGACIÓ)** 
 
 Dins d'una clase hi ha un caràcter que es torna especial segons la seva posició dins la clase. Es el caràcter ^ (CARET)
 
@@ -197,7 +197,7 @@ Cerca una cadena d'ADN que contingui exactament el patró AAA.
 
 ![[cuantificadorsexample3.png]](./img/cuantificadorsexample3.png "cuantificadorsexample3.png")
 
-**2.5.Abreviadors Quantificadors** 
+**2.5. Abreviadors Quantificadors** 
 
 Els quantificadors enen 3 abreviacions comuns:
 
@@ -229,3 +229,81 @@ aaaaa
 1 match
 ```
 
+```bash
+*
+<string_buit>
+1 match
+```
+
+**2.6. Groups ( )** 
+
+Els grups de captura són una **agrupació de caràcters, s'escriu entre ()**
+
+Tenen la següent funcionalitat. 
+1. Capturar i després revisar una coincidència. 
+2. Grups de cuantificadors. 
+3. Unions de grups de caràcters ( ab | cd) pipe dins d'un grup = OR
+
+Sintaxi:
+
+**Exemples**
+
+Rgx:
+(ab|aza)
+Txt:
+abbaazab
+Matches ? 
+3
+["ab","aza","ab"]
+
+Vull provar una mutació d'un tros de cadena d'ADN; per això va molt bé.
+
+Rgx:
+(GCC){1,}
+Txt:
+AUG(CGA){0,10}GCC
+Matches ? 
+1
+
+![[expressionsexample2.png]](./img/expressionsexample2.png "expressionsexample2.png")
+
+![[especialscharactersexample3.png]](./img/especialscharactersexample3.png "especialscharactersexample3.png")
+
+**2.6 Anchors**  
+
+Son caràcters especials que no consumeixen entrada i serveixen per indicar una posició.
+
+    - ^ CARET : Inici de linea (text).
+  
+    - $ DOLLAR : Fí de linea (text).
+  
+    - \b: Principi a final de paraula \s\w o \w\s
+
+
+Un paràmetre controla si la llibreria treballa linea a linea o tot el text de cop.
+
+Quant es treballa linea a linea, no es té en compte el salt de línea "\n".
+
+![[anchorexample1.png]](./img/anchorexample1.png "anchorexample1.png")
+
+![[anchorexample2.png]](./img/anchorexample2.png "anchorexample2.png")
+
+Si es treballa amb multiline, sol troba una ocurrencia
+
+· Flags Paràmetres de la llibreria de regexps.
+
+· ^, $ marca el principi/fi de la linea text (opció Multiline).
+· . (dot) coincideix amb el \n també (o no).
+
+
+<hr/>
+<hr/>
+
+### Finalment, regla d'or:
+
+Mai utilitzeu regex per parsejar un llenguatge com HTML (ni Java ni PHP ni JS...).
+No entenen els metacaràcters com els <>,{}, etc...
+
+## Link següent sessió
+
+[Sessió 9 - Regexp](./UF2_Sessions9_IntroRegexp/readme.md)
