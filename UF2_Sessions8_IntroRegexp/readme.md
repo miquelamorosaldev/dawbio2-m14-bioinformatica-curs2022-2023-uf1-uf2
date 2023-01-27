@@ -197,20 +197,35 @@ Cerca una cadena d'ADN que contingui exactament el patró AAA.
 
 ![[cuantificadorsexample3.png]](./img/cuantificadorsexample3.png "cuantificadorsexample3.png")
 
-Tenen dos abreviacions comuns:
+**2.5.Abreviadors Quantificadors** 
 
-- * = {0,} (asterisc)
+Els quantificadors enen 3 abreviacions comuns:
+
+- ? = {0,1} de 0 a 1, és a dir; opcional.
+
+- * = {0,} (star or asterisc)
 
 - + = {1,} (plus) exigeix que almenys hi hagi 1
 
+**Exemples**
 
 <em>La abreviatura de l'asterisc és la més coneguda amb diferència; sobretot a l'hora de cercar noms de fitxers.
+L'únic que coneix molta gent.
 ```bash
 *.png
 Pt[1-9]*
 ```
 </em>
 
+```bash
+a? 
+aaaaa
+5 matches
+```
 
-
+```bash
+a*
+aaaaa
+1 match
+```
 
