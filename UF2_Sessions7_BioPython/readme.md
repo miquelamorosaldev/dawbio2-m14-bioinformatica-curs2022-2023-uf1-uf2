@@ -45,28 +45,36 @@ NCBI posa .gb i .gbk per defecta al baixar-nos els Genbank.
 Millor canviar a .genbank per a què Ubuntu no es confongui.
 
 
-## Exercicis amb el nostre Genbank.
+## Exercicis que hem fet a classe amb el nostre Genbank.
 
-Les solucions que el Miquel ha extret a classe estan al fitxer [test.py](./test.py)
+- Mostrar quantes features y annotations hi ha.
+- Quina longitud tiene la secuencia ?
+- Obtenim el type i la location de totes les features del genbank. És la part 2 del fitxer.
+- Analitzem la seqüencia.
+- Comparem la seqüència del genbank amb la del fasta.
 
-Exemple, on trobem el Genbank i el Fasta del Cannabis.
+Si voleu consultar directament les solucions del Pablo les podeu trobar a ex1.py
+[ex1.py](./code/ex1.py)
+
+Les solucions que el Miquel ha extret a classe estan al fitxer [test.py](./code/test.py)
+
+Alguns dels exercicis els ha fet sobre Genbank i el Fasta del Cannabis.
 
 https://www.ncbi.nlm.nih.gov/nuccore/?term=Cannabis+sativa
 
-Mostrar quantes features y annotations hi ha.
+El Pablo també ha trobat, dins del genbank, l'article PubMed que parla del Sars-Cov-2:
 
-Quina longitud tiene la secuencia ?
-
-### Ex 3 i 4. Obtenim el type i la location de totes les features del genbank. És la part 2 del fitxer.
-
-### Ex 5. Analitzem la seqüencia.
+[PubMedSarsCov2.pdf](./s41586-020-2008-3.pdf)
 
 <hr/>
 <hr/>
 
 
+## Esquema erarquia de clases a la lectura de fitxers FASTA i GENBANK
 
-## Jerarquia de clases a la lectura de fitxers FASTA i GENBANK
+![[SeqRecord_Jerarquia]](jerarquia-seqrecord.png "SeqRecord_Jerarquia")
 
 
 ## Link següent sessió
+
+[Sessió 8 - Biopython](./UF2_Sessions8_BioPython/readme.md)
