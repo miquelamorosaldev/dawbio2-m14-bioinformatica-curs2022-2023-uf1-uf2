@@ -135,7 +135,7 @@ Cliquem el botó de la segona fila:
 
 NCBI RefSeq SARS-CoV-2 genome sequence record 
 
-I quan ens trobem a la següent pàgina podem descarregar el fitxer.
+I quan ![[Dogma]](dogma.png "Dogma")ens trobem a la següent pàgina podem descarregar el fitxer.
 
 ![[sars-cov-2-genbank]](sars-cov-2-genbank.png "sars-cov-2-genbank")
 
