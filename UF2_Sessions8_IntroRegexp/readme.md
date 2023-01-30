@@ -45,7 +45,7 @@ Si ja heu llegit tota aquesta pàgina accediu al codi:
 Els patrons s'escriuen usant els següents caràcters.
 
 **1. Literals (una lletra)**
- a L, Z, J, 9, 2, #, % => Qualsevol caràcter no especial
+ a L, Z, J, 9, 2, #, % => Qualsevol caràcter no especial (lletres, xifres, símbols ASCII)
 
 Per exemple, quantes vegades apareix un patró 'A' a la cadena 'GATAGATA'
 Resultat: Apareix 4 vegades.

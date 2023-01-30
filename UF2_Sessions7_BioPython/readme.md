@@ -74,6 +74,8 @@ El Pablo també ha trobat, dins del genbank, l'article PubMed que parla del Sars
 
 ![[SeqRecord_Jerarquia]](jerarquia-seqrecord.png "SeqRecord_Jerarquia")
 
+<hr/>
+<hr/>
 
 ## Link següent sessió
 
