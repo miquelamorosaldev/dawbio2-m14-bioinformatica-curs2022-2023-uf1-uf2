@@ -8,6 +8,7 @@ Fem el Beginner.
 
 https://regexcrossword.com/challenges/beginner/puzzles/1
 
+
 #### Pista 1: Llegim les regex.
 
 Aquesta què vol dir ? 
@@ -37,7 +38,8 @@ La O és la única lletra que hi ha d'estar; pot ser la primera lletra o la sego
 (A|B|C)\1
 
 Significa que hi ha d'haver 2 A, 2 B o 2 C.; el \1 significa que el 
-patró del parèntesi s'ha de repetir.
+patró del parèntesi s'ha de repet10. [Sessió 10 - Expressions regulars i BioPython](./UF2_Sessionsx10_Bioregexps/readme.md)
+ir.
 
 #### Pista 5: Llegim les regex.
 
@@ -69,6 +71,9 @@ El segon caràcter és un número que pot ser qualsevol dels 4 que surt a [2480]
 
 <hr/>
 <hr/>
+
+<hr/>
+
 
 ## Sketch Engine.
 
@@ -147,4 +152,48 @@ Ex3.
 
 ftp seguit de 1 o més caràcters que no siguin un espai [^ ]
 
+Ex4. 
+
+### .{1,}?\$
+
+Això el que fa és trobar els símbols $
+
+Per aconseguir que el comportament de la regex .{1,} no sigui greedy i sigui lazy, posem un interrogant al costat. Això ho fem per a què pari just quan es compleix la condició i que no segueixi; la qual cosa en aquest exercici fa que la solució sigui més eficent.
+
+Eviteu els quantificadors de 0 a N com el * i {0,} si és possible.
+
+Un altre exemple:
+https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions
+
+Ex5. 
+
+Possibles solucions
+
+#### (([0-2]?[0-9]{2})\.){3}([0-2]?[0-9]{2})
+
+#### \d+\.\d+\.\d+\d\.+\d+
+
+#### (\d{1,3}\.)\d
+
+Ex6.
+
+#### href=(['"]).+?\1  = href=(['"]).{1,}?\1
+
+L'href l'obrim amb comes simples o dobles. 
+Després, capturarem qualsevol caràcter de forma lazy (sinó continuaria buscant i no seria correcte)
+fins arribar de nou a trobar ' o " (\1) que tanca l'href.
+
+Ex7.
+
+(http://[^ ]+)
+
 </details>
+
+<hr/>
+<hr/>
+
+## Link següent sessió
+
+Si ja hem jugat suficient amb regex podeu veure com funcionen amb Python i BioPython:
+
+[Sessió 10 - Regexp](./UF2_Sessionsx10_Bioregexps/readme.md)

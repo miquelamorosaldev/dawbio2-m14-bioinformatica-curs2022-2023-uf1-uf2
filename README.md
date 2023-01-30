@@ -43,6 +43,10 @@
 * Reptes per aprendre expressions regulars. https://regexone.com/
 
 8. [Sessió 8 - Introducció Expressions regulars](./UF2_Sessions8_IntroRegexp/readme.md)
+9. [Sessió 9 - Jocs d'expressions regulars](./UF2_Sessions9_RegexpGames/readme.md)
+   
+10. [Sessió 10 - Expressions regulars i BioPython](./UF2_Sessionsx10_Bioregexps/readme.md)
+
 
 #### Mètode 2. Algorismes com BLAST
 
