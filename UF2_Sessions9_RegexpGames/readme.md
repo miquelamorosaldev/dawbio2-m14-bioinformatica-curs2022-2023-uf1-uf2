@@ -185,9 +185,63 @@ fins arribar de nou a trobar ' o " (\1) que tanca l'href.
 
 Ex7.
 
-(http://[^ ]+)
+### http://[a-zA-Z0-9/_=?;.~&:-]*[a-zA-Z0-9/]
+
+### (http[^\s\<\>]{1,}[^\.\<\>\s=])
+### (http:\S{1,})(\d|\w|/)
+
+La segona i tercera segueixen la estratègia negativa.
+
+### http://[^ >]+[\w/]
+
+Ex8. 
+
+### (<h\d\s?).+(</h\d>)
+
+### <h.*>
+### <h.*
+### <h\d.*>
+
+Com funcionen aquestes tan curtes ?
+
+. -> Agafa qualsevol caràcter excepte salts de línia
+
+Versió optimitzada amb back references '\1' i lazy quantifier (més eficient) '.*?'
+
+### <(h\d).*?</\1>
+
+
+Ex9.
+
+### \(?\d{3}[.)/]?[-\s]?\d{3}[.-]\d{4}
+
+General, la més interessant.
+
+### \(734\) \d{3}[\s\W]\d{3,4}|734.\d{3}.\d{3,4}|800.\d{3}-\d{3,4}
+
+Molt específica.
 
 </details>
+
+## Estratègies per resoldre problemes regex.
+
+1. Constructiva positiva
+   
+Posant els literals i caràcters especials que han d'encaixar. 
+
+2. Construcció negativa.
+   
+Dient el que no té que encaixar (amb character class)
+
+3. Destructiva
+
+Consisteix en eliminar els trossos de text que no ens interessen.
+
+Per exemple, eliminar la primera línia d'un fitxer .fasta
+
+4. Agrupació
+
+Usar operadors d'agrupació ( ) com hem fet en algunes solucions.
 
 <hr/>
 <hr/>

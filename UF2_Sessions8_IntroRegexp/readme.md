@@ -96,10 +96,13 @@ Amb el backslash interpreta un punt com a literal
 Si el fessim en Python, usariem aquestes variables:
 
 txt = "G**AT****AG****AT****AA**CCGG**AT****AG**"
+
 rgx = "A."
 
 matches = ["AT","AG","AT","AA","AT","AG"]
+
 Descartem la G, la T
+
 
 **2.3.Character classes**
 
@@ -108,15 +111,20 @@ Una "char class" ens permet dir que un caràcter és una de les opcions que hi h
 **Exemples** 
 
 1. Rex. "Hola guap[ao]"
+   
 Txt. "Hola guapa"      ✅ MATCH 
+
 Txt. "Hola guapo"      ✅ MATCH 
+
 Txt. "Hola guapi"      ❌ NOT MATCH 
+
 · Els [] són caràcters especials.
 
 1. Hola a tod[ao]s <= Una clase de 2 lletres hi haurà coincidència tant amb la 'a' i la 'o'
 
 2. Parsejar capçaleres d'un fitxer html (h1,h2,h3,h4,h5,h6)
       <h\d> => tots els numeros inclosos el 0
+
       <h[123456]> => tots excepte el 7,8,9,0.
 
 [exemple1exp]
@@ -124,9 +132,13 @@ Txt. "Hola guapi"      ❌ NOT MATCH
 **2.4. guió - (DASH)** Altre caràcter que es torna especial es el guió - (DASH)
 
   1. Quant esta entre dos caràcters, crea un rang.
+
     *exemple* [0-9] => Tots els dígits entre 0 i 9
-              [a-z] => El alfabet amb minúscules, anglès (ASCII,UTF-8)
-              [a-zA-Z0-9] => Qualsevol caràcter alfanumèric (\w)
+
+    [a-z] => El alfabet amb minúscules, anglès (ASCII,UTF-8)
+
+    [a-zA-Z0-9] => Qualsevol caràcter alfanumèric (\w)
+
   2. Quan es troba al principi o al final de la classe, és un literal normal.
 
 Aquest algoritme només aplica als caràcters ASCII, 127 primers caràcters (les ñ i altres símbols no).
@@ -149,7 +161,9 @@ Busca els espais.
 Dins d'una clase hi ha un caràcter que es torna especial segons la seva posició dins la clase. Es el caràcter ^ (CARET)
 
 1. Quan és el primer caràcter dins de la classe, nega tota la classe. 
-      *exemple* [^S] => Busca paraules amb singular  Qualsevol caràcter que no sigui S, [^aeiou] => Buscaria consonants
+   
+      [^S] => Busca paraules amb singular  Qualsevol caràcter que no sigui S, 
+      [^aeiou] => Buscaria consonants
 
 2. Quan no és el primer dins la clase, és un literal:
      [a^eiou] => Busca totes les paraules y el caret
@@ -183,7 +197,9 @@ Txt:    "aaaaa"
 ![[rgx_quant1.png]](./img/rgx_quant1.png "rgx_quant1.png")
 
 Cerca una cadena d'ADN que contingui exactament el patró AAA.
+
 - Si té AAAA selecciona les 3 primeres
+  
 - Si té menys de 3 A seguides no compta.
 
 
