@@ -1,5 +1,9 @@
 # Sessió 10 - Aplicació Expressions regulars amb Biopython (2022-02-03)
 
+Hem resolt les expressions del regexplay que quedaven:
+
+[Sessió 9, juguem amb regexs](../UF2_Sessions9_RegexpGames/readme.md)
+
 ## Com posar les expressions regulars a Python ? 
 
 Pàgina oficial llibreria de regex Pyhton **re**
