@@ -140,8 +140,9 @@ La expressió que ens permet seleccionar cada un dels blocs fasta del fitxer mul
 
 "Primer caràcter >, els següents poden ser qualsevol menys >; anem llegint infinitament fins a trobar un altre >"
 
+![[multifasta.png]](./multifasta.png "multifasta.png")
 
-2. Ara, apliquem la expressió regular per a filtrar el tros de cadena dins de cada un dels fasta. **parse_fasta**
+1. Ara, apliquem la expressió regular per a filtrar el tros de cadena dins de cada un dels fasta. **parse_fasta**
 
 ```python
 >[^\n]{1,})(.{0,})
