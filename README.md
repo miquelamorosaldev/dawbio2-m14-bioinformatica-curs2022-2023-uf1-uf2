@@ -48,9 +48,11 @@
 8. [Sessió 8 - Introducció Expressions regulars](./UF2_Sessions8_IntroRegexp/readme.md)
 9. [Sessió 9 - Jocs d'expressions regulars](./UF2_Sessions9_RegexpGames/readme.md)
    
-10. [Sessió 10 - Expressions regulars i BioPython](./UF2_Sessionsx10_Bioregexps/readme.md)
-11. [Sessió 11 - Expressions regulars i BioPython](./UF2_Sessionsx11/readme.md)
+10. [Sessió 10 - Lectura fitxers multifasta amb expressions regulars](./UF2_Sessionsx10_Bioregexps/readme.md#sessio11multifasta)
+11. [Sessió 11 - BioPython. Introducció a l'API de l'NCBI](./UF2_Sessionsx11/readme.md)
 
+<br/>
+<hr/>
 
 #### Mètode 2. Algorismes com BLAST
 

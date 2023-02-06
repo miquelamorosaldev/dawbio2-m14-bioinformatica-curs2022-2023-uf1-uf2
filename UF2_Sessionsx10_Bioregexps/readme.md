@@ -109,8 +109,58 @@ Cal vigilar, ja que si la web té (C) Copyright podem infringir drets d'autor.
 </hr>
 </hr>
 
+
+<a name="sessio11multifasta">
+
+## Sessió 11, Part 1 - Solució parseig multifasta Python. (2022-02-06)
+
+El repte que vam proposar a la sessió anterior és aconseguir com llegir un fitxer multifasta 
+mitjançant Pyhton i regexps.
+
+## Solució parseig multifasta Python.
+ 
+[questions.py](./questions.py)
+
+### Fitxers de prova
+
+[regex-1.fasta](./regex-1.fasta)
+[regex-2.fasta](./regex-2.fasta)
+
+### Provem expressió a regex101
+
+La estratègia que segueix el codi és:
+
+1. Separar el fitxer multifasta en blocs amb cada una de les cadenes fasta; mètode **split_multi_fasta**
+
+La expressió que ens permet seleccionar cada un dels blocs fasta del fitxer multifasta és aquesta:
+
+```python
+>[^>]{0,}
+```
+
+"Primer caràcter >, els següents poden ser qualsevol menys >; anem llegint infinitament fins a trobar un altre >"
+
+
+2. Ara, apliquem la expressió regular per a filtrar el tros de cadena dins de cada un dels fasta. **parse_fasta**
+
+```python
+>[^\n]{1,})(.{0,})
+```
+
+"Primer caràcter >, els següents poden ser qualsevol menys >; anem llegint infinitament fins a trobar un altre >"
+
+3. Apart d'això, hem de tenir en compte que moltes vegades els fasta tenen la cadena separada per espais. 
+Els hem d'eliminar amb compte; amb la funció **remove_whitespaces**
+
+I la expressió:
+```python
+\s
+```
+
+</hr>
+</hr>
+
+
 ## Link següent sessió
 
-Si ja hem jugat suficient amb regex podeu veure com funcionen amb Python i BioPython:
-
-[Sessió 11 - Part 1. Llegir fitxers multifasta amb Python i Regexp](./UF2_Sessionsx10_/readme.md)
+[Sessió 11 - Part 2. Intro accés a l'API d'NCBI amb Biopython](./UF2_Sessionsx11_/readme.md)
