@@ -56,6 +56,37 @@ def exemple1():
 
 [test1.fasta](./test1.fasta)
 
+
+```python
+# -----------------------------------------------------------------------------
+def read_fasta():
+
+    txt: str        = Path('/bio/data/example.fasta').read_text()
+    reg: str        = r'.{0,}'
+    pat: re.Pattern = re.compile(reg)
+
+    match_list: list[re.Match] = list(pat.finditer(txt))
+
+    # Remove header
+    match_list.pop(0)
+
+    # Get list of all lines
+    line_list: list[str] = [match.group(0)
+                            for match
+                            in match_list]
+
+    # Sequence
+    seq: str = ''.join(line_list)
+    print(seq)
+
+# -----------------------------------------------------------------------------
+def main():
+
+    example1()
+    read_fasta()
+```
+
+</hr>
 </hr>
 
 ## Utilitats regexp amb Python.
@@ -76,5 +107,10 @@ def exemple1():
 Cal vigilar, ja que si la web té (C) Copyright podem infringir drets d'autor.
 
 </hr>
+</hr>
 
+## Link següent sessió
 
+Si ja hem jugat suficient amb regex podeu veure com funcionen amb Python i BioPython:
+
+[Sessió 11 - Part 1. Llegir fitxers multifasta amb Python i Regexp](./UF2_Sessionsx10_/readme.md)

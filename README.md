@@ -24,10 +24,12 @@
 ## 🦠 UF2_A01 - Biopython, per a tractar informació de gens. 🦠
 
 #### Introducció ciències Òmniques
+
 3. [Sessió 3 - Part 2. Dogma central de la Biologia Molecular. Investigacions genòmiques del SARSCov2.](./UF2_Sessió3_IntroCiènciesÒmniques1)
 4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
 ### Introducció a BioPython.
+
 4. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
 5. [Sessió 5 - Biopython. Lectura del fitxer Genbank del Sars-Cov-2](./UF2_Sessions4+5_IntroBioPython/readme.md#s5-genbank)
 6. [Sessió 6 - Biopython. Exemples de tractament del fitxer Genbank del Sars-Cov-2 i altres (1)](./UF2_Sessions6_BioPython/readme.md)
@@ -39,6 +41,7 @@
 ## UF2_A02 - Alineament de diversos gens i bases de dades.
 
 #### Mètode 1. Expressions regulars:
+
 * Validador d'expressions regulars https://regex101.com/ 
 * Reptes per aprendre expressions regulars. https://regexone.com/
 
@@ -46,6 +49,7 @@
 9. [Sessió 9 - Jocs d'expressions regulars](./UF2_Sessions9_RegexpGames/readme.md)
    
 10. [Sessió 10 - Expressions regulars i BioPython](./UF2_Sessionsx10_Bioregexps/readme.md)
+11. [Sessió 11 - Expressions regulars i BioPython](./UF2_Sessionsx11/readme.md)
 
 
 #### Mètode 2. Algorismes com BLAST
