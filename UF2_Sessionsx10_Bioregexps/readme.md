@@ -1,5 +1,13 @@
 # Sessió 10 - Aplicació Expressions regulars amb Biopython (2022-02-03)
 
+## NOVETAT DIA 2023-02-10: Aquí teniu un resum de tot el que hem fet de regex:
+
+Consulteu la carpeta 4-regexps i les seves subcarpetes
+
+<hr/>
+
+### Què vam fer i que farem ? 
+
 Hem resolt les expressions del regexplay que quedaven:
 
 [Sessió 9, juguem amb regexs](../UF2_Sessions9_RegexpGames/readme.md)

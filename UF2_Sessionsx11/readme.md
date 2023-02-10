@@ -32,6 +32,11 @@ Des de fa 10 anys s'utilitzen cada cop més les API Restful; les que permete ass
 * **DELETE** = DELETE.
 
 
+### Proves crida GET a la API Animechan
+
+[animechan.py](./3-apis/1-requests/animechan.py)
+
+
 #### Referència:
 [https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto#GET]
 
@@ -87,6 +92,8 @@ print(record)
 - [Prova 1 einfo IPYNB](./entrez1.ipynb "entrez1.ipynb")
 
 **ESearch** és un mètode tipus (GET)
+
+Conté els accession numbers.
    
 **EPost** és un mètode tipus (POST)
    
@@ -94,3 +101,9 @@ print(record)
 
 </hr>
 </hr>
+
+
+## CODI FINAL SESSIÓ 11.
+
+[entrez.py](./5-entrez/entrez.py)
+

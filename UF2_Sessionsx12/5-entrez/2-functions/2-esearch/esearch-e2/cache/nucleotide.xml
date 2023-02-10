@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eInfoResult PUBLIC "-//NLM//DTD einfo 20190110//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20190110/einfo.dtd">
+<eInfoResult>
+	<DbInfo>
+	<DbName>nuccore</DbName>
+	<MenuName>Nucleotide</MenuName>
+	<Description>Core Nucleotide db</Description>
+	<DbBuild>Build220327-1425m.1</DbBuild>
+	<Count>491382732</Count>
+	<LastUpdate>2022/03/29 04:52</LastUpdate>
+	<FieldList>
+		<Field>
+			<Name>ALL</Name>
+			<FullName>All Fields</FullName>
+			<Description>All terms from all searchable fields</Description>
+			<TermCount>9894322874</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>N</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>UID</Name>
+			<FullName>UID</FullName>
+			<Description>Unique number assigned to each sequence</Description>
+			<TermCount>0</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>Y</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>Y</IsHidden>
+		</Field>
+		<Field>
+			<Name>FILT</Name>
+			<FullName>Filter</FullName>
+			<Description>Limits the records</Description>
+			<TermCount>436</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>WORD</Name>
+			<FullName>Text Word</FullName>
+			<Description>Free text associated with record</Description>
+			<TermCount>2145029997</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>N</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>TITL</Name>
+			<FullName>Title</FullName>
+			<Description>Words in definition line</Description>
+			<TermCount>368606929</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>N</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>KYWD</Name>
+			<FullName>Keyword</FullName>
+			<Description>Nonstandardized terms provided by submitter</Description>
+			<TermCount>23270759</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>AUTH</Name>
+			<FullName>Author</FullName>
+			<Description>Author(s) of publication</Description>
+			<TermCount>3308026</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>JOUR</Name>
+			<FullName>Journal</FullName>
+			<Description>Journal abbreviation of publication</Description>
+			<TermCount>27753</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>VOL</Name>
+			<FullName>Volume</FullName>
+			<Description>Volume number of publication</Description>
+			<TermCount>4138</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ISS</Name>
+			<FullName>Issue</FullName>
+			<Description>Issue number of publication</Description>
+			<TermCount>4671</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PAGE</Name>
+			<FullName>Page Number</FullName>
+			<Description>Page number(s) of publication</Description>
+			<TermCount>190758</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ORGN</Name>
+			<FullName>Organism</FullName>
+			<Description>Scientific and common names of organism, and all higher levels of taxonomy</Description>
+			<TermCount>5758007</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>Y</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ACCN</Name>
+			<FullName>Accession</FullName>
+			<Description>Accession number of sequence</Description>
+			<TermCount>1012973569</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PACC</Name>
+			<FullName>Primary Accession</FullName>
+			<Description>Does not include retired secondary accessions</Description>
+			<TermCount>983715893</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>GENE</Name>
+			<FullName>Gene Name</FullName>
+			<Description>Name of gene associated with sequence</Description>
+			<TermCount>7028977876</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PROT</Name>
+			<FullName>Protein Name</FullName>
+			<Description>Name of protein associated with sequence</Description>
+			<TermCount>8135420</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ECNO</Name>
+			<FullName>EC/RN Number</FullName>
+			<Description>EC number for enzyme or CAS registry number</Description>
+			<TermCount>6066</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PDAT</Name>
+			<FullName>Publication Date</FullName>
+			<Description>Date sequence added to GenBank</Description>
+			<TermCount>12210</TermCount>
+			<IsDate>Y</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>MDAT</Name>
+			<FullName>Modification Date</FullName>
+			<Description>Date of last update</Description>
+			<TermCount>8770</TermCount>
+			<IsDate>Y</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>SUBS</Name>
+			<FullName>Substance Name</FullName>
+			<Description>CAS chemical name or MEDLINE Substance Name</Description>
+			<TermCount>199892</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PROP</Name>
+			<FullName>Properties</FullName>
+			<Description>Classification by source qualifiers and molecule type</Description>
+			<TermCount>53208</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>SQID</Name>
+			<FullName>SeqID String</FullName>
+			<Description>String identifier for sequence</Description>
+			<TermCount>269600327</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>GPRJ</Name>
+			<FullName>BioProject</FullName>
+			<Description>BioProject</Description>
+			<TermCount>250086</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>Y</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>SLEN</Name>
+			<FullName>Sequence Length</FullName>
+			<Description>Length of sequence</Description>
+			<TermCount>1267123</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>Y</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>FKEY</Name>
+			<FullName>Feature key</FullName>
+			<Description>Feature annotated on sequence</Description>
+			<TermCount>436</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>PORG</Name>
+			<FullName>Primary Organism</FullName>
+			<Description>Scientific and common names of primary organism, and all higher levels of taxonomy</Description>
+			<TermCount>5756985</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>Y</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>COMP</Name>
+			<FullName>Component Accession</FullName>
+			<Description>Component accessions for an assembly</Description>
+			<TermCount>206434632</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ASSM</Name>
+			<FullName>Assembly</FullName>
+			<Description>Assembly</Description>
+			<TermCount>244629</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>DIV</Name>
+			<FullName>Division</FullName>
+			<Description>Division</Description>
+			<TermCount>19</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>STRN</Name>
+			<FullName>Strain</FullName>
+			<Description>Strain</Description>
+			<TermCount>2836513</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>ISOL</Name>
+			<FullName>Isolate</FullName>
+			<Description>Isolate</Description>
+			<TermCount>7439289</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>CULT</Name>
+			<FullName>Cultivar</FullName>
+			<Description>Cultivar</Description>
+			<TermCount>40205</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>BRD</Name>
+			<FullName>Breed</FullName>
+			<Description>Breed</Description>
+			<TermCount>5884</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+		<Field>
+			<Name>BIOS</Name>
+			<FullName>BioSample</FullName>
+			<Description>BioSample</Description>
+			<TermCount>4706014</TermCount>
+			<IsDate>N</IsDate>
+			<IsNumerical>N</IsNumerical>
+			<SingleToken>Y</SingleToken>
+			<Hierarchy>N</Hierarchy>
+			<IsHidden>N</IsHidden>
+		</Field>
+	</FieldList>
+		<LinkList>
+			<Link>
+				<Name>nucleotide_genome</Name>
+				<Menu>Assembly to Genome</Menu>
+				<Description>Genome record containing nucleotide sequence</Description>
+				<DbTo>genome</DbTo>
+			</Link>
+		</LinkList>
+	</DbInfo>
+
+</eInfoResult>
