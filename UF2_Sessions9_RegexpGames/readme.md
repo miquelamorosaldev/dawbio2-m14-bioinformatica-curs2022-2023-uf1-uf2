@@ -117,6 +117,11 @@ Primeres lletres ap, tercera lletra pot ser qualsevol, 4a lletra la t o la h.
 
 </details>
 
+### Altres exercicis regex solucionats:
+
+[Altres exercicis regex solucionats](./solucions-4exercicis-regex/readme.md)
+
+<hr/>
 
 ## Regex Play.
 
