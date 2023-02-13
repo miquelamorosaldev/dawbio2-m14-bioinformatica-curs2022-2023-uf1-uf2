@@ -28,6 +28,9 @@
 3. [Sessió 3 - Part 2. Dogma central de la Biologia Molecular. Investigacions genòmiques del SARSCov2.](./UF2_Sessió3_IntroCiènciesÒmniques1)
 4. [Sessió 4 - Part 1. Crispr.](./UF2_Sessió3_IntroCiènciesÒmniques1/readme.md#S4_Part1_Crispr)
 
+Fora dels apunts impartits a classe, però interessant:
+5. [Apunts introducció a la genòmica des de zero](./UF2_IntroCiènciesÒmniques1/readme.md)
+
 ### Introducció a BioPython.
 
 4. [Sessió 4 - Part 2. Primers passos amb BioPython](./UF2_Sessions4+5_IntroBioPython/readme.md)
@@ -157,6 +160,7 @@ La resta de recursos queden com a referència.
 **[Exercicis solucionats Pokemons](./A021_EstructuresPandas/pandaspokemons.ipynb)**
 
 #### Apliquem Pandas a la BBDD de Scimago. Sessions 6 i 7
+
 5. [Apliquem Pandas a la BBDD de Scimago.](./A022_Consultes_PandasScimago "Sessió 9")
 	- Inici explotació fitxer Scimago amb Pandas (es fà a la sessió 12)
 	- Seleccionar diferents registres a partir d'una condició d'un camp
