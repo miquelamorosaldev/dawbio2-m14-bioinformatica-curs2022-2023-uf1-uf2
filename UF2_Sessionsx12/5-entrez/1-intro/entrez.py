@@ -67,10 +67,12 @@ from   pathlib  import Path
 from   Bio      import Entrez
 
 # Before using any function, fill in your REAL e-mail
-Entrez.email = "xxx@yyy.zzz"
+Entrez.email = "mamoro10@xtec.cat"
+
+#'/bio/data/entrez-cache'
 
 # Path constants
-CACHE_DIR = Path('/bio/data/entrez-cache')
+CACHE_DIR = Path('/home/mamorosal/m14/dawbio2-m14-uf1-uf2/dawbio2-m14-bioinformatica-uf1-uf2/UF2_Sessionsx12/data/entrez-cache')
 
 
 # 9.2 EInfo + writing to disk
@@ -85,7 +87,7 @@ def einfo():
 
     # Handles are _io.TextIOWrapper, exactly like files.
     print(type(handle))
-    file_handle = open("entrez.py", "r")
+    file_handle = open("./5-entrez/1-intro/entrez.py", "r")
     print(type(file_handle))
     file_handle.close()
 
@@ -246,15 +248,19 @@ def epost_and_efetch():
                     retmax=10) as response:
         res = Entrez.read(response)
 
+    ## Pujo els identificadors.
+
     # The XML response after posting the identifiers
     with Entrez.epost("nucleotide", id=",".join(res["IdList"])) as response:
         epost_xml_str = response.read()
     print(epost_xml_str)
 
     # The WebEnv and QueryKey we need for EFetch:
+    # Aquesta funció és millor que l'anterior, perquè parseja directament.
     with Entrez.epost("nucleotide", id=",".join(res["IdList"])) as response:
         epost = Entrez.read(response)
 
+    ## Identificadors de sessió: QueryKey i WebvEnv
     pp(epost, indent=4)
     query_key = epost['QueryKey']
     webenv    = epost['WebEnv']

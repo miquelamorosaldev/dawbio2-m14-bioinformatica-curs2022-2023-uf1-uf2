@@ -47,18 +47,19 @@
 
 8. [Sessió 8 - Introducció Expressions regulars](./UF2_Sessions8_IntroRegexp/readme.md)
 9. [Sessió 9 - Jocs d'expressions regulars](./UF2_Sessions9_RegexpGames/readme.md)
-   
-10. [Sessió 10 - Ús d'expressions regulars amb Python](./UF2_Sessionsx10_Bioregexps/readme.md)
-11. [Sessió 10 - Lectura fitxers multifasta amb expressions regulars i Python](./UF2_Sessionsx10_Bioregexps/readme.md#sessio11multifasta)
-12. [Sessió 11 - BioPython. Introducció a l'API de l'NCBI](./UF2_Sessionsx11/readme.md)
-
+10. [Sessió 10 - Lectura fitxers multifasta amb expressions regulars i Python](./UF2_Sessionsx10_Bioregexps/readme.md#sessio11multifasta)
 
 <br/>
 <hr/>
 
-#### Mètode 2. Algorismes com BLAST
+#### Mètode 2. Recerca i algorismes alineament seqüències:
 
-⚠ Pròximament ⚠ 
+11. [Sessió 11 - BioPython, capítol 9. Introducció a l'API de l'NCBI](./UF2_Sessionsx11/readme.md)
+12. [Sessió 12 - Alineament de seqüències amb BioPython](./UF2_Sessionsx12/readme.md)
+
+### Pràctica de Ciències Òmniques.
+
+13. [Sessió 13 - Pràctica de Ciències Òmniques.](./UF2_Sessionsx13_Practica_Pt1/readme.md)
 
 <br/>
 <hr/>

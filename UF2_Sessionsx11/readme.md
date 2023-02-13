@@ -87,17 +87,28 @@ print(record)
 
 ## Les instruccions que veurem seran:
 
-**EInfo** Les instruccions que hem fet avui.
+**EInfo** Mètode tipus GET. Conté informació d'ORGANISMES =ORGN
 
 - [Prova 1 einfo IPYNB](./entrez1.ipynb "entrez1.ipynb")
 
 **ESearch** és un mètode tipus (GET)
 
-Conté els accession numbers.
+Entrez retorna XML.
+
+Amb la funció read d'Entrez es parseja l'XML i retorna un diccionari {}.
+
+Aquest conté llista d'Accession Numbers (idList) en comptes de retornar les cadenes dirèctament.
+
    
 **EPost** és un mètode tipus (POST)
-   
-**EFetch** recull les dades
+
+Ens permet pujar a l'NCBI la nstta idList (Accession Numbers)
+
+Ens retorna un Id de Sessió.
+
+**EFetch** recull les dades usant l' idSessió.
+
+Baixar els fitxers fasta demanats anteriorment a l'EPost.
 
 </hr>
 </hr>
