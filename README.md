@@ -38,7 +38,7 @@
 <br/>
 <hr/>
 
-## UF2_A02 - Alineament de diversos gens i bases de dades.
+## 🧬 UF2_A02 - Alineament de diversos gens i bases de dades. 🧬
 
 #### Mètode 1. Expressions regulars:
 
@@ -57,7 +57,10 @@
 11. [Sessió 11 - BioPython, capítol 9. Introducció a l'API de l'NCBI](./UF2_Sessionsx11/readme.md)
 12. [Sessió 12 - Alineament de seqüències amb BioPython](./UF2_Sessionsx12/readme.md)
 
-### Pràctica de Ciències Òmniques.
+<br/>
+<hr/>
+
+### 🧬🦠🦊 Pràctica de Ciències Òmniques. 🦊🦠🧬
 
 13. [Sessió 13 - Pràctica de Ciències Òmniques.](./UF2_Sessionsx13_Practica_Pt1/readme.md)
 
