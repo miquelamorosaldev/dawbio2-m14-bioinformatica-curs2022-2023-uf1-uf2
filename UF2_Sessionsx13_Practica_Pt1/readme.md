@@ -98,6 +98,32 @@ L’important no és la conclusió si no veure que heu fet tot el procés correc
 
 • El codi, la taula i les conclusions han d’estar en un JupyterLab notebook.
 
+
+## Altres consells
+
+Primer, seleccioneu un gen que us resulti interessant en base a algun estudi (més o menys científic) que hagueu llegit o algun tema mèdic.
+
+Després seleccioneu el vostre producte genètic o proteïna (tingueu en compte que un gen pot tenir diverses isoformes i, per tant, diversos productes diferents).
+
+Per exemple, podeu **cercar gens relacionats amb malalties o la seva cura/tolerància, relacionats amb al·lèrgies, amb fenotips físics (color d'ulls, pèl, sexe), etc.**
+
+Qualsevol és vàlid sempre que el tema us interessi. 
+
+Però no t'encarinyis massa amb el teu gen, potser no trobes res de nou i has de cercar en un altre.
+
+Veureu que apareixen moltíssims gens/productes genètics relacionats amb la vostra cerca. 
+
+Alguns criteris per filtrar-los:
+
+• Limiteu la cerca inicial al màxim, mitjançant l'ús de diferents filtres (especialment nom de gen i organisme). 
+
+Per exemple, si busquem “BRCA1” (BRCA = Breast Cancer) a Entrez Protein ens torna desenes de milers de resultats. 
+
+Si busquem “BRCA1[Gene]” només unes mil, i si
+busquem “BRCA1[Gene] AND Homo sapiens[Organism] es redueix a unes cent.
+
+<hr/>
+
 ## Recursos
 
 • NCBI: https://www.ncbi.nlm.nih.gov/

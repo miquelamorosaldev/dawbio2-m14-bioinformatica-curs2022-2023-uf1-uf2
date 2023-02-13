@@ -72,13 +72,11 @@
 
 ## 🐍 A01 - Introducció a Python. 🐍
 
-⌚ Temps previst. 12 hores.
-
 ### A011 - Preparació entorn: SO Linux, Python, Anaconda i editors de codi.
 
-⌚ Temps previst: Entre el primer i segon dia.
+⌚ Temps previst: Entre la sessió 1 i la sessió 2.
 
-1. [Sessió 1](./Sessi%C3%B31_PreparacioEntorn "Sessió 1")
+1. [Sessió 1 i 2](./Sessi%C3%B31_PreparacioEntorn "Sessió 1 i 2")
 	- Important! Com actualitzar de PopOS 20.04 a PopOS 22.04 LTS
 	- Creació usb bootable amb iso de PopOS o Ubuntu 22.04 LTS
 	- Instal·lació de noves versions de python diferent al de PopOs o Ubuntu
@@ -88,9 +86,10 @@
 
 ### A012 - Repàs funcionalitats bàsiques de Python.
 
-⌚ Temps previst. (2 hores) amb el més important.
-La resta de recursos queden com a referència. 
+⌚ Temps previst: Entre la sessió 2 i la sessió 3.
+
 Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures bàsiques de Python, i aquí en fem un repàs.
+La resta de recursos queden com a referència. 
 
 1. [Repàs Python, part 1](./A012_RepasPythonPart1 "Repàs Python, part 1")
 	- Introducció Bàsica a Python 
@@ -102,26 +101,23 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 		- Slices
 		- Conjunts (Sets)
 		- Ajuda
-3. [Txuletari Python](./A012_Cheatsheet "Txuletari Python")
-	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris.
-4. [ExercicisBasicsPython](./A012_ExercicisBasicsPython "ExercicisBasicsPython")
-	- Exercicis programació amb python (bucles, llistes, set, etc)
-5. [Repàs Python, part 2](./A012_RepasPythonPart2 "Repàs Python, part 2")
+2. [Repàs Python, part 2](./A012_RepasPythonPart2 "Repàs Python, part 2")
 	- Llegir fitxers CSV amb iteradors
 	- Instrucció Yields
 	- Prog. Funcional : Map i filter
-6. [Com fer còpia seguratat amb RSYNC](./A012_ConsellsGit "ConsellsGit 5")
+3. [Txuletari Python](./A012_Cheatsheet "Txuletari Python")
+	- Txuletari propi de comandes bàsiques python per Llistes i Diccionaris.
+4. [Com fer còpia seguratat amb RSYNC](./A012_ConsellsGit "ConsellsGit 5")
 
 #### Activitat A012 - Repassem Python amb Jupyter Notebook.
 
-**[A012-Exercicis-JupyterNb-Sessio1](./A012_ExercicisBasicsPython/a012_exercicis_1asessio.md "A012-Exercicis-JupyterNb-Sessio1")**
-
-**[A012-SolucionsExercicis-JupyterNb-Sessio1](./A012_ExercicisBasicsPython/A012_SolucionsExercicisBasicsPython.ipynb)**
+**[A012-Exercicis-JupyterNb-Sessio3](./A012_ExercicisBasicsPython/readme.md "A012-Exercicis-JupyterNb-Sessio3")**
 
 <hr/>
 
 ### A013 - Exercicis explotació de dades amb Python.
 
+⌚ Temps previst: Sessió 4.
 
 **[A013-Exercicis Fitxes CSV Scymago (2022-2023)](./A013_ExplotacioFitxersCSV_2022_2023/readme.md)**
 	- Llegir nou fitxer CSV i exercicis d'explotació de dades.
@@ -138,7 +134,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 
 ### A021 - Introducció a les estructures de la libreria Pandas.
 
-#### Introducció a Pandas. Sessions 4 i 5.
+#### Introducció a Pandas. Sessió 5.
 1. [Estructures Pandas : Series , Dataframes](./A021_EstructuresPandas "EstructuresPandas:Series,Dataframes")
 	- Estructures bàsiques pandas.
 		* Sèries
@@ -154,7 +150,7 @@ Pressuposem que ja s'han treballat les funcions, bones pràctiques i estructures
 	
 3. [Com importar un fitxer de dades a un Dataframe de Pandas.](./A0212_ImportacioDadesPandas/readme.md)
 
-### A022 - Ús de màscares i funcions de selecció i edició dades. 
+### A022 - Ús de màscares i funcions de selecció i edició dades. Sessió 6.
 
 4. [Repàs ús de màscares, selecció i edició de màscares.](./A021_EstructuresPandas/mascares_readme.md)
 
