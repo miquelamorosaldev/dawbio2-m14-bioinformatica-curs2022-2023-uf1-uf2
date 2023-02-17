@@ -49,10 +49,12 @@ A l'EFetch hi ha uns fitxers d'Utils que llegeixen directament els fitxers del d
 L'utils de l'Efetch 3 és el més complet i interessant per a fer pràctiques. 
 Per exemple; només fa la petició a NCBI si no existeix el fitxer XML al disc.
 
-## I per a què ens serveix ?
+## I per a què ens serveix el codi ? Alineament de seqüències.
 
 La genòmica ha pogut aplicar-se gràcies al projecte del Gènoma Humà (2001), als repositoris accessibles 
 mundialment com l'NCBI i les dades obertes de llocs com la WHO i a les tècniques d'**alineament de seqüències.**
+
+L'alineament serveix per a trobar similitud (distància) entre dues seqüències.
 
 A biologia s'han vist els alineaments per parelles de seq. = **PAIRWISE**
 
@@ -62,15 +64,26 @@ Exemple seqB.   GATA
 Normalment la longitud és diferent (habitual) i necessitem algoritmes avançats.
 Si fos igual seria més fàcil (comparem lletra a lletra).
 
-* Global Alignement
+* **Global Alignement. Smith - Waterman**
   * Va bé per a cadenes de longitud similar (no igual).
-* Local Alignement
-  * S'usa molt quan només disposem un tros petit de seqüència,
-  * com ho pot fer la policía científica.
+  * No forcem a que els extrens coincideixin.
+  * El global intenta alinear les dues seqüències de extrem a extrem. 
+  * Exemple: GATAGATA alineat GATA--TA
+* **Local Alignement. Needleman Wunsch**
+  * S'usa molt quan només disposem un tros petit de seqüència.
+  * Exemple GATATA alineat GATA-A-- (la T no) s'utilitza quant les diferencies de longitud son grans
+  * Com ho pot fer la policía científica.
 
-Com traiem l'score (la puntuació) de la diferència de les 2 seqüència.
+## Com funcionen els algorismes per dins ? 
 
-## Com més baix sigui l'score més semblants seran.
+Com traiem l'score (la puntuació) de la diferència de les 2 seqüències ?
+
+### Recomanació: Millor alineament de proteïnes que de nucleòtids (A,C...).
+
+Sempre que poguem, fem alineació de proteïnes. 
+Perquè tenen més lletres, i llavors les diferències són molt més marcades.
+
+## Alineament de més de dos parelles de seqüències. BLAST.
 
 També podem fer alineament de moltes parelles de seqüències (clustal):
 
@@ -81,25 +94,14 @@ Exemple seqC.   ATGC
 Un cop tenim aquesta taula podem crear arbres filogenètics per a comparar espècies.
 És una pena que no hem arribat a temps per abordar la creació d'aquests arbres.
 
-## Alineament de proteïnes.
-
-Sempre que poguem, fem alineació de proteïnes. 
-Perquè tenen més lletres, i llavors les diferències són molt més marcades.
-
 Matriu BLOSUM62.
 
 ![[Blosum62-dayhoff-ordering.svg]](./Blosum62-dayhoff-ordering.svg)
 
 Sempre usar aquesta matriu per a l'alineament de proteines.
 
-## Alineament d'ADN.
+# Codi de tots els alineaments:
 
-Tenim una matriu d'scores de les 4 lletres.
-
-![[dna_align_mat.jpg]](./dna_align_mat.jpg)
-
-## Pendent:
-
-Provar el codi pairwise.py i aprendre més sobre l'alineament de seqüències.
+El codi font a [pairwise.py](./6-alignments/pairwise.py) conté la impementació de tots els algorismes d'alineament de seqüències que necessitareu per a la pràctica.
 
 <hr/>
