@@ -1,4 +1,4 @@
-# Sessió 8 - Expressions regulars (2022-01-27)
+# Sessió 8 - Expressions regulars (2023-01-27)
 
 ### Repàs sessions 6 i 7.
 
@@ -75,12 +75,18 @@ Per a fer la \ com a literal, hem de fer '\\'
 <em>En otras palabras; es como la varita de Harry Potter, le da poderes al literal del lado, convierte un literal a carácter especial y al revés.</em>
 
 ### Exemple:
+
 Patró:      \d
+
 Text:       hola123
+
 Resultat:   3 coincidencies
 
-**2.2. Dot "."**
+
+### 2.2. Dot "."
+
 El punt és un comodí, significa qualsevol caràcter, però només un.
+
 Excepció: No coincideix amb el '\n', el salt de linea (a no ser que activis la opció single-line)
 
 **Exemple: Agafa 3 caracters qualsevol** 
@@ -91,7 +97,7 @@ Amb el backslash interpreta un punt com a literal
 
 ![[dotexemple2.png]](./img/dotexemple2.png "dotexemple2.png")
 
-**Exemple:**
+**Exemples:**
 
 Si el fessim en Python, usariem aquestes variables:
 
@@ -103,42 +109,49 @@ matches = ["AT","AG","AT","AA","AT","AG"]
 
 Descartem la G, la T
 
+### 2.3.Character classes
 
-**2.3.Character classes**
-
-Una "char class" ens permet dir que un caràcter és una de les opcions que hi ha dins.
+Una "char class" ens permet dir que un caràcter només pot ser una de les opcions que hi ha dins. 
+Es representa amb els símbols [], square brackets. 
 
 **Exemples** 
 
-1. Rex. "Hola guap[ao]"
-   
+Rex. "Hola guap[ao]"
+
 Txt. "Hola guapa"      ✅ MATCH 
 
 Txt. "Hola guapo"      ✅ MATCH 
 
 Txt. "Hola guapi"      ❌ NOT MATCH 
 
-· Els [] són caràcters especials.
+
+**Els [], square brackets, són caràcters especials. Serveixen per donar opcionalitat ** 
 
 1. Hola a tod[ao]s <= Una clase de 2 lletres hi haurà coincidència tant amb la 'a' i la 'o'
 
 2. Parsejar capçaleres d'un fitxer html (h1,h2,h3,h4,h5,h6)
-      <h\d> => tots els numeros inclosos el 0
 
+      <h\d> => tots els numeros inclosos el 0
+      
       <h[123456]> => tots excepte el 7,8,9,0.
+      
+      [AGCT] => Ens assegurem que el text només conté caràcters d'ADN.
 
 [exemple1exp]
 
-**2.4. guió - (DASH)** Altre caràcter que es torna especial es el guió - (DASH)
+
+### 2.4. guió - (DASH)
+
+Un altre caràcter que es torna especial es el guió - (DASH). Té 2 funcions:
 
   1. Quant esta entre dos caràcters, crea un rang.
-
-    *exemple* [0-9] => Tots els dígits entre 0 i 9
-
-    [a-z] => El alfabet amb minúscules, anglès (ASCII,UTF-8)
-
-    [a-zA-Z0-9] => Qualsevol caràcter alfanumèric (\w)
-
+  
+    [0-9] => Tots els dígits entre 0 i 9
+    
+              [a-z] => El alfabet amb minúscules, anglès (ASCII,UTF-8)
+              
+              [a-zA-Z0-9] => Qualsevol caràcter alfanumèric (\w)
+              
   2. Quan es troba al principi o al final de la classe, és un literal normal.
 
 Aquest algoritme només aplica als caràcters ASCII, 127 primers caràcters (les ñ i altres símbols no).
@@ -146,6 +159,7 @@ Aquest algoritme només aplica als caràcters ASCII, 127 primers caràcters (les
 **Exemples**
 
 Rex: [-ab] 
+
 Txt: 18 year-old
 
 ![[express2minus.png]](./img/express2minus.png "express2minus.png")
@@ -156,16 +170,16 @@ Busca els espais.
 
 ![[exemple1exp.png]](./img/exemple1exp.png "exemple1exp.png")
 
-**2.4.Caràcter ^ (CARET o NEGACIÓ)** 
+### 2.5.Caràcter ^ (CARET o NEGACIÓ)
 
 Dins d'una clase hi ha un caràcter que es torna especial segons la seva posició dins la clase. Es el caràcter ^ (CARET)
 
 1. Quan és el primer caràcter dins de la classe, nega tota la classe. 
-   
-      [^S] => Busca paraules amb singular  Qualsevol caràcter que no sigui S, 
-      [^aeiou] => Buscaria consonants
+
+      *exemple* [^S] => Busca paraules amb singular  Qualsevol caràcter que no sigui S, [^aeiou] => Buscaria consonants
 
 2. Quan no és el primer dins la clase, és un literal:
+
      [a^eiou] => Busca totes les paraules y el caret
 
 **Exemples**
@@ -178,7 +192,7 @@ Retorna tot el que no són lletres.
 
 Troba les consonants i altres caràcters que no són vocals (els espais)
 
-**2.5.Cuantificadors** 
+### 2.6.Cuantificadors 
 
 Amb aquestex expressions podem detectar moltes vegades un mateix caràcter.
 
@@ -199,7 +213,7 @@ Txt:    "aaaaa"
 Cerca una cadena d'ADN que contingui exactament el patró AAA.
 
 - Si té AAAA selecciona les 3 primeres
-  
+
 - Si té menys de 3 A seguides no compta.
 
 
@@ -213,15 +227,17 @@ Cerca una cadena d'ADN que contingui exactament el patró AAA.
 
 ![[cuantificadorsexample3.png]](./img/cuantificadorsexample3.png "cuantificadorsexample3.png")
 
-**2.5. Abreviadors Quantificadors** 
+**2.7. Abreviadors Quantificadors** 
 
-Els quantificadors enen 3 abreviacions comuns:
+Els quantificadors els representem 3 abreviacions comuns:
 
-- ? = {0,1} de 0 a 1, és a dir; opcional.
+```
+? {0,1} (interrogant) de 0 a 1, és a dir; opcional.
 
-- * = {0,} (star or asterisc)
+* {0,} (star or asterisc) de 0 a infinit.
 
-- + = {1,} (plus) exigeix que almenys hi hagi 1
++ {1,} (plus) exigeix que almenys hi hagi 1, si podem usar el + millor que el *
+```
 
 **Exemples**
 
@@ -251,41 +267,55 @@ aaaaa
 1 match
 ```
 
-**2.6. Groups ( )** 
+### 2.8. Groups ( )
 
 Els grups de captura són una **agrupació de caràcters, s'escriu entre ()**
 
 Tenen la següent funcionalitat. 
+
 1. Capturar i després revisar una coincidència. 
+
 2. Grups de cuantificadors. 
+
 3. Unions de grups de caràcters ( ab | cd) pipe dins d'un grup = OR
 
 Sintaxi:
 
-**Exemples**
+**Exemple**
 
-Rgx:
+**Rgx:**
 (ab|aza)
-Txt:
+
+**Txt:**
 abbaazab
-Matches ? 
+
+**Matches** 
+
+Número de matches:
 3
+
+Quins matches són?
 ["ab","aza","ab"]
+
+**Exemple**
 
 Vull provar una mutació d'un tros de cadena d'ADN; per això va molt bé.
 
-Rgx:
+**Rgx:**
 (GCC){1,}
-Txt:
+
+**Txt:**
 AUG(CGA){0,10}GCC
-Matches ? 
+
+**Núm Matches ? **
 1
 
 ![[expressionsexample2.png]](./img/expressionsexample2.png "expressionsexample2.png")
 
 ![[especialscharactersexample3.png]](./img/especialscharactersexample3.png "especialscharactersexample3.png")
 
-**2.6 Anchors**  
+
+### 2.9 Anchors
 
 Son caràcters especials que no consumeixen entrada i serveixen per indicar una posició.
 
@@ -300,17 +330,33 @@ Un paràmetre controla si la llibreria treballa linea a linea o tot el text de c
 
 Quant es treballa linea a linea, no es té en compte el salt de línea "\n".
 
-![[anchorexample1.png]](./img/anchorexample1.png "anchorexample1.png")
+![[anchorsexample1.png]](./img/anchorsexample1.png "anchorsexample1.png")
 
 ![[anchorexample2.png]](./img/anchorexample2.png "anchorexample2.png")
 
+**EXEMPLE, LECTURA FASTA**
+
+**Rgx:**
+^>
+
+**Txt:**
+>Fasta demo 1
+AGCGATCGT
+
+**Núm Matches ? **
+1
+
+
+
 Si es treballa amb multiline, sol troba una ocurrencia
 
-· Flags Paràmetres de la llibreria de regexps.
+```
+Flags Paràmetres de la llibreria de regexps.
 
-· ^, $ marca el principi/fi de la linea text (opció Multiline).
-· . (dot) coincideix amb el \n també (o no).
+^, $ marca el principi/fi de la linea text (opció Multiline).
 
+. (dot) coincideix amb el \n també (o no).
+```
 
 <hr/>
 <hr/>
@@ -319,6 +365,7 @@ Si es treballa amb multiline, sol troba una ocurrencia
 
 Mai utilitzeu regex per parsejar un llenguatge com HTML (ni Java ni PHP ni JS...).
 No entenen els metacaràcters com els <>,{}, etc...
+
 
 ## Link següent sessió
 
