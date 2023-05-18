@@ -60,6 +60,9 @@ Fora dels apunts impartits a classe, però interessant:
 11. [Sessió 11 - BioPython, capítol 9. Introducció a l'API de l'NCBI](./UF2_Sessionsx11/readme.md)
 12. [Sessió 12 - Alineament de seqüències amb BioPython](./UF2_Sessionsx12/readme.md)
 
+**Referències:**
+[Tipus alineaments. Alineament local vs global](https://bioinf.comav.upv.es/courses/intro_bioinf/alineamientos.html)
+
 <br/>
 <hr/>
 
