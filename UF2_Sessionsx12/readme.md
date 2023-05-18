@@ -62,17 +62,20 @@ Exemple seqA.   GAT
 Exemple seqB.   GATA
 
 Normalment la longitud és diferent (habitual) i necessitem algoritmes avançats.
+
 Si fos igual seria més fàcil (comparem lletra a lletra).
 
-* **Global Alignement. Smith - Waterman**
+* **Global Alignement. Needleman-Wunsch**
   * Va bé per a cadenes de longitud similar (no igual).
   * No forcem a que els extrens coincideixin.
   * El global intenta alinear les dues seqüències de extrem a extrem. 
   * Exemple: GATAGATA alineat GATA--TA
-* **Local Alignement. Needleman Wunsch**
-  * S'usa molt quan només disposem un tros petit de seqüència.
+  
+* **Local Alignement. Smith - Waterman**
+  * És una adaptació de l'algoritme de Needleman.
+  * És ideal quan només disposem un tros petit de seqüència.
   * Exemple GATATA alineat GATA-A-- (la T no) s'utilitza quant les diferencies de longitud son grans
-  * Com ho pot fer la policía científica.
+  * L'utilitza la policía científica.
 
 ## Com funcionen els algorismes per dins ? 
 
@@ -80,8 +83,11 @@ Com traiem l'score (la puntuació) de la diferència de les 2 seqüències ?
 
 ### Recomanació: Millor alineament de proteïnes que de nucleòtids (A,C...).
 
-Sempre que poguem, fem alineació de proteïnes. 
+Sempre que poguem, fem alineació de proteïnes.
+
 Perquè tenen més lletres, i llavors les diferències són molt més marcades.
+
+També tenen menys cost computacional.
 
 ## Alineament de més de dos parelles de seqüències. BLAST.
 
@@ -100,8 +106,14 @@ Matriu BLOSUM62.
 
 Sempre usar aquesta matriu per a l'alineament de proteines.
 
-# Codi de tots els alineaments:
+## Codi de tots els alineaments:
 
 El codi font a [pairwise.py](./6-alignments/pairwise.py) conté la impementació de tots els algorismes d'alineament de seqüències que necessitareu per a la pràctica.
+
+També explica com funcionen per dins.
+
+# Referències:
+
+https://bioinf.comav.upv.es/courses/intro_bioinf/alineamientos.html
 
 <hr/>
