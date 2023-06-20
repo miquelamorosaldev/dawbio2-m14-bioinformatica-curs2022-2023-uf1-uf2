@@ -94,6 +94,8 @@ Recomanable [crear una drecera per activar el system-monitor per si es realentei
 
 🚩 També és important no utilitzar la comanda sudo a partir d'ara, treballarem en mode usuari sense privilegis per no alterar el SO. A les companyies on treballarem rarament estarem al grup de sudoers (rarament serem admin). 
 
+🚩 Per tant, prohibit <strike>sudo pip install ... </strike>
+
 Fem unes comprovacions prèvies:
 
 - Per saber la versió que tenim de Python,  escriure a la línia de terminal **python3 --version**
