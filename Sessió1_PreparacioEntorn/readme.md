@@ -14,48 +14,54 @@
 
 <a name="installpopos"></a>
 
-### Important! Com actualitzar de PopOS 20.04 a PopOS 22.04 LTS
+### Instal·lar PopOS 22.04 LTS
 
 ## <strong style="color:red;"> Abans de tot, cal fer còpies de seguretat de totes les dades!</strong>
 
-** ⚠️ Un cop fetes, per experiència us recomanem que torneu a instal.lar des de 0 el sistema a la versió 22.04 LTS. Aquesta guia us ajudarà. ⚠️** 
+**⚠️ Un cop fetes, per experiència us recomanem que torneu a instal.lar des de 0 el sistema a la versió 22.04 LTS si no el teniu Aquesta guia us ajudarà. ⚠️** 
 
-Això és deu a que, tot i que [la pàgina oficial assegura que amb dues comandes s'actualitza el sistema](https://support.system76.com/articles/upgrade-pop/), la veritat és que en ocasions poden deixar de funcionar programes i perifèrics després de l'actualització. Amb Ubuntu ens ha passat i Popos també hi ha risc que passi. 
+**Si teniu Ubuntu 22 LTS també funcionarà tot OK per aquest curs.**
+
+En canvi, si teniu PopOS 20 LTS o Ubuntu recomanem la instal·lació des de 0 en comptes del **full-upgrade**. Tot i que [la pàgina oficial assegura que amb dues comandes s'actualitza el sistema](https://support.system76.com/articles/upgrade-pop/), la veritat és que en ocasions poden deixar de funcionar programes i perifèrics després de l'actualització. Amb Ubuntu ens ha passat i Popos també hi ha risc que passi. 
 
 
 <a name="installpopos"></a>
 
 ### Hardware necessari
- - USB(3.0) de >= 4 gb Linux
- - ISO  (iso és un fitxer que té l'estructura d´un cd) El ordinador creurà que la ISO és un CD. → Instal·lador y un modo live(de prueba). 
- - HDD/SSD >= 256 GB → Aconsellats Crucial, SanDisk , Kingston, Samsung.
- - Cable Sata 3.0 → USB 3.0
+ - USB(3.0) de >= 8 GB Linux
+ - ISO amb el PopOS (iso és el fitxer que té l'estructura d´un cd) El ordinador creurà que la ISO és un CD. → Instal·lador y un modo live(de prueba). 
+ - Disc dur SSD >= 128 GB → Aconsellats: Crucial, SanDisk, Kingston, PNY. Comprar-los a PC Componentes o comerços online grans.
+ - Cable Sata 3.0 → USB 3.0 (el podeu comprar apart o bé us ve inclòs amb el SSD) 
 
 ### Programari necessari (2 opcions)
 
-1. **Màquina arranca en mode UEFI**, baixar la ISO de --> [Pop_Os](https://pop.system76.com/)   
+1. **Màquina arranca en mode UEFI**, baixar la ISO de --> [Pop_Os](https://pop.system76.com/)
+  
 Instalador fàcil, No usa GRUB, sino systemd-boot. 
 
-Alternativa Espanyola [Slimbook](https://slimbook.es/). 
+Alternativa Espanyola del systemd-boot [Slimbook](https://slimbook.es/). 
+
 El SystemBoot de la BIOS ha d'estar desactivat.
 
-1. **Màquina NO arranca en mode UEFI o no es vol popups** baixar la ultima  [ISO de Ubuntu LTS ](https://ubuntu.com/download/desktop) 
-
- - [BalenaEtcher](https://www.balena.io/etcher/), per fer la còpia de la ISO al disc dur extraïble
+2. **Màquina NO arranca en mode UEFI o no es vol PopOS** baixar la ultima [ISO de Ubuntu Desktop LTS](https://ubuntu.com/download/desktop) 
 
 ### Passos a seguir per l'USB bootable
 
  1. Descarregar iso escollida.
- 2. Executar el [BalenaEtcher](https://www.balena.io/etcher/), esculleixes la ISO(elegida) i t'assegures de triar el usb, ** ⚠️ no el disc dur del PC ⚠️**
- 3. Arrancar amb el usb en lloc del disc dur. Amb la tecla que sigui per arrancar bios(ESC/F2/F1/F8/F9)
+ 2. Executar el [BalenaEtcher](https://www.balena.io/etcher/), esculleixes la ISO(elegida) i t'assegures de triar l'USB, **⚠️ no el disc dur del PC ⚠️**
+ 3. Arrancar amb el usb en lloc del disc dur. Amb la tecla que sigui per arrancar la uefi(ESC/F2/F1/F8/F9)
+
+#### Glossari:
 
 > **Firmware**, el software dins del hardware perquè funcioni.
->
-> **Bios** - Basci Input/Output System - Mort al 2013 - Tabla Particions MBR
->
-> **UEFI** - Universal EFI = EFI 20 Extensible Firmware Interface - Live - 
->  Tabla Particiones GPT: GUID Partition table
-> UUID: Universal Unique ID
+
+> **Bios** - Basci Input/Output System - Mort al 2013
+> - Tabla Particions MBR, màxim 4 particions primàries per disc
+
+> **UEFI** - Universal EFI = EFI 20 Extensible Firmware Interface - Live -
+>  Tabla Particiones GPT: GUID Partition table, Màxim 128 particions primàries per disc
+
+> **UUID:** Universal Unique ID
 
  3. Arrancar en **mode UEFI el usb** → Hi ha l´opció try demo, que és recomanable per provar si funciona el sistema operatiu abans de fer la còpia al ssd,  i les opcions a escollir, preferentment serien: 
     - Software  Angles-Irlanda
@@ -72,6 +78,7 @@ https://ubunlog.com/inxi-cli-informacion-equipo/#Instalar_inxi
 
 ```sh
 apt install inxi
+inxi
 ```
 
 - System Monitor --> 
@@ -83,23 +90,28 @@ Recomanable [crear una drecera per activar el system-monitor per si es realentei
 
 ## Instal·lació d´una versió de Python diferent del sistema Linux.
 
-- Per saber la versió que tenim de Python,  escriure a la línia de terminal **python3 --version**.
-   -  Per saber on és l'executable del teu python **which -a python3**. 
-      - Es pot utilitzar **ls -lisah /bin/python3**, i es veu on es localitza l'executable i es veu quin executable realment utilitza, quant a la terminal escrivim python3. Al llistat pot sortir ***blau claret***, que vol dir que és executable.
+🚩 És convenient no utilitzar el Python que ve instal·lat per defecte, sinó crear un entorn virtual amb el seu Python, les seves llibreries i aïllat del sistema. Això ho farem amb Conda. També es podria fer amb venv (Virtualenv) i pip.
+
+🚩 També és important no utilitzar la comanda sudo a partir d'ara, treballarem en mode usuari sense privilegis per no alterar el SO. A les companyies on treballarem rarament estarem al grup de sudoers (rarament serem admin). 
+
+Fem unes comprovacions prèvies:
+
+- Per saber la versió que tenim de Python,  escriure a la línia de terminal **python3 --version**
+- Per saber on és l'executable del teu python **which -a python3**. 
+- Es pot utilitzar **ls -lisah /bin/python3**, i es veu on es localitza l'executable i es veu quin executable realment utilitza, quant a la terminal escrivim python3. Al llistat pot sortir **blau claret**, que vol dir que és executable.
 	  
-	  - Per poder instal·lar la nostra versió de python, necessitem saber on es troben els python de sistema, per no fer-los malbé. Posarem la comanda **echo $PATH | sed -E "s/:/\n/g"**.
+- Per poder instal·lar la nostra versió de python, necessitem saber on es troben els python de sistema, per no fer-los malbé. Posarem la comanda **echo $PATH | sed -E "s/:/\n/g"**.
+
+Ara sí, instal·larem **Conda - Anaconda**, que és un software que ens permet dues coses:
 	  
-	  Per poder instal·lar la nostra pròpia versió de python, instal·larem **Conda - Anaconda**, que és un software que ens permet dues coses:
-	  
-	     - **Gestor d'entorns virtuals** Un directori amb llibreries i executables, aïllats de la resta. Així evitem problemes de compatibilitat. 
-	     Anaconda els posa a anaconda3/env
+- **Gestor d'entorns virtuals** Un directori amb llibreries i executables, aïllats de la resta. Així evitem problemes de compatibilitat. Anaconda els posa a anaconda3/env
 	    
-	     - **Gestor de paquets** Conjunt d´arxius necessaris per a un executable o llibreria (codi que es pot executar des de un executable). Suporta Python i R.
+- **Gestor de paquets** Conjunt d´arxius necessaris per a un executable o llibreria (codi que es pot executar des de un executable). Suporta Python i R.
 	       
-	L´instal·larem perque no permet requerir permis d'administrador (ideal per empreses)
+L´instal·larem perque no permet requerir permis d'administrador (ideal per empreses)
 	
 	1.  Baixarem l'instal·lador de la pagina oficial de [Anaconda](https://www.anaconda.com/products/distribution) - **64-Bit (x86) Installer ** *64-Bit(la quantitat de memoria que podem dirigir) (x86 *(Arquitectura Intel)*) *.  Extensió sh (shell)
-	2. Al instal·lador podem mirar dins el fitxer amb *less nom_fitxer*, i veiem quin codi hi ha.
+	2. Dins l'instal·lador podem mirar dins el fitxer amb **less nom_fitxer**, i veiem quin codi hi ha.
 	3. Executem "sh nom_instal·lador.sh"  i hem de fer els passos:
 	```sh
 		> Do you accept the license terms? [yes|no]
@@ -148,7 +160,9 @@ A l'arrancar el terminal et sortirà la paraula (base), és el intèrpret de Con
 Executem aquesta comanda per actualitzar Conda a la última versió. 
 Si ja tenim una versió recent no cal.
 
-```conda update -n base -c defaults conda```
+```sh 
+conda update -n base -c defaults conda
+```
 
 ### Crear el teu propi entorn. 
 
@@ -165,7 +179,9 @@ conda create -n nomenv
 ```
 
 #### Pas 2.
+
 Instal.lem una llibreria, la del Jupyter Labs
+
 <em>Acrònim de: Ju -> Julia, Py -> Python, R -> R.</em>
 
 ```sh
@@ -195,7 +211,7 @@ Per esborrar un entorn:
 conda env remove -n nomenv
 ```
 
-· Instal·lació python --> 
+### Instal·lació python --> 
 
 Un cop instal·lat un entorn de Conda, Python queda instal·lat a la última versió (la 3.10 l'any 2022).
 
