@@ -46,9 +46,9 @@ Per fer una introducció a Pandas, durant varies sessions, seguirem el tutorial 
 
 Les primeres llibreries a importar son dues:
 
- · **np** --> numerical panda, és una llibreria per a realitzar càlcul numèric
+ · **np** --> Numpy, és una llibreria per a realitzar càlculs numèrics
  
- · **pd** --> llibreria panda, és la llibreria per a gestionar i analitzar dades tabulars(dades amb format de taula)
+ · **pd** --> Llibreria Pandas, per a gestionar i analitzar dades tabulars indexades
 
 ```python
 import numpy as np 
@@ -60,9 +60,10 @@ import pandas as pd
  2. **DataFrame**, estructura 2D que presenta les dades com una taula, o en definitiva un conjunt de Series.
  
  
- **Exemple: Crearem una taula d'alumnes que volen estudiar amb format dual**
+ **Exemple Dataframe senzill: Crearem una taula d'alumnes que volen estudiar amb format dual**
+
+ Primer, creem 3 llistes del mateix tamany.
  
- **Series**
  ```python
 names_list = ["John","Mary","Lucy","Peter"]
 grades_ser=[7,9,8,4]
@@ -94,21 +95,7 @@ wants_dual_ser = [False, True, False, True]
     3. **index.** L'índex el pots configurar al teu gust. Per defecte és numèric, però podem elegir d'un altre tipus segons el cas.
 
 
-**No es molt normal, barrejar tipus de dades dins una serie**
-
-Dins el contingut hi ha 3 conceptes de dades diferents:
-
-   ·**NaN**: Not a Number (infinit, Indeterminar). La dada està calculada. Concepte matemàtic.
-   
-   ·**NA**:  Not Avalaible(No disponible). La dada no hi és, no existeix. Concepte estadístic.
-   
-   ·**None**:  És un objecte, per tant no és eficient.
-
-
-Per eficiencia a *Python* i *Pandas* s'utilitza NaN quant vol dir NA.
-
-
-## DTYPE. Tipus de dades que s'utilitzen a Pandas
+## DTYPE. Tipus de dades que s'utilitzen a Pandas.
 
  ·**dtype** = Data Type. Es un camp que utilitza la llibreria NumPy.
    Numpy utilitza el seu propi tipus, codificats al llenguatge de programació C, per eficiència. 
@@ -116,7 +103,7 @@ Per eficiencia a *Python* i *Pandas* s'utilitza NaN quant vol dir NA.
   *Exemple: float 64(bits), int 64(bits), "string", datetime*
   
 
-  ```python
+```python
 ser = pd.Series([1, 3, 5, np.nan, 6, 8])
 print(ser)
 ```
@@ -138,17 +125,27 @@ print(ser)
 >   dtype: float64
 
 
+### Tractament dades indeterminades o inexistents. 
 
+Dins del contingut indeterminat, hi ha 3 conceptes diferents en Python i Pandas:
+
+   ·**NaN**: Not a Number (infinit, Indeterminar). La dada està calculada. Concepte matemàtic.
+   
+   ·**NA**:  Not Avalaible (No disponible). La dada no hi és, no existeix. Concepte estadístic.
+   
+   ·**None**:  És un objecte que fa el mateix que NA. No és eficient, millor usar NA.
+
+
+Per eficiencia a *Python* i *Pandas* s'utilitza NaN quant vol dir NA.
+
+Podem esborrar la dada np.nan
+
+Si son uniformes el dtype tria el tipus de dades correcte i més adient.
 
 ```python
 ser = pd.Series([1, 3, 5, 6, 8])
 print(ser)
 ```
-
-
-
-Si son uniformes el dtype tria un tipus de dades correctes.
-
  >   0    1
  >   
  >   1    3
@@ -163,13 +160,10 @@ Si son uniformes el dtype tria un tipus de dades correctes.
  >   
 
 
-
-
 ```python
 ser = pd.Series([1, 3, 5, 6, 8], dtype=np.float32)
 print(ser)
 ```
-
 
 Una serie es pot forçar a un tipus de dades prefixat per nosaltres.
 
@@ -187,9 +181,13 @@ Una serie es pot forçar a un tipus de dades prefixat per nosaltres.
  >   
 
 
+## Creació de sèries amb Pandas.
 
+Provem el següent codi:
 
 ```python
+import numpy as np 
+import pandas as pd
 #les notes de dawbio amb series
 student_list=["John","Mary","Lucy","Peter"]
 grades_list = [7,9,8,4]
@@ -198,7 +196,6 @@ ser = pd.Series(grades_list)
 print(ser)
 ```
 
-
 >    0    7
 >    1    9
 >    2    8
@@ -206,8 +203,9 @@ print(ser)
 >    dtype: int64
 >    
 
+Per defecte, la sèrie assigna un index autonumèric.
 
-Creem una llista amb indexs propis.
+Les sèries de Pandas també es poden crear amb indexs propis (poden ser strings, dates...)
 
 ```python
 #index canviats a índex d'estudiants
@@ -245,12 +243,11 @@ print(ser.dtypes)
 * * * 
 
 ## DataFrame
-  
-  Podem seguir l'exemple del tutorial [en aquest punt](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#object-creation "aqui")
+
+Podem seguir l'exemple del tutorial [en aquest punt](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html#object-creation "aqui")
 
 **Codi d'exemple pd.Dataframe a classe**
 [intro_pandas_dataframes.py](./intro_pandas_dataframes.py)
-
 
 **Exemple 1: Dataframe d'informació d'animals.**
 
@@ -265,8 +262,9 @@ dict_animals = {'num_legs': [2, 4, 0, 8], 'num_wings': [2, 0, 0, 0]}
 name_animals = ['falcon', 'dog', 'snail', 'spider']
 df_animals = pd.DataFrame(data=dict_animals, index=name_animals)
 print(df_animals)
-
 ```
+
+Proveu l'exemple, i a veure si podeu inserir algún animal més.
 
 **Exemple 2:** Com poder crear un dataframe a partir de 6 mesos diferents
 
@@ -367,9 +365,9 @@ df3
 </div>
 
 
-### Altres tipus de dades.
+## Altres tipus de dades de Pandas.
 
-#### Categorical
+### Categorical
 
 ```python
 gender = pd.Categorical(["Male", "Female", "Non-Binary", "Transgender", "Intersex", "I prefer not to say"])
@@ -381,7 +379,7 @@ Categories (6, object): ['Female', 'I prefer not to say', 'Intersex', 'Male', 'N
 [How to ask about gender in forms respectfully](https://www.ruth-ng.co.uk/how-to-ask-about-gender-in-forms-respectfully)
 
 
-#### Timestamp
+### Timestamp
 Serveix per a convertir enters en dates, per defecte en format americà.
 
 ```python
@@ -391,11 +389,9 @@ pd.Timestamp("20130102")
 Timestamp('2013-01-02 00:00:00')
 
 
-### Cheatsheet instruccions bàsiques.
-
+## Cheatsheet instruccions bàsiques.
 
 A partir del exemple creat per nosaltres, amb les notes dels estudiants de DAWBIO que volen fer dual, veurem les principals funcions del dataframe.
-
 
 <a name="dataframe"></a>
 
@@ -459,16 +455,15 @@ print(students_frame)
 # Amb aquesta instruccio obtenim el tipus  de dades de cadascuna de les columnes.
 students_frame.dtypes
 ```
-
     grade    int64
     dual      bool
     dtype: object
 
-#### Funcions bàsiques de Pandas.
+## Funcions bàsiques de Pandas.
 
 <a name="head"></a>
 
-##### Mostrar les primeres línies
+### Mostrar les primeres línies
 
 ```python
 #Obtenir les primeres 5 linees de la taula
@@ -542,6 +537,8 @@ students_frame.head(2)
 
 <a name="tail"></a>
 
+### Mostrar les últimes línies
+
 ```python
 # Les últimes 2 files
 students_frame.tail(2)
@@ -572,7 +569,7 @@ students_frame.tail(2)
 
 <a name="shape"></a>
 
-##### Mostra el número de files i columnes del dataframe.
+### Mostra el número de files i columnes del dataframe.
 
 ```python
 students_frame.shape()
@@ -581,6 +578,7 @@ students_frame.shape()
 **Resultat:**
 (4, 2)
 
+### Mostrem l'índex i les columnes.
 
 ```python
 # Recupera el index (row names) i les columnes (column names)
@@ -594,7 +592,7 @@ print(type(students_frame.index))
 
 <a name="describe"></a>
 
-##### Càlculs estadístics.
+### Realitza càlculs estadístics.
 
 Si el dataframe o la sèrie conté dades numèriques, obté càlculs estadístics: mitjana, moda, quartils... només de les columnes amb valors numèrics.
 
@@ -618,7 +616,7 @@ max    9.000000
 
 <a name="sample"></a>
 
-###### Linea aleatòria
+### Linea aleatòria
 
 ```python
 # Linea aleatoria
@@ -645,7 +643,7 @@ students_frame.sample()
 
 <a name="T"></a>
 
-##### Trasposar la matriu
+### Trasposar la matriu del dataframe
 
 ```python
 students_frame.T
@@ -690,9 +688,9 @@ students_frame.T
 
 <a name="sort_index"></a>
 
-#### Ordenació dataframes.
+### Ordenació dataframes.
 
-##### Ordenació dataframes per un índex
+#### Ordenació dataframes per un índex
 
 ```python
 #Ordenació per index axis=0 el index de la primera columna, axis=1 ordena els index de la primera columna (dual,grade)
@@ -739,7 +737,7 @@ students_frame_sorted
 
 <a name="sort_values"></a>
 
-##### Ordenació dataframes per valors de columnes.
+####  Ordenació dataframes per valors de columnes.
 
 ```python
 #Ordenació per valors axis=0 columnes 
@@ -787,15 +785,18 @@ students_grade_sorted
 
 <a name="coordenades"></a>
 
-### Sistema coordenades, consultes.
+### Sistema coordenades de Dataframes. Consultes.
 
 Amb un dataframe, el sistema de coordenades, comença per 0, i la coordenada s'indica primera la fila i després la columna.
 
-**Regla nemotècnica (enfonsar-se i nedar)**  
+**Regla nemotècnica (enfonsar-se i nedar)**
+
 1. Primer et tires de cap a la posició de la fila que vols.
+
 2. Llavors vas nedant fins la columna que t'interessa.
  
 La funció més habitual per fer-ho és loc. 
+
 Sintaxi general:
 
 <em><strong>dataframe.loc [ --fila o llista de files-- , --columna o fila de columnes -- ] </em></strong>
@@ -817,7 +818,7 @@ students_frame.loc["Lucy","grade"]
 <a name="loc"></a>
 
 
-#### Búsqueda de varis valors en diferentes columnes.
+#### Cerca de varis valors en diferentes columnes.
 
 ```python
 #busqueda de mes d'una columna
@@ -1175,4 +1176,3 @@ Espai per a que creis 2 consultes i les seves solucions, a partir de les noves c
 Podeu trobar les solucions fetes a classe al link:
   
 [Exercicis Sessió5 Dataframes](./exercicisSessio5dataframes.py)
-
