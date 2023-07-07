@@ -117,15 +117,16 @@ Evitem el meme: "a la meva màquina funciona".
 És programari privatiu.
 
 - **Docker Engine -> Ës el sistema que usarem.** 
+
 És FOSS -> Free and Open Source Software.
 
 #### Pàgina oficial.
 
 [https://docs.docker.com/get-docker/]
 
-www.docker.com -> Docs -> Download and  Install
+www.docker.com -> Docs -> Download and Install
 
-No vamos a usar los que propone la página que vamos a seguir los siguientes pasos para instalar los de Ubuntu.
+No usarem exactament els passos que proposa la pàgina. Usarem els següents:
 
 Obrim terminal d'Ubuntu:
 
@@ -135,7 +136,8 @@ ubuntu-user$sudo apt install docker.io
 ubuntu-user$sudo apt install docker-compose
 ```
 
-El docker-compose no l'usarem per ara però ens vindrà bé quan tinguem molts contenidors i volguem orquestrar-los (decidir en quin ordre s'executen i com interactuen entre ells). També hi ha Kubernates que és més avançat, si voldeu ser un perfil devops (dev+admin)
+El docker-compose no l'usarem per ara però ens vindrà bé quan tinguem molts contenidors i volguem orquestrar-los (decidir en quin ordre s'executen i com interactuen entre ells). 
+També hi ha Kubernates que és més avançat, si voldeu ser un perfil devops (dev+admin)
 
 A les últimes versions d'Ubuntu (i PopOS) es diu docker compose.
 
@@ -147,11 +149,7 @@ Primer, hem d'assignar-nos el grup de docker (que s'ha creat automàticament a l
 sudo usermod -aG docker $USER
 ```
 
-$USER -> És una variable d'entorn (del Sistema Opeatiu) que té 
-
-L'any que es va crear la Shell de Unix, també es van crear aquestes variables d'entorn, que avui en dia s'usen en tots els sistemes operatius. S'hereden de Perl. 
-
-Aquesta tècnica també la podem usar per assignar 
+L'any que es va crear la Shell de Unix, també es van crear aquestes variables d'entorn ($USER,$PATH...), que avui en dia s'usen en tots els sistemes operatius.
 
 #### Provem si s'ha instal·lat Docker:
 
@@ -159,8 +157,8 @@ Aquesta tècnica també la podem usar per assignar
 systemctl status docker
 ```
 
-
 Resultat esperat:
+
 ```sh
 ● docker.service - Docker Application Container Engine
      Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
@@ -170,7 +168,8 @@ TriggeredBy: ● docker.socket
 
 Mirem que s'ha creat el daemon de docker.
 
-- **Deamon** -> Procés del sistema, que s'executa en segon pla.
+- **Daemon** -> Procés del sistema, que s'executa en segon pla (background)
+
 L'equivalent de Windows són els serveis.
 
 ### Tipus comandes a Docker.
@@ -180,13 +179,15 @@ L'equivalent de Windows són els serveis.
 - Commands.
 
 Usem les management commands; són més fàcils de recordar i d'aprendre.
-De builder fins a volumne.
+
+De builder fins a volume.
 
 Moltes són semblants a Git, per facilitar la integració amb aquest.
 
 ## Definicions importants a Docker.
 
 ### Image.
+
 Ârbre de fitxers i directoris comprimits que contenen tot el que necessita el meu entorn.
 Les imatges son només de lectura.
 Les guardarem al nostre PC, amb un sistema de fitxers especial. 
@@ -198,6 +199,7 @@ docker image --help
 ```
 
 ### Contenidor.
+
 Procés aïllat que s'executa a partir de una imatge. Així obtenim més seguretat (no afectarà al sistema si cau un contenidor)
 Analogia: Un procés de qualsevol sistema, que és un programa en execució.
 A priori són també de lectura; per garantir estabilitat. Es podria escriure per configurar-lo.
@@ -211,15 +213,16 @@ docker container --help
 ```
 
 #### Exemples: 
-Entorn amb Apache, PHP i MySQL.
-Entorn amb Python, Pandas i Biopython.
+
+- Entorn amb Apache, PHP i MySQL.
+- Entorn amb Python, Pandas, Flask i Biopython.
 
 
 ## On obtenim imatges ja fetes ?  
 
 De DockerHub. [Provem cercar una imatge de Flask a Dockerhub, per a fer aplicacions web amb Python](https://hub.docker.com/search?q=flask)
 
-Una altra opció és Django; però per ara Flask està creixent molt amb popularitat.
+Una altra opció semblant és Django; però per ara Flask està creixent molt amb popularitat.
 
 El Laravel és el framework de generació de págines web amb PHP. Per generar pàgines web automàtiques amb Python tenim Flask i Django.  
 
@@ -248,8 +251,9 @@ Status: Downloaded newer image for hello-world:latest
 docker.io/library/hello-world:latest
 ```
 
-Tag: La versió. Si surt **lastest** és que és la última versió.
-Hash: És un codi que conté la firma que idenfifica un usuari de forma segura en un servidor. En aquest cas usa l'algoritme d'encriptació amb SHA256. Té el més important d'un fitxer.
+**Tag:** La versió. Si surt **lastest** és que és la última versió.
+
+**Hash:** És un codi que conté la firma que idenfifica un usuari de forma segura en un servidor. En aquest cas usa l'algoritme d'encriptació amb SHA256. Té el més important d'un fitxer.
 
 Per entendre-ho, quan fem commit a Git des del terminal surt el codi de Hash.
 
@@ -271,6 +275,7 @@ docker container run nom_de_la_imatge
 (base) mamorosal@pop-os:~$ docker container run hello-world
 
 Hello from Docker!
+
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
@@ -294,6 +299,6 @@ For more examples and ideas, visit:
 
 ☺☺ Enhorabona, ja hem arrencat el nostre primer programa amb Docker. ☺☺
 
-## <a href="../UF2_Sessió2_Docker/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
+## <a href="../UF2_Sessions2+3_Docker/readme.md"> Accedeix a la pròxima sessió, on seguim muntant imatges de Docker més potents :) </a>
 
 <hr/>
