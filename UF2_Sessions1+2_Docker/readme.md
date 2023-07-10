@@ -64,8 +64,9 @@ Joc practicar expressions regulars:
 
 https://regexone.com/
 
-También os vendrá bien usar Pandas y Seaborn para presentar algunos de los resultados.
+Tambén us vindrà bé usar Pandas y Seaborn per a presentar els resultats.
 
+<hr/>
 <hr/>
 
 # Creació del nostre entorn de treball amb Docker.
@@ -73,6 +74,7 @@ También os vendrá bien usar Pandas y Seaborn para presentar algunos de los res
 Primerament, hem de comparar Docker amb un programari que realitza operacions aparentment simulars, que és VirtualBox, un un generador de màquines virtuals. 
 També hi ha altres virtualitzadors com VMWare, QEMU.
 
+### Comparativa VirtualBox vs Docker. 
 
 | VirtualBox  | Docker      |
 | :---        | :---        |
@@ -83,16 +85,25 @@ També hi ha altres virtualitzadors com VMWare, QEMU.
 |- Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ... | - Sistema Operatiu (host): Linux, Mac, Windows, Android, iOS ...|
 |- Hardware (host): 16 GB RAM, Intel / AMD processador   |- Hardware (host): 16 GB RAM, Intel / AMD processador | 
 
-VirtualBox emula el hardware (les VDI)
+VirtualBox emula el hardware (les VDI, processadors, RAM ...) i això té un cost  considerable. 
+<em>Un exemple típic: necessitem 2 nuclis de CPU i 6GB de RAM per la VM de Linux i almenys 2GB i 1 CPU per mantenir actiu el SO Host de Windows.</em> 
+
 A diferència de VirtualBox, no hi ha una emulació a Docker; comparteixein el hardware del host.
-Si tinc un processador amb 8 nuclis al meu PC, a Docker també els tenim.
 
-Un contenidor (de Docker) és un procés aïllat.
-
-Gràcies a compartir el mateix hardware, Docker és més ràpid i consumeix menys memòria (tant de RAM com de disc dur)
+Si tinc un processador amb 8 nuclis al meu PC, a Docker també els tenim, no n'hem de reservar pel SO host.
 
 ![[Docker vs VirtualBox]](containers-vs-virtual-machines.jpg)
 
+## Què és són els contenidors de Docker ? 
+
+Un contenidor (de Docker) és un procés aïllat. 
+Està basat en el format **estàndard de contenidors de Linux (LXC)** i permet **córrer aplicacions en ambients aïllats de manera lleugera**; de la mateixa manera que en 
+el **transport de mercaderies s'utilitzen contenidors amb un tamany estàndard**
+independentment del que portin.
+
+Per això, el logo de docker és una balena que porta contenidors a sobre (com un vaixell).
+
+Gràcies a compartir el mateix hardware (el mateix vaixell), Docker és més ràpid i consumeix menys memòria (tant de RAM com de disc dur).
 
 <hr/>
 
