@@ -200,4 +200,4 @@ El fitxer // es el final d'un fitxer genbank
 
 ## Link següent sessió
 
-[Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2](./UF2_Sessions6_BioPython/readme.md)
+[Sessió 6 - Biopython. Tractament del fitxer Genbank del Sars-Cov-2](../UF2_Sessions6_BioPython/readme.md)
