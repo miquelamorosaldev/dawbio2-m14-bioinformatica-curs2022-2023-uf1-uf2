@@ -1,4 +1,4 @@
-# Ciències Òmniques amb BioPython.
+# Ciències Òmniques amb BioPython. Sessions 4 i 5.
 
 Omicas , es un sufix grec que significa molts, en aquest cas moltes opcions per treballar sobre les lleis de la genètica.
 
