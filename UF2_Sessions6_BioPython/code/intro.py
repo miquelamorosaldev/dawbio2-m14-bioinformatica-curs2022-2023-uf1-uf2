@@ -146,9 +146,9 @@ def chapter_5_io():
 # Biopython Chapter 4: SeqRecords
 # SeqRecords are similar to Genbank files.
 # Genbank files have three parts:
-# 1. Context:     From LOCUS until FEATURES.
-# 2. Annotations: From FEATURES until ORIGIN.
-# 3. Sequence:    From ORIGIN until the end of file or the next LOCUS.
+# 1. Annotations:     From LOCUS until FEATURES. Also called Header or Context.
+# 2. Features:        From FEATURES until ORIGIN.
+# 3. Sequence:        From ORIGIN until the end of file or the next LOCUS.
 # -----------------------------------------------------------------------------
 def chapter_4_seq_record():
 
